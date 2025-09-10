@@ -1,0 +1,212 @@
+{
+	id: "69A4A73D5EDFE24B"
+	group: "23AE05F5773EEA05"
+	order_index: 4
+	filename: "industrial_foregoing"
+	title: "Industrial foregoing"
+	icon: {
+		id: "patchouli:guide_book"
+		Count: 1b
+		tag: {
+			"patchouli:book": "industrialforegoing:industrial_foregoing"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Extractor de fluidos!"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Eso suena muy mal"
+			description: [
+				"Maquina esencial para empezar con el mod, vas a necesitar sacar latex, para después hacer plástico que lo necesitan todas las cosas de este mod."
+				""
+				""
+				"Poné el extractor mirando para un tronco de arbol que tengas (1 log nomás, no el arbol entero) y luego funciona sólo sin energía."
+				""
+				""
+				"PD: podés ponerle energía y mejoras para que vaya muchisimo más rápido"
+			]
+			dependencies: ["2D9ED3F4810D27A7"]
+			id: "3DC425958E24FDE2"
+			tasks: [{
+				id: "7D893F8EE292F0FF"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+		}
+		{
+			title: "Procesadora de latex"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Plástico!"
+			description: ["Con agua y latex, podés crear pequeños pedazos de goma, que juntos y cocinados producen plástico completo!"]
+			dependencies: ["3DC425958E24FDE2"]
+			id: "4B5E4B97667E6B5B"
+			tasks: [{
+				id: "4F480316EF655745"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+		}
+		{
+			title: "Plástico!"
+			x: 5.5d
+			y: 0.0d
+			description: [
+				"El plástico se utiliza para Muchas cosas de este mod, las cuales son TANTAS que sinceramente me da paja hacerlas por que no me pagan por hacer este modpack"
+				""
+				""
+				"Así que estas son las máquinas mas esenciales!"
+			]
+			dependencies: ["4B5E4B97667E6B5B"]
+			id: "36210FFDC5ED0B78"
+			tasks: [{
+				id: "21B06E596F0E8D73"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			subtitle: "Un Yunque que no se rompe, usa esencia y energía."
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "14F5E199B8EA4A2A"
+			tasks: [{
+				id: "6EE4DAFCE18399CF"
+				type: "item"
+				item: "industrialforegoing:enchantment_applicator"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			subtitle: "Extrae encantamientos de cualquier cosa."
+			description: [" Puede extraer encantamientos y ponerlos en un libro o extraer encantamientos y convertirlos en esencia (la peor manera de hacer esencia posible)"]
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "4A8817D704555F3A"
+			tasks: [{
+				id: "61A07C1753E5EE20"
+				type: "item"
+				item: "industrialforegoing:enchantment_extractor"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			subtitle: "Un horno eléctrico, por si no querés usar mekanism o thermal series."
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "2D631E2E06D5E198"
+			tasks: [{
+				id: "613266C94F4CDABC"
+				type: "item"
+				item: "industrialforegoing:resourceful_furnace"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			subtitle: "Mata a los mobs hostiles en un area, además de generar esencia."
+			description: ["Se puede mejorar con los addons, y usa bastante energía pero te da los drops de los mobs asi que buenardo"]
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "7121F900CA87B5AC"
+			tasks: [{
+				id: "5157FCF207A969E3"
+				type: "item"
+				item: "industrialforegoing:mob_crusher"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			subtitle: "Mata a los mobs pero genera Slime rosa."
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "7D775C56DCC20E32"
+			tasks: [{
+				id: "014B7FB6946F8251"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			subtitle: "Un spawner de mobs con energía. Necesita esencia, una safari net del mob que necesites duplicar y MUCHA energía. (depende de la cantidad de mobs)"
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "50C450508CD8DDD7"
+			tasks: [{
+				id: "7966D374666FD6D7"
+				type: "item"
+				item: "industrialforegoing:mob_duplicator"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			subtitle: "Poné los items necesarios, y va a spawnear al wither en el lugar que necesites."
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "13D8343BAF8970E4"
+			tasks: [{
+				id: "03A72540BC14F567"
+				type: "item"
+				item: "industrialforegoing:wither_builder"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			description: ["Pone los bloques que quieras enfrente de él"]
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "2ADE003330FBD8C4"
+			tasks: [{
+				id: "62F355EC45D76208"
+				type: "item"
+				item: "industrialforegoing:block_placer"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			subtitle: "Va a poner los fluidos que quieras en el lugar que quieras."
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "1CD04E8C28608FF6"
+			tasks: [{
+				id: "44C942BCC1C52028"
+				type: "item"
+				item: "industrialforegoing:fluid_placer"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.0d
+			subtitle: "Atrapa cualquier mob en esta safari net, y llevalo en un inventario."
+			dependencies: ["36210FFDC5ED0B78"]
+			id: "0B45476705A8F1E6"
+			tasks: [{
+				id: "349F0134C51397E7"
+				type: "item"
+				item: "industrialforegoing:mob_imprisonment_tool"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			subtitle: "te va a servir para ver todas las máquinas y sus usos de este mod. (aunque creo que no están traducidos al español)"
+			dependencies: ["3DC425958E24FDE2"]
+			id: "0FB20DB70A0E74B6"
+			tasks: [{
+				id: "0311BA35C2DF33A6"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+			}]
+		}
+	]
+}

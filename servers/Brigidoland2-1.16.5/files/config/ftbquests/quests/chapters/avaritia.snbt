@@ -1,0 +1,524 @@
+{
+	id: "57CEBC8D447900CA"
+	group: "34AFBBF700497BD7"
+	order_index: 1
+	filename: "avaritia"
+	title: "Avaritia"
+	icon: "avaritia:infinity_catalyst"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["45D10979B9B94E64"]
+			id: "6D7C0957B086041F"
+			tasks: [{
+				id: "3BFE1DEB7E3A0A0F"
+				type: "item"
+				item: "avaritia:neutronium_ingot"
+				consume_items: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			dependencies: ["45D10979B9B94E64"]
+			id: "1420951BF4EA6CB8"
+			tasks: [{
+				id: "5FC4AD7410D0CE96"
+				type: "item"
+				item: "avaritia:crystal_matrix_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			subtitle: "7x7"
+			dependencies: ["5ED5C0A115B94414"]
+			id: "62B7656AE858A496"
+			tasks: [{
+				id: "5267B59B7FE2C71B"
+				type: "item"
+				item: "extendedcrafting:elite_table"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.5d
+			subtitle: "5x5"
+			dependencies: ["00B3F0EB8B51D75B"]
+			id: "5ED5C0A115B94414"
+			tasks: [{
+				id: "5E4E125BCD27C582"
+				type: "item"
+				item: "extendedcrafting:advanced_table"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			subtitle: "Super Crafteos 3x3!"
+			description: ["Item necesario para empezar a hacer crafteos super complicados."]
+			dependencies: ["45D10979B9B94E64"]
+			id: "00B3F0EB8B51D75B"
+			tasks: [{
+				id: "08A0CFB6625D7532"
+				type: "item"
+				item: "extendedcrafting:basic_table"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			subtitle: "9x9"
+			dependencies: ["62B7656AE858A496"]
+			id: "31DBD2143BC9B3C5"
+			tasks: [{
+				id: "72784BA1AAAA047C"
+				type: "item"
+				item: "extendedcrafting:ultimate_table"
+			}]
+		}
+		{
+			title: "Singularidades."
+			x: 0.0d
+			y: -2.5d
+			subtitle: "Compresiooooooon"
+			description: ["Lo vas a utilizar para comprimir las singularidades (para crear la singularidad ultimate sólamente usada en crafteos)"]
+			dependencies: ["45D10979B9B94E64"]
+			id: "5C462C703EDD483A"
+			tasks: [
+				{
+					id: "6BACD256A582CDE5"
+					type: "item"
+					item: "extendedcrafting:compressor"
+				}
+				{
+					id: "36569FCA92BB3189"
+					type: "item"
+					item: "extendedcrafting:ultimate_catalyst"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "3965898106F407C3"
+			tasks: [{
+				id: "525D1FEC38103767"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:bronze"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "2DAB088A3A4EA2DA"
+			tasks: [{
+				id: "421A18E6F115CE48"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:electrum"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "36628A1EC6BF4F77"
+			tasks: [{
+				id: "1F7D90FB9C1BA601"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:invar"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "72D182C31E715DFC"
+			tasks: [{
+				id: "2703CC2092EF8B81"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:steel"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "0ECF14A4E14A3CFE"
+			tasks: [{
+				id: "18FAB6A731FB6947"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:lapis_lazuli"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "3A923AD009B61311"
+			tasks: [{
+				id: "1A1B77368F20D7AD"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:uranium"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "4D507675056803C6"
+			tasks: [{
+				id: "29C65B72C6161A09"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:emerald"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "4F3714784461D63E"
+			tasks: [{
+				id: "73269AF63B71E81F"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:coal"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "2F5CBE2C8DE12401"
+			tasks: [{
+				id: "63D32D89AC49D55E"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:redstone"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "6C93720BBFC7F46D"
+			tasks: [{
+				id: "48A1AF28BBC8837A"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:aluminum"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "2C25C181422A7A43"
+			tasks: [{
+				id: "0A81F0C78890352E"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:silver"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "7DC211EA577D9A7B"
+			tasks: [{
+				id: "2071861957145F2B"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:tin"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "342F97597D5FAE9E"
+			tasks: [{
+				id: "0FC30D6B6C06E938"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:diamond"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "13422810486CEAEB"
+			tasks: [{
+				id: "3AF25FF9C4A65315"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:platinum"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "1C1477E2462E63D9"
+			tasks: [{
+				id: "3EC8FDB4FE46C87E"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:copper"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "38FA735372953ACE"
+			tasks: [{
+				id: "64AE914EBB9027C1"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:iron"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "4EA480D8B4571696"
+			tasks: [{
+				id: "74B93D1DAD0F74E1"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:lead"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "1CB7ECEA89A293C9"
+			tasks: [{
+				id: "131D772C0A358C06"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:nickel"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["5C462C703EDD483A"]
+			id: "73993373BE095B11"
+			tasks: [{
+				id: "4D96C7854836DC5C"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:glowstone"
+					}
+				}
+			}]
+		}
+		{
+			title: "Singularidad definitiva"
+			x: 1.0d
+			y: 3.5d
+			subtitle: "Comprimiste las singularidades en una."
+			dependencies: [
+				"3965898106F407C3"
+				"2DAB088A3A4EA2DA"
+				"36628A1EC6BF4F77"
+				"72D182C31E715DFC"
+				"0ECF14A4E14A3CFE"
+				"6C93720BBFC7F46D"
+				"2F5CBE2C8DE12401"
+				"4F3714784461D63E"
+				"4D507675056803C6"
+				"3A923AD009B61311"
+				"2C25C181422A7A43"
+				"7DC211EA577D9A7B"
+				"342F97597D5FAE9E"
+				"13422810486CEAEB"
+				"1C1477E2462E63D9"
+				"73993373BE095B11"
+				"1CB7ECEA89A293C9"
+				"4EA480D8B4571696"
+				"38FA735372953ACE"
+			]
+			id: "2A52CF0B2BEFCD6A"
+			tasks: [{
+				id: "15263258B39DA848"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			title: "El Lingote Definitivo"
+			x: 2.5d
+			y: 3.5d
+			subtitle: "Todos los lingotes en uno."
+			description: ["Todos los lingotes que están en este crafteo son automatizables, buena suerte."]
+			dependencies: ["2A52CF0B2BEFCD6A"]
+			id: "1336125526182BB6"
+			tasks: [{
+				id: "4EC4F1BB57F935E0"
+				type: "item"
+				item: "extendedcrafting:the_ultimate_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.5d
+			subtitle: "Catalizador del infinito"
+			description: ["Poco a poco te acercas al final de este modpack..."]
+			dependencies: [
+				"38FA735372953ACE"
+				"4F3714784461D63E"
+				"0ECF14A4E14A3CFE"
+				"2F5CBE2C8DE12401"
+				"342F97597D5FAE9E"
+				"4D507675056803C6"
+				"7DC211EA577D9A7B"
+				"3A923AD009B61311"
+				"1CB7ECEA89A293C9"
+				"72D182C31E715DFC"
+				"3965898106F407C3"
+				"73993373BE095B11"
+				"6C93720BBFC7F46D"
+				"36628A1EC6BF4F77"
+				"1C1477E2462E63D9"
+				"2DAB088A3A4EA2DA"
+				"13422810486CEAEB"
+				"2C25C181422A7A43"
+				"4EA480D8B4571696"
+			]
+			id: "27B9890FFC53AA7D"
+			tasks: [{
+				id: "4BE287A4A56B129D"
+				type: "item"
+				item: "avaritia:infinity_catalyst"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.5d
+			subtitle: "Más alto tier de lingote posible, solamente segundo de el Lingote Definitivo"
+			dependencies: [
+				"1420951BF4EA6CB8"
+				"6D7C0957B086041F"
+				"27B9890FFC53AA7D"
+			]
+			id: "16E46AE10A7AF3C9"
+			tasks: [{
+				id: "77DC93C0D5E7A1B1"
+				type: "item"
+				item: "avaritia:infinity_ingot"
+			}]
+		}
+	]
+}

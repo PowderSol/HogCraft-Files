@@ -1,0 +1,2190 @@
+{
+	id: "7A04527C166ACD61"
+	group: "23AE05F5773EEA05"
+	order_index: 1
+	filename: "mekanism"
+	title: "Mekanism"
+	icon: "mekanism:alloy_atomic"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Mekanism?"
+			x: -2.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Primeros pasos"
+			description: [
+				"Mekanism es un mod de tecnología que va a cambiar la manera en la que jugás Minecraft normalmente."
+				""
+				"Este mod se basa en romper materiales a su contraparte química, para tener lo mejor de cada material que te encuentres."
+				""
+				"Este mod tiene cosas como Jetpacks con Energía de hidrogeno, un amigo robótico, Reactores nucleares, un Minador Digital para automatizar tu minado y mucho, mucho más."
+				""
+				"Este es el Osmio, el cual será el item principal para todos tus crafteos."
+			]
+			dependencies: ["53E96999DD0357CF"]
+			size: 1.5d
+			id: "0852B1F07E2DE203"
+			tasks: [{
+				id: "426C6A47AB8702F6"
+				type: "item"
+				title: "Mekanism?"
+				item: {
+					id: "alltheores:osmium_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			subtitle: "Generación de energía básica"
+			description: [
+				"El generador de calor tiene 2 modos para generar energía:"
+				""
+				"Pasivo: Poner Source-Blocks de lava (que se ponen con cubeta) crea energía pasiva al generar calor. Pon 1 source de lava arriba del todo y dejalo fluir a los lados. Pero asegurate de ponerle cables de energía primero para sacarle la energía!"
+				""
+				"Activo: Poner materiales combustibles como carbón o madera al generador los quemará para crear energía."
+			]
+			dependencies: ["0852B1F07E2DE203"]
+			id: "1B5CA0BA62B769F8"
+			tasks: [{
+				id: "247C4B528E7B2421"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:heat_generator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Mi primera máquina."
+			description: [
+				"El infusor metalúrgico es usado para craftear los items principales para TODO el mod."
+				""
+				"Esta máquina funciona imbuyendo un material con un infusor (Infusor a la izquierda del todo y material normal en el medio ligeramente a la izquierda)"
+				"{image:modpack:textures/Metallurgic_explicacion.png width:200 height:100 align:1}"
+				""
+				"PD: 10mb (o mili-buckets según el owner) equivale a 1 item. Por ejemplo 1 de carbón equivale a 10mb y 8 de carbón es 80mb"
+			]
+			dependencies: ["1B5CA0BA62B769F8"]
+			size: 1.5d
+			id: "712C9AB9050C194B"
+			tasks: [{
+				id: "0C3B3437702B1152"
+				type: "item"
+				item: {
+					id: "mekanism:metallurgic_infuser"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			subtitle: "Algo relativamente necesario"
+			description: [
+				"Esta máquina hace 2 lingotes sumamente poderosos. La Glowstone Refinada (Refined Glowstone) y la Obsidiana refinada (Refined Obsidian)"
+				""
+				"Imbuye un item con osmio para crear un lingote más poderoso en pocas palabras."
+			]
+			dependencies: ["712C9AB9050C194B"]
+			id: "5C8C829848D3BFD2"
+			tasks: [{
+				id: "46A0CAB54A0B29A1"
+				type: "item"
+				item: {
+					id: "mekanism:osmium_compressor"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			dependencies: ["5C8C829848D3BFD2"]
+			id: "0AFBD2EA85623A29"
+			tasks: [{
+				id: "5C4FE948C96DFF15"
+				type: "item"
+				item: {
+					id: "mekanism:ingot_refined_glowstone"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			dependencies: ["5C8C829848D3BFD2"]
+			id: "5BBB4D021BEEA496"
+			tasks: [{
+				id: "39BD5CA0ADCD3822"
+				type: "item"
+				item: {
+					id: "mekanism:ingot_refined_obsidian"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			subtitle: "Un mejor horno."
+			description: [
+				"Esta máquina Funde/cocina items."
+				""
+				"Puede ser mejorado a una fábrica de fundición (Smelting Factory), subiendo el numero total de SLOTS hasta un máximo de 9 al mismo tiempo."
+			]
+			dependencies: ["712C9AB9050C194B"]
+			id: "1F3C406DD9E5663A"
+			tasks: [{
+				id: "5A1DCE7669C78A41"
+				type: "item"
+				item: {
+					id: "mekanism:energized_smelter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			subtitle: "De Mena a Polvo"
+			description: [
+				"Esta máquina funciona como un Pulverizador, la cual va a romper Menas a varios polvos."
+				""
+				"Esto rompe 1 mena a 2 polvos."
+				""
+				"Los polvos mismos se pueden fundir a lingotes normales, haciendo que básicamente dupliques tu mena de 1 lingote a 2 por cada polvo obtenido."
+				""
+				"Este es el comienzo de tu Fábrica de Menas, esta máquina también puede ser mejorada a una Fábrica, subiendo los Slots de Uso como el horno."
+			]
+			dependencies: ["712C9AB9050C194B"]
+			id: "3FBE46C40B733B83"
+			tasks: [{
+				id: "4680B9E3EF921B87"
+				type: "item"
+				item: {
+					id: "mekanism:enrichment_chamber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			subtitle: "Crafteo núcleo tier 1 (CNt1)"
+			description: [
+				"Imbuyendo Hierro con redstone en un Infusor Metalúrgico te va a dar uno de estos"
+				""
+				"Pista: Si tienes problemas con los montos, 10mb = 1 20mb = 2 (tienes que poner el mouse arriba de la barrita a la izquierda de el item a imbuir para saber sus cantidades)"
+				"{image:modpack:textures/Demostracion_enriched.png width:215 height:138 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "5E2677A00791F3E4"
+			tasks: [{
+				id: "4E858F8760AF02F8"
+				type: "item"
+				item: {
+					id: "mekanism:alloy_infused"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			subtitle: "Crafteo Núcleo Tier 1 (CNt1)"
+			description: ["Imbuir Osmio con 20 mb de redstone te va a dar uno de estos"]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "1AB8A71381C92938"
+			tasks: [{
+				id: "5FE87B8A00B41CC0"
+				type: "item"
+				item: {
+					id: "mekanism:basic_control_circuit"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			subtitle: "CNt2"
+			dependencies: ["5E2677A00791F3E4"]
+			id: "147EF09E59321C3D"
+			tasks: [{
+				id: "08F555A9B8795D16"
+				type: "item"
+				item: {
+					id: "mekanism:alloy_reinforced"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			subtitle: "CNt2"
+			dependencies: [
+				"1AB8A71381C92938"
+				"5E2677A00791F3E4"
+			]
+			id: "5315934E482C620A"
+			tasks: [{
+				id: "229C5E6A6B465092"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_control_circuit"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			subtitle: "CNt3"
+			dependencies: ["147EF09E59321C3D"]
+			id: "5D04ED97D6D87325"
+			tasks: [{
+				id: "1D0BBA45F1B9B369"
+				type: "item"
+				item: {
+					id: "mekanism:alloy_atomic"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			subtitle: "CNt3"
+			description: [""]
+			dependencies: [
+				"147EF09E59321C3D"
+				"5315934E482C620A"
+			]
+			id: "7D01C100EA2A9CE2"
+			tasks: [{
+				id: "75A2963F949542D8"
+				type: "item"
+				item: {
+					id: "mekanism:elite_control_circuit"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			subtitle: "CNt4"
+			dependencies: [
+				"5D04ED97D6D87325"
+				"7D01C100EA2A9CE2"
+			]
+			id: "5F4EA3AB97A97E8C"
+			tasks: [{
+				id: "7F4F5FA7D2ACBA57"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_control_circuit"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			subtitle: "Combinando"
+			description: [
+				"Esta máquina combina gases, items solidos y liquidos para producir un item y su sobrante."
+				""
+				"Esta máquina es necesitada para crear los materiales de End-Game del mod y la armadura."
+			]
+			dependencies: ["3FBE46C40B733B83"]
+			id: "2F590CDFDD4F255D"
+			tasks: [{
+				id: "4CFA462C772F44FE"
+				type: "item"
+				item: {
+					id: "mekanism:pressurized_reaction_chamber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			subtitle: "Eficiencia... EFICIENCIA!!!"
+			description: [
+				"Usando el Enrichment Chamber, vas a poder enriquecer tus items para convertirlos en variantes enriquecidas."
+				""
+				"Estas variantes enriquecidas te dan 8 veces más del monto normal en el Infusor Metalúrgico (Si un sólo carbon te daba 10mb, ahora te dará 80mb por la variante enriquecida)"
+				""
+				"Si planeas hacer bastante Acero, enriquece tu carbón primero!"
+				""
+				"con rima y todo jaj"
+			]
+			dependencies: ["3FBE46C40B733B83"]
+			id: "401124F425954BD0"
+			tasks: [{
+				id: "58355B7E32424E5B"
+				type: "item"
+				item: {
+					id: "mekanism:enriched_carbon"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			subtitle: "De esto a aquello"
+			description: [
+				"El Separador Electrolítico es usado para separar los químicos de ciertos líquidos y gases."
+				""
+				"Vas a necesitar bastantes de estos si planeas en hacer una Fábrica de Procesado de Menas"
+				""
+				"Para empezar, hacé una de estas para descomprimir uno de los fluídos más básicos: Agua."
+			]
+			dependencies: ["3FBE46C40B733B83"]
+			id: "07C849F62D37AD86"
+			tasks: [{
+				id: "652376CD60C7F37A"
+				type: "item"
+				item: {
+					id: "mekanism:electrolytic_separator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			subtitle: "Agua Infinita!"
+			description: [
+				"Para empezar a descomprimir agua, vas obtenerla consistentemente. El Kitchen Sink de este mod provee agua infinita y encima es bastante fácil ponerla en acción."
+				""
+				"También siempre podés usar la manera clásica de agua infinita y usar un Pump de Mekanism. Pero (además de gastar energía) ocupa mucho espacio innecesario."
+				""
+				"Saca el agua y redirigela hacia tu Separador Electrolítico para partir el agua en Hidrógeno y Oxígeno."
+				""
+				"PD: Si no sabes cómo mover el agua de la Kitchen Sink a el Separador, ver la misión de Mechanical Pipe abajo."
+			]
+			dependencies: ["07C849F62D37AD86"]
+			id: "7EB8BAAD66BC5D13"
+			tasks: [{
+				id: "2037B185C7B0FD4F"
+				type: "item"
+				item: {
+					id: "cookingforblockheads:sink"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			subtitle: "Quemando gases para hacer energía!"
+			description: [
+				"Este generador puede quemar tanto Hidrógeno como Etileno para producir energía."
+				""
+				"Nota: Quemar Hidrógeno no va a producir más energía de la que cuesta usar el Separador Electrolítico. Quema Etileno en su lugar."
+			]
+			dependencies: ["7EB8BAAD66BC5D13"]
+			id: "488F52CFC4AE8BD5"
+			tasks: [{
+				id: "5596E34E38513EE2"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:gas_burning_generator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			subtitle: "Hace pedacitos de ores :<"
+			description: ["Esta máquina \"Purifica\" nuestras menas. Convierte 1 mena en 3 \"Pedacitos\" (o clumps) los cuales pueden ser luego enviados por un Pulverizador para hacer polvos sucios. Luego, pasando por una enrichment chamber, para convertirse en Polvo Limpio y por último por un smelter o horno para convertirse en lingote."]
+			dependencies: ["07C849F62D37AD86"]
+			id: "272D08A3ECA90B52"
+			tasks: [{
+				id: "35DCC32188FCE4E0"
+				type: "item"
+				item: {
+					id: "mekanism:purification_chamber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 3.0d
+			subtitle: "Por si te perdiste"
+			description: ["{image:modpack:textures/triplicado_demostracion.png width:200 height:700 align:1}"]
+			dependencies: ["272D08A3ECA90B52"]
+			optional: true
+			id: "1E6B73ECD31776AD"
+			tasks: [{
+				id: "3B0343CC525F8B35"
+				type: "checkmark"
+				title: "Explicación:"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 1.0d
+			subtitle: "Pulveriza duh"
+			description: ["Esta máquina pulveriza menas a sus formas \"sucias\", puede ser util para convertir los pedacitos anteriormente dichos a polvo sucio. el cual puede pasar por la Enrichment Chamber para crear el polvo original, que por último puede ser fundido para hacer lingotes."]
+			dependencies: ["272D08A3ECA90B52"]
+			id: "242BB15CEA27AE15"
+			tasks: [{
+				id: "666621CB35845CB1"
+				type: "item"
+				item: {
+					id: "mekanism:crusher"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: 0.0d
+			subtitle: "Otro uso?"
+			description: [
+				"El Pulverizador también puede ser usado para romper sustancias naturales para hacer Bio-Fuel!"
+				""
+				"El Bio-Fuel puede ser usado para hacer un generador de Bio-Fuel :<"
+			]
+			dependencies: ["242BB15CEA27AE15"]
+			id: "73D5C71359438D34"
+			tasks: [{
+				id: "5449935A063287AE"
+				type: "item"
+				item: {
+					id: "mekanism:bio_fuel"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.0d
+			subtitle: "Quesesto"
+			description: [
+				"Cuando combinas Bio-fuel con agua y hidrógeno en una Pressurized Reaction Chamber, el mismo crea Substratos. También crea etileno como sub-producto."
+				""
+				"Estos substratos son necesarios para crear HDPE Pellets, los cuales son usados para los crafteos de endgame como la Meka-Armadura."
+			]
+			dependencies: ["73D5C71359438D34"]
+			id: "3A3C458BEBCC516F"
+			tasks: [{
+				id: "3537F232267DC94C"
+				type: "item"
+				item: {
+					id: "mekanism:substrate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			subtitle: "Ya casi eh..."
+			description: ["Combinando Oxígeno, etileno y un substrato en una Pressurized Reaction Chamber va a crear un HDPE Pellet."]
+			dependencies: ["3A3C458BEBCC516F"]
+			id: "0EE0571647BF3370"
+			tasks: [{
+				id: "63F13E275F82218E"
+				type: "item"
+				item: {
+					id: "mekanism:hdpe_pellet"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -1.5d
+			subtitle: "Pero que macizo"
+			description: [
+				"Crafteo común, 8 de HDPE Pellets hacen 1 sheet."
+				""
+				"O También puedes usar un enrichment chamber y usar solo 3 para crear 1."
+			]
+			dependencies: ["0EE0571647BF3370"]
+			id: "2D2693B4531B06C8"
+			tasks: [{
+				id: "6E4416B6160ADBDF"
+				type: "item"
+				item: {
+					id: "mekanism:hdpe_sheet"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: 1.0d
+			subtitle: "Fábrica de Menas tier 2"
+			description: [
+				"Por ahora, para duplicar nuestras menas nuestras maquinas se deberían ver así:"
+				""
+				"La Mena va a tu Purification Chamber, la cual está siendo alimentada por Oxígeno como combustible de tu Electrolytic Separator."
+				""
+				"Después mueve el producto a nuestro Crusher (Pulverizador), lo cual convierte nuestros pedacitos de mena en polvos sucios. Este polvo sucio es enviado a un Enrichment Chamber, que convierte el Polvo Sucio en el Polvo de la Mena que estamos buscando."
+				""
+				"Y por último estos Polvos de Mena que salieron de la Enrichment Chamber van a tu horno de elección, todo bien por acá."
+			]
+			dependencies: ["242BB15CEA27AE15"]
+			id: "3585B7244F91D091"
+			tasks: [{
+				id: "376458DCF4F69966"
+				type: "checkmark"
+				title: "Por ahora tenemos:"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 1.0d
+			subtitle: "Convierte 1 Mena a 4 Fragmentos de Mena"
+			description: [
+				"Esta máquina es tu siguiente paso para tu Fábrica de Procesado de Menas. Añade estoa la izquierda de tu Purification Chamber para empezar a mejorar tu actual Fábrica de Menas"
+				""
+				"Esta máquina requiere Cloruro de Hidrógeno (Hydrogen Chloride) para funcionar. Para saber cómo crear Cloruro de Hidrógeno podés ver las misiones de abajo"
+			]
+			dependencies: ["3585B7244F91D091"]
+			id: "73D64EC3A0D36D8D"
+			tasks: [{
+				id: "3F717EC97C149BFF"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_injection_chamber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Planta de Evaporación Térmica"
+			x: 16.0d
+			y: 2.5d
+			subtitle: "De agua a salmuera"
+			description: [
+				"Para tener Cloruro de Hidrógeno para nuestras máquinas, vamos a necesitar hacer Salmuera."
+				""
+				"Para esto, vamos necesitar una Planta de Evaporación Térmica. que es esta estructura multibloque mostrada acá abajo."
+				""
+				"Para empezar, vamos a hacer una planta de 4x3x4 que es vacía en el medio exceptuando la base. Podes reemplazar cualquiera de los lados con un Controller (Controlador) o Valve (Válvula)."
+				""
+				"Vas a necesitar porlomenos 1 Controller, y por lo menos 2 válvulas."
+				""
+				"Insertá agua, y vas a empezar a generar Salmuera, la cual puede ser enviada a un separador electrolítico (Electrolytic Separator) para extraer Cloruro del gas."
+				""
+				"Imagen de ejemplo:"
+				"{image:modpack:textures/salmuera_generador.png width:200 height:200 align:1}"
+			]
+			dependencies: ["73D64EC3A0D36D8D"]
+			id: "0FB71C8867AD9445"
+			tasks: [
+				{
+					id: "137E44BE7727DC98"
+					type: "item"
+					item: {
+						id: "mekanism:thermal_evaporation_block"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 37L
+				}
+				{
+					id: "4055489BA2266930"
+					type: "item"
+					item: {
+						id: "mekanism:thermal_evaporation_valve"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "120E35E0980D8D29"
+					type: "item"
+					item: {
+						id: "mekanism:thermal_evaporation_controller"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			subtitle: "ta medio caliente esto"
+			description: [
+				"La Planta de Evaporación Térmica produce Salmuera (Brine) de acuerdo a su temperatura interna."
+				""
+				"Hay varias maneras de subir la temperatura de la planta, incluyendo construyendolos en el desierto."
+				""
+				"El Resistive Heater usa RF (energía) para producir calor. Podés también elegir que tanta energía darle para que genere una temperatura acorde."
+				""
+				"Alternativamente también podés usar un Fuelwood Heater, el cual quema cubos de lava. El calor puede ser introducido a la planta usando una Pipe que transfiera calor."
+			]
+			dependencies: ["0FB71C8867AD9445"]
+			id: "0DD1ED8F9410EFF3"
+			tasks: [{
+				id: "7AD2D505894D52F2"
+				type: "item"
+				item: {
+					id: "mekanism:resistive_heater"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: 2.5d
+			subtitle: "El combinador químico"
+			description: [
+				"Esta máquina combina dos gases para crear un nuevo gas."
+				""
+				"Vas a necesitar esto para combinar Cloruro con Hidrógeno para hacer Cloruro de Hidrógeno (wao!) que después es usado en nuestra Chemical Injection Chamber (por fín!)"
+			]
+			dependencies: ["0FB71C8867AD9445"]
+			id: "48253B21BBF2C96E"
+			tasks: [{
+				id: "2F1B773A866F1AB8"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_infuser"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: 1.0d
+			subtitle: "Fábrica de Menas TIER 3"
+			description: [
+				"Ahora que tenés 5 máquinas listas para procesar tus menas, estás listo para hacerlo aún más complicado?"
+				""
+				"Esta fábrica debería ser:"
+				"1. Chemical Injection Chamber"
+				"2. Purifying Chamber"
+				"3. Crusher"
+				"4. Enrichment Chamber"
+				"5. Horno Industrial o Horno a Elección"
+				""
+				"Fácil no?"
+				""
+				"Bueno, ojalá que pienses que es fácil por que se viene lo más complicado"
+			]
+			dependencies: [
+				"73D64EC3A0D36D8D"
+				"48253B21BBF2C96E"
+			]
+			id: "507B118F31B73D97"
+			tasks: [{
+				id: "0A47F40FD853BC65"
+				type: "checkmark"
+				title: "Lo dificil"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 1.0d
+			subtitle: "ay"
+			description: [
+				"Vamos a necesitar añadir 3 máquinas más a nuestra Fábrica actual."
+				""
+				"La Primera parte de el proceso es la Chemical Dissolution Chamber (Cámara de disolusión química)"
+				""
+				"Esta máquina requiere Ácido sulfurico (Sulfuric Acid) para romper las menas a un estado semi líquido (o Acuoso) lo llamaremos Ore Slurry."
+				""
+				"Para obtener Ácido sulfurico, vamos a necesitar nuevas herramientas, las cuales serán explicadas en detalle arriba."
+			]
+			dependencies: ["507B118F31B73D97"]
+			id: "5DAAB4F55FC92023"
+			tasks: [{
+				id: "0EB1CEB5EDFA763F"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_dissolution_chamber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 19.5d
+			y: -0.5d
+			subtitle: "todomedavueltastodomedavueltas"
+			description: [
+				"Para hacer Ácido sulfúrico vas a necesitar hacer Vapor de Agua."
+				""
+				"Inserta agua a esta máquina para convertirla en Vapor."
+			]
+			dependencies: ["5DAAB4F55FC92023"]
+			id: "5CB7CE1F024BB820"
+			tasks: [{
+				id: "6C04F65DE9ED7C19"
+				type: "item"
+				item: {
+					id: "mekanism:rotary_condensentrator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "mekanism:dust_sulfur"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 20.5d
+			y: -0.5d
+			subtitle: "ADVERTENCIA, MUCHO TEXTO"
+			description: [
+				"Okay, vamos a empezar con hacer Dioxido de Sulfuro."
+				""
+				"Preparate, por que se viene grandes textos."
+				""
+				"Primero empezamos por insertar Pólvora en una Chemical Injection chamber separada con Cloruro de Hidrógeno (Te acordas de la planta de evaporación térmica?) para hacer Polvo de Sulfuro."
+				"O, simplemente podés pulverizar sulfuro que encuentres en el mundo para hacer polvo de sulfuro, quedá en vos."
+				""
+				"Alimentando el Polvo de Sulfuro a esta máquina, el Chemical Oxidizer, va a crear Dioxido de Sulfuro. Ahora necesitamos crear TRIOXIDO de Sulfuro."
+				""
+				"Envía el Dioxido de Sulfuro a un Chemical Infuser para combinarlo con Oxígeno y crear Trioxido de Sulfuro. Envía el Trioxido a otro Chemical Infuser y combinalo con Vapor de Agua para crear POR FÍN el Ácido Sulfúrico."
+				""
+				"Es una banda."
+			]
+			dependencies: ["5DAAB4F55FC92023"]
+			id: "6FFBADF4FC46814C"
+			tasks: [
+				{
+					id: "51A94FB0A0D732C5"
+					type: "item"
+					item: {
+						id: "mekanism:chemical_oxidizer"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "3C00E5770FA97638"
+					type: "item"
+					title: "Any #forge:dusts/sulfur"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/sulfur"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 19.5d
+			y: 2.5d
+			subtitle: "Un bañito para las menas."
+			description: [
+				"Esta Máquina requiere agua para funcionar y usa la misma para limpiar el Ore Slurry a Ore Slurry Limpio."
+				""
+				"Va a hacer la segunda parte de tu Fábrica de Procesado de Menas tier 4."
+			]
+			dependencies: ["5DAAB4F55FC92023"]
+			id: "5FA47837019F02EE"
+			tasks: [{
+				id: "7482253DE39EFD75"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_washer"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 20.5d
+			y: 2.5d
+			subtitle: "de Ore Slurry a Cristales."
+			description: [
+				"Esta máquina va a ser tu número 3 en tu fábrica de procesado de menas tier 4."
+				""
+				"Agarra tu Clean Ore Slurry que viene de la máquina de acá al lado y lo convierte en Cristales, los cuales pueden ser procesado con el Chemical Injection Chamber más adelante."
+			]
+			dependencies: ["5DAAB4F55FC92023"]
+			id: "2D3120633241A568"
+			tasks: [{
+				id: "6C26FBBA21968943"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_crystallizer"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: 4.0d
+			subtitle: "Es DEMASIADO, lo sé."
+			description: [
+				"Si sos como yo, probablemente te perdiste como 1298391 veces durante estos últimos pasos. Lo puedo entender, es un sistema BASTANTE complicado."
+				""
+				"Una plantilla básica para tu Fábrica debería ser:"
+				""
+				"Mena va tu Chemical Dissolution Chamber => Pasas el Slurry por el Chemical Washer => Despues de Lavarlo lo Pasas por el Crystalizer => Mandas los cristales a el Chemical Injection Chamber => Sacas los Fragmentos de Cristal a un Purification Chamber => Sacas los Pedacitos de los Fragmentos de Cristal a un Crusher => Sacas el Polvo Sucio de los Fragmentos de Cristal a un Enrichment Chamber => Pones el Polvo de Mena limpio en tu Horno a Elección."
+				""
+				"Cómo se que es una banda de texto, decidí poner una foto para que te guíe mejor."
+				"{image:modpack:textures/setup_tier4.png width:300 height:150 align:1}"
+			]
+			dependencies: [
+				"5FA47837019F02EE"
+				"2D3120633241A568"
+			]
+			id: "6BD37E76B5845D7F"
+			tasks: [{
+				id: "4E58B356066BD8C9"
+				type: "checkmark"
+				title: "Resumen de tu fábrica de procesado de menas tier 4."
+			}]
+		}
+		{
+			icon: {
+				id: "mekanism:pellet_antimatter"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 20.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Camino a los Reactores."
+			description: [
+				"Ahora que tenemos un poco de experiencia trabajando con la maquinara avanzada, es hora de movernos hacia hacer Antimateria."
+				""
+				"La AntiMateria crea varios items de End Game como por ejemplo el SuperMassive QIO Drive que es necesario para el Estabilizador Nuclear del Brigidium o inclusive para mejoras extra de la meka-armadura"
+				""
+				"Mejoras como vuelo creativo, por ejemplo..."
+				""
+				"Para aprender todo sobre como hacer reactores y más, dirijete hacia la linea de misiones de Mekanism (Nuclear)"
+			]
+			dependencies: [
+				"5CB7CE1F024BB820"
+				"6FFBADF4FC46814C"
+			]
+			size: 3.0d
+			id: "0D11BC383AF11F3D"
+			tasks: [{
+				id: "5245B9AD8EF02142"
+				type: "checkmark"
+				title: "NUCLEAR"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 6.5d
+			description: [
+				"Si Imbuis Hierro con Carbon o Carbon Vegetal en una Metallurgic Infuser te van a dar Enriched Iron."
+				""
+				"Imbuir este Enriched Iron con más Carbón o Carbón vegetal te va a dar Polvo de Acero, el cual se puede fundir en un horno o smelter para hacer Steel (Acero)."
+				""
+				"Este es un componente de crafteo muy importante en todas las recetas del Mekanism."
+			]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "7868A44D08A6C8B3"
+			tasks: [{
+				id: "024B40C48DC48036"
+				type: "item"
+				item: {
+					id: "mekanism:ingot_steel"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.5d
+			subtitle: "hoy me voy al soool"
+			description: ["Genera energía del sol!"]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "71D31C86C9AB58B1"
+			tasks: [{
+				id: "21DA42A6A496895E"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:solar_generator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.5d
+			description: [
+				"Si te estás preguntando si vale la pena esta mejora, la respuesta es si."
+				""
+				"Esta versión es capaz de producir 120 mas o menos de RF por Tick. También puede producir calor extra para tus plantas de Evaporación Térmica."
+			]
+			dependencies: ["71D31C86C9AB58B1"]
+			id: "262505F958B9C91A"
+			tasks: [{
+				id: "6DDB4B59FD0E0EE9"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:advanced_solar_generator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 5.5d
+			subtitle: "Energía del viento"
+			description: [
+				"Esta es una gran opción para generar energía."
+				""
+				"Genera alrededor de 60 RF por tick, que sube de acuerdo a que tan alto esté el generador. Cuanto más alto esté en la coordenada Y, más energía va a producir (puede generar hasta 250 rf por tick en la capa 256!)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "289296A4A965A464"
+			tasks: [{
+				id: "2F0CE542C9EC0078"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:wind_generator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 6.5d
+			description: ["Este generador va a quemar Bio-Fuel como combustible para hacer energía."]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "1C505F460DE3BDDA"
+			tasks: [{
+				id: "6480CBE430CE4C23"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:bio_generator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 8.0d
+			subtitle: "Para Transferir Energía!"
+			description: [
+				"Te vas a dar cuenta que todas tus máquinas necesitaran energía para funcionar."
+				""
+				"Ahí es cuando este cable entra en acción, simplemente conecta los dos bloques con este cable de por medio y la energía se transferirá automáticamente."
+				""
+				"PD: Si quieres saber como mejorarlos, leer el cable Advanced de abajo. (el rojo que dice TUTORIAL)"
+			]
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "07DD6E71983E3F9A"
+			tasks: [{
+				id: "27764B962A3026A2"
+				type: "item"
+				item: {
+					id: "mekanism:basic_universal_cable"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 8.0d
+			subtitle: "Transfiriendo Líquidos!"
+			description: [
+				"Esta Pipe te va a permitir mover cualquier líquido (no confundir con gases, para eso ver cables a presión al lado) de un lado a otro!"
+				""
+				"Simplemente conecta de la misma manera que lo hiciste con los cables de energía, pero esta vez decide el modo de cada extremo. (Importante, usar el item Configurator en ese extremo con shift y click derecho para cambiar modos)"
+				""
+				"Este modo es que está Extrayendo de ese bloque"
+				"{image:modpack:textures/extrae_pipe.png width:200 height:200 align:1}"
+				""
+				"Y Este modo es que está insertando hacia ESE bloque."
+				"{image:modpack:textures/inserta_pipe.png width:200 height:200 align:1}"
+				""
+				"Funciona de la misma manera con TOOODAS las demás pipes. (inclusive la del mod Pipez!)"
+			]
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "15891BA6DF4F3A60"
+			tasks: [{
+				id: "6D4B52D127ECFC67"
+				type: "item"
+				item: {
+					id: "mekanism:basic_mechanical_pipe"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 8.0d
+			subtitle: "Transfiriendo Gases."
+			description: ["Este tipo de pipe mueve gases, muy usado para máquinas de mid-late game."]
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "1D057B490137286A"
+			tasks: [{
+				id: "352279B524DE3937"
+				type: "item"
+				item: {
+					id: "mekanism:basic_pressurized_tube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 8.0d
+			subtitle: "Transfiriendo... ITEMS?!"
+			description: ["Funciona de la Misma manera que todas las demás pipes. Muchisimo mejor que un hopper y más rápido!"]
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "244D5CDB4BA7D2DA"
+			tasks: [{
+				id: "63A35552AE537910"
+				type: "item"
+				item: {
+					id: "mekanism:basic_logistical_transporter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: 8.0d
+			subtitle: "TRANSFIRIENDO TEMPERATURAS?!?!?!?!"
+			description: ["Simplemente mueve la temperatura de un calentador deseado o de un panel solar hacia otro lado. Exclusivamente usado para hacer Salmuera en tu Planta de Evaporación Térmica."]
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "78FDF46BF41830E3"
+			tasks: [{
+				id: "25631C0A00402CFF"
+				type: "item"
+				item: {
+					id: "mekanism:basic_thermodynamic_conductor"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.0d
+			subtitle: "Básicamente, tu herramienta para las máquinas"
+			description: [
+				"Te permitirá cambiar configuraciónes de tus máquinas como por ejemplo de que lado extraen o insertan. Además de que te permitirá configurar tus Pipes a tu gusto!"
+				""
+				"No hace falta cargarla para que funcione."
+			]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "41DD81FDF0FC83CB"
+			tasks: [{
+				id: "2324D09CA937A8E1"
+				type: "item"
+				item: {
+					id: "mekanism:configurator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 9.0d
+			shape: "diamond"
+			subtitle: "TUTORIAL"
+			description: [
+				"Te preguntaras, que es esto?"
+				""
+				"Esto son los diferentes tiers de Cable. Según que tan mejorado esté, tardaran menos y serán mejores en cuanto a capacidad."
+				""
+				"Los cables van de Advanced => Elite => Ultimate, siendo ultimate el mejor de todos y el más fuerte de prácticamente todo el juego."
+			]
+			hide_dependency_lines: true
+			dependencies: ["07DD6E71983E3F9A"]
+			id: "16A516EBB1E83C10"
+			tasks: [{
+				id: "6C902CEAD258959E"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_universal_cable"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 9.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["16A516EBB1E83C10"]
+			id: "3E46A1384B25C366"
+			tasks: [{
+				id: "0A9A89D6AD3B3A11"
+				type: "item"
+				item: {
+					id: "mekanism:elite_universal_cable"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["3E46A1384B25C366"]
+			id: "3517FB21B288B850"
+			tasks: [{
+				id: "24977925A76079ED"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_universal_cable"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["72C4E057C2F449F1"]
+			id: "01D49B174AF102FD"
+			tasks: [{
+				id: "00E6A9BBF8E4A6E3"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_mechanical_pipe"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["15891BA6DF4F3A60"]
+			id: "5C70E1DC741B8EB5"
+			tasks: [{
+				id: "68FB411C42C359DC"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_mechanical_pipe"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 9.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5C70E1DC741B8EB5"]
+			id: "72C4E057C2F449F1"
+			tasks: [{
+				id: "6AE80F27C47A881C"
+				type: "item"
+				item: {
+					id: "mekanism:elite_mechanical_pipe"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["138996C62910B8F5"]
+			id: "534BFF8243007BC6"
+			tasks: [{
+				id: "02F18E442FDAC999"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_pressurized_tube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 9.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["425619F25B716BBC"]
+			id: "138996C62910B8F5"
+			tasks: [{
+				id: "7850A81EFD37780A"
+				type: "item"
+				item: {
+					id: "mekanism:elite_pressurized_tube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["1D057B490137286A"]
+			id: "425619F25B716BBC"
+			tasks: [{
+				id: "3FABEBC8CAA12938"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_pressurized_tube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["0B7A5BAF7435BFD8"]
+			id: "1A6F3F1FC3FA7E2A"
+			tasks: [{
+				id: "5C20D3467E4CFA4C"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_logistical_transporter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 9.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["2C1BED0FD60031B7"]
+			id: "0B7A5BAF7435BFD8"
+			tasks: [{
+				id: "08D653D005649D07"
+				type: "item"
+				item: {
+					id: "mekanism:elite_logistical_transporter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["244D5CDB4BA7D2DA"]
+			id: "2C1BED0FD60031B7"
+			tasks: [{
+				id: "34230C09B084C0CD"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_logistical_transporter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["62B66C7A2E14C54F"]
+			id: "58612546ADF7C1CC"
+			tasks: [{
+				id: "56F1072503A87B37"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_thermodynamic_conductor"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: 9.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["3C34A382CFB1D31E"]
+			id: "62B66C7A2E14C54F"
+			tasks: [{
+				id: "4F156C3344B60035"
+				type: "item"
+				item: {
+					id: "mekanism:elite_thermodynamic_conductor"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: 9.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["78FDF46BF41830E3"]
+			id: "3C34A382CFB1D31E"
+			tasks: [{
+				id: "7B81AE78546AF641"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_thermodynamic_conductor"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 11.0d
+			subtitle: "Guardando Energía"
+			description: [
+				"No te pasó alguna vez que te quedaste sin energía para una máquina y dejó de funcionar instantaneamente?"
+				""
+				"No te frustra malgastar energía cuando todo está lleno?"
+				""
+				"Quieres tener un seguro así no explota todo tu sistema?"
+				""
+				"Guardar energía es la solución!"
+				""
+				"Simplemente inserta energía a este cubo y usalo como proxy"
+				""
+				"Ejemplo:"
+				"{image:modpack:textures/Ejemplo_Cube.png width:200 height:200 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "2AE973024ACB564E"
+			tasks: [{
+				id: "671423B31E2D907B"
+				type: "item"
+				item: {
+					id: "mekanism:basic_energy_cube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["2AE973024ACB564E"]
+			id: "1227DDCAAC268D38"
+			tasks: [{
+				id: "6ED27BD1379CD3A1"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_energy_cube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 12.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["1227DDCAAC268D38"]
+			id: "6C635D7B663A242C"
+			tasks: [{
+				id: "0BEB612175E2925B"
+				type: "item"
+				item: {
+					id: "mekanism:elite_energy_cube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["6C635D7B663A242C"]
+			id: "66E6D26C805B71D6"
+			tasks: [{
+				id: "7AD6E2AB960ED45F"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_energy_cube"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 11.0d
+			subtitle: "Mejorando a Mini Fábricas"
+			description: [
+				"Este item es ESENCIAL para mejorar toda tu experiencia con este mod."
+				""
+				"Sirve para mejorar tus máquinas a versiones fábrica de la misma. Haciendo que tengan más espacios para poner items y sean ligeramente más rápidas!"
+				""
+				"Mucho cuidado, esto no hace que gasten menos. Simplemente gastaran el mismo monto pero multiplicado por el numero de espacios nuevos!"
+				""
+				"Para no usar tanta energía y que sean AÚN MÁS RAPIDOS, ver abajo las mejoras de Velocidad (Speed) y de Energía (Energy)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "3212A87903292BEC"
+			tasks: [{
+				id: "34054C072F7D413E"
+				type: "item"
+				item: {
+					id: "mekanism:basic_tier_installer"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["3212A87903292BEC"]
+			id: "2FE688AC2E7E5C29"
+			tasks: [{
+				id: "68239A14F4D4986B"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_tier_installer"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 12.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["2FE688AC2E7E5C29"]
+			id: "352D8505B6D797B4"
+			tasks: [{
+				id: "50C1A55651380023"
+				type: "item"
+				item: {
+					id: "mekanism:elite_tier_installer"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["352D8505B6D797B4"]
+			id: "0134833792DD3613"
+			tasks: [{
+				id: "7237664546A1A3F5"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_tier_installer"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 11.0d
+			subtitle: "Guardando Gases!"
+			description: ["De la misma manera que guardabas Energía en el cube, esto guarda Gases!"]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "2ABA59630E1E84C5"
+			tasks: [{
+				id: "7EE20FE1C11D381B"
+				type: "item"
+				item: {
+					id: "mekanism:basic_chemical_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["3D47EE715E582806"]
+			id: "41C19C81AECCF2A4"
+			tasks: [{
+				id: "5F0289D8A36E52CA"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_chemical_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 12.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5ED27A94B1EAB522"]
+			id: "3D47EE715E582806"
+			tasks: [{
+				id: "0006E8E3BFB286CB"
+				type: "item"
+				item: {
+					id: "mekanism:elite_chemical_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["2ABA59630E1E84C5"]
+			id: "5ED27A94B1EAB522"
+			tasks: [{
+				id: "76B77693208DECB7"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_chemical_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 11.0d
+			subtitle: "Con modo balde?!"
+			description: [
+				"De la misma manera que el Cube guarda energía y el Chemical Tank guarda gases, esto guarda fluídos!"
+				""
+				"PD: Puedes usarlo para guardar agua o lava en cantidades industriales! "
+				"Y si lo quieres llevar por ahí y guardar no necesitas usar un balde/cubeta para meterle fluídos, puede usar el modo Bucket con una tecla rápida en controles!"
+				""
+				"Pista: Para encontrar el control, buscar Item Mode en Mekanism."
+			]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "62DFC4F8D1A39F8E"
+			tasks: [{
+				id: "38BEB076426B3CED"
+				type: "item"
+				item: {
+					id: "mekanism:basic_fluid_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["62DFC4F8D1A39F8E"]
+			id: "4A818DC981134AFD"
+			tasks: [{
+				id: "08402942E46E5BD9"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_fluid_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 12.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["4A818DC981134AFD"]
+			id: "7D1F3E6F88E51DC0"
+			tasks: [{
+				id: "6315FDE67E83D332"
+				type: "item"
+				item: {
+					id: "mekanism:elite_fluid_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 12.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["7D1F3E6F88E51DC0"]
+			id: "6DF9456779AA57CF"
+			tasks: [{
+				id: "5EECD12BC8114AEC"
+				type: "item"
+				item: {
+					id: "mekanism:ultimate_fluid_tank"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.0d
+			subtitle: "Atómico..."
+			description: [
+				"El Atomic Dissasembler es una de las herramientas de early game más útiles para cualquier minecraftero. Hace la función de Espada, picota, pala y hacha en uno! (y con muchisima eficiencia)"
+				""
+				"Pega muy fuerte (prácticamente one shotea a todos los mobs hostiles básicos) pica super rápido y hasta tiene diferentes modos para gastar más o menos energía. y por sobre todo NO TIENE DURABILIDAD, usa energía en su lugar."
+				""
+				"Osea, que no se puede romper."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5D04ED97D6D87325"]
+			id: "7AA8B0AB55CF8C85"
+			tasks: [{
+				id: "5589E2CBDA15372E"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.0d
+			subtitle: "Minando por ti!"
+			description: [
+				"Es básicamente un minador automático, mina todo lo que configures que mine en su HUD en un rango de hasta máximo un chunk hacia abajo y 5 chunks a los lados si no me equivoco."
+				""
+				"Aunque quizá no lo puedas hacer tan pronto, por que necesitas algo de otro mod..."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5D04ED97D6D87325"]
+			id: "321210EC20A63115"
+			tasks: [{
+				id: "50AFFD8A85F191EC"
+				type: "item"
+				item: {
+					id: "mekanism:digital_miner"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 7.0d
+			subtitle: "PUEDO VOLAAAAR"
+			description: [
+				"Este es el jetpack, necesitará de Hidrógeno para funcionar..."
+				""
+				"Pista: Vas a tener que hacer la misión de Electrolytic Separator primero para desmantelar agua a Hidrogeno y Oxígeno."
+			]
+			hide_dependency_lines: true
+			dependencies: ["07C849F62D37AD86"]
+			id: "4E386B5D5448BC94"
+			tasks: [{
+				id: "1FB01DDD6B96F698"
+				type: "item"
+				item: {
+					id: "mekanism:jetpack"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			subtitle: "Item componente"
+			description: ["Se puede usar para guardar energía, pero no enviará energía a los items de tu inventario sólamente se puede usar en tus máquinas para darles energía si no podés darles un cable rápido"]
+			hide_dependency_lines: true
+			dependencies: ["712C9AB9050C194B"]
+			id: "286115B9E0B8A0D7"
+			tasks: [{
+				id: "174DFC33B8EC29DA"
+				type: "item"
+				item: {
+					id: "mekanism:energy_tablet"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			subtitle: "Robit!"
+			description: [
+				"Un robot mascota que puede ayudarte a matar enemigos, guardar items y mucho más!"
+				""
+				"PD: Esta mascota no muere, simplemente se recarga en su estación de recarga. (Osea que no tengas miedo de sacarlo a la batalla!)"
+			]
+			dependencies: ["286115B9E0B8A0D7"]
+			id: "09485D8F572AFE99"
+			tasks: [{
+				id: "2D92BFDC29B4672C"
+				type: "item"
+				item: {
+					id: "mekanism:robit"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			subtitle: "Estación de Recarga"
+			description: ["Este item te permitirá cargar la energía de todos tus items de manera rápida y sencilla (y también será la camita de Robit <3)"]
+			dependencies: ["09485D8F572AFE99"]
+			id: "4C0E31F3BEDA6E84"
+			tasks: [{
+				id: "31AE2E068E7ABF1F"
+				type: "item"
+				item: {
+					id: "mekanism:chargepad"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 14.0d
+			shape: "diamond"
+			subtitle: "Máximo de 8 por máquina"
+			description: [
+				"Te permite mejorar la velocidad de una máquina"
+				""
+				"CUIDADO, esto hará que gaste más energía de lo usual."
+			]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "12CC6B2774DE6087"
+			tasks: [{
+				id: "6A3C34CC21CC3574"
+				type: "item"
+				item: {
+					id: "mekanism:upgrade_speed"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 14.0d
+			shape: "diamond"
+			description: [
+				"Te permite filtrar de agua normal a agua pesada! (sirve para el endgame)"
+				""
+			]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "3299FC715C6EF0B6"
+			tasks: [{
+				id: "65E91FD05E8A4F78"
+				type: "item"
+				item: {
+					id: "mekanism:upgrade_filter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 14.0d
+			shape: "diamond"
+			subtitle: "Máximo 8 por máquina"
+			description: ["Te permite mejorar el costo de energía por producción y el monto de energía que guarda la máquina!"]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "7BB1C5C3A223CA57"
+			tasks: [{
+				id: "7CE83C9F7937F6A6"
+				type: "item"
+				item: {
+					id: "mekanism:upgrade_energy"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 14.5d
+			shape: "diamond"
+			subtitle: "EFICIENCIA!"
+			description: [
+				"Mejora cuanto gas use una máquina para ciertas cosas."
+				""
+				"Por ejemplo es usado con frecuencia en las Purification y Injection Chambers."
+			]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "5A47B7FDCF650705"
+			tasks: [{
+				id: "21CFEA80E459689B"
+				type: "item"
+				item: {
+					id: "mekanism:upgrade_gas"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 14.5d
+			shape: "diamond"
+			subtitle: "BRRRRRRRR"
+			description: ["Cansado de tanto sonidos de las máquinas? esta mejora es tu solución."]
+			hide_dependency_lines: true
+			dependencies: ["7868A44D08A6C8B3"]
+			id: "3CB48C03344E9B6E"
+			tasks: [{
+				id: "1F6BF36EA9D23B2C"
+				type: "item"
+				item: {
+					id: "mekanism:upgrade_muffling"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.0d
+			subtitle: "Wi-Fi de energía, con bluetooth de objetos y fluidos."
+			description: [
+				"Este bloque mueve en una red propia (creada a tu gusto) Objetos, items y energía hacia otro Quantum Entangloporter que tengas. Simplemente tienes que ponerlos en la misma red y pum. Wifi"
+				""
+				"PD: Puede ir entre dimensiones, pero asegurate de cargar el chunk si no quieres que se corrompan tus máquinas!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5F4EA3AB97A97E8C"]
+			id: "3DA27310A5E7453D"
+			tasks: [{
+				id: "32C682ACF4BC3B27"
+				type: "item"
+				item: {
+					id: "mekanism:quantum_entangloporter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			subtitle: "Cómo puedo configurar mis máquinas?"
+			description: [
+				"Todas las máquinas tienen una manera de configurar los lados, ya sea para mover o tomar objetos de un inventario automáticamente o para que ciertos cables no se conecten directamente por esos lados."
+				""
+				"Acá abajo te voy a dejar una pequeña guía de que hace cada cosa con imagenes."
+				""
+				"Este es el modo Eject:"
+				"{image:modpack:textures/Modo_Eject.png width:200 height:150 align:1}"
+				""
+				"Después tenemos los colores:"
+				"{image:modpack:textures/Colores_Maquina.png width:200 height:150 align:1}"
+				""
+				"Rojo: Entrada/Input Permite la entrada de objetos por este lado"
+				"Azul: Salida/Output, permite la Salida de objetos por este lado."
+				"Morado: Entrada y salida Deja de manera libre la entrada y salida de todo."
+				"Verde: (No recomendado usar) Permite o deshabilita la entrada de energía de ese lado"
+				"Amarillo: Entrada Extra, permite la entrada de items o gases extra por ese lado"
+				""
+				"Tener en cuenta que los bloques arriba están ordenados según el lado correspondiente, siendo arriba del todo arriba del bloque, abajo del todo abajo del bloque, el del medio el frente del bloque y el de abajo a la izquierda la parte de atrás del bloque."
+			]
+			dependencies: ["3FBE46C40B733B83"]
+			optional: true
+			id: "07C5062364722B92"
+			tasks: [{
+				id: "4CADC75C2F7D7C03"
+				type: "checkmark"
+				title: "Info!"
+			}]
+		}
+	]
+}

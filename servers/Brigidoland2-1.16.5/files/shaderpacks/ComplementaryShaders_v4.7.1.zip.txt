@@ -1,0 +1,6 @@
+#Sun May 14 16:57:21 ART 2023
+shadowDistance=128.0
+BLOCK_ENTITY_SHADOWS=false
+shadowMapResolution=1024
+REFLECTION_SPECULAR=false
+ENTITY_SHADOWS=false

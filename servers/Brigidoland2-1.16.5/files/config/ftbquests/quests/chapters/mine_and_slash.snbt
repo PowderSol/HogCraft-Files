@@ -1,0 +1,899 @@
+{
+	id: "156E3672690A34D0"
+	group: "5CB5B5C458868902"
+	order_index: 3
+	filename: "mine_and_slash"
+	title: "Mine and Slash"
+	icon: "mmorpg:identify_tome"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Esencia?"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Este es el item más esencial de todo el mod, la esencia."
+			description: [
+				"Que es esto?"
+				"La Esencia purificada es el subproducto de destruir almas o items que tengan alma con un Salvage Hammer"
+				""
+				"El mayor uso que tiene este item es el de permitirte hacerte las diferentes cosas del mod."
+			]
+			dependencies: ["49A0600440C962F1"]
+			id: "1FB6AB7890E0D318"
+			tasks: [{
+				id: "2EFCAD1956BA48FB"
+				type: "item"
+				item: "mmorpg:mat/salvage/salvage0"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			subtitle: "Hora de mejorar."
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "7932F45CC52D5433"
+			tasks: [{
+				id: "521311E83697739D"
+				type: "item"
+				item: "mmorpg:craft_tools/wep_craft"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			subtitle: "Es hora de cocinar!"
+			description: ["Combina los items en esta olla con ingredientes acordes para producir comidas! Las comidas tienen un efecto duradero."]
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "6B13CB63978B7F78"
+			tasks: [{
+				id: "478AEEDC5CDC62A8"
+				type: "item"
+				item: "mmorpg:craft_tools/cooking"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			subtitle: "Alquimia"
+			description: ["Usa el mortar del alquimista con ingredientes acordes para producir pociones!. Las pociones tienen efectos fuertes pero efectos cortos. (al contrario de los pergaminos)"]
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "1FD301FD82174FA2"
+			tasks: [{
+				id: "0A685BC6FEFD4DD1"
+				type: "item"
+				item: "mmorpg:craft_tools/alchemy"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			subtitle: "Voy a meter este pergamino en un lugar seguro"
+			description: ["Usa este item para craftear poderosos pergaminos mágicos, los cuales daran buffos a todo tu equipo. (Solo algunos ingredientes pueden ser usados para los Pergaminos, busca los items que digan Scribing!)"]
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "7988315CB0DECE11"
+			tasks: [{
+				id: "16E93EED11C78CBD"
+				type: "item"
+				item: "mmorpg:craft_tools/inscribing"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			subtitle: "ropita uwu"
+			description: ["Usa este item para combinar tu armadura con algunos materiales para encantar ese item con estadísticas"]
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "422553C50C8F3334"
+			tasks: [{
+				id: "271D08EEA28B81A2"
+				type: "item"
+				item: "mmorpg:craft_tools/armor_craft"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			subtitle: "oooh- brillante"
+			description: ["Podras combinar Anillos o Collares con algunos materiales acordes con esta Herramienta del Lapidario para encantar el item con estadísticas extra."]
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "62BA01E362A2606B"
+			tasks: [{
+				id: "379EF554830055AF"
+				type: "item"
+				item: "mmorpg:craft_tools/jewel_craft"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "67EE1CDAC5B62950"
+			tasks: [{
+				id: "09B80D2523AE1BD1"
+				type: "item"
+				item: "mmorpg:mat/salvage/salvage1"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			subtitle: "Reset de tus hechizos elegidos."
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "51C93E12BD24B384"
+			tasks: [{
+				id: "1E96279A58A22FA6"
+				type: "item"
+				item: "mmorpg:potions/reset_spells"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			subtitle: "Item para craftear el orbe del desorden."
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "375B7847A2A98574"
+			tasks: [{
+				id: "3BF0E9E8E00B3523"
+				type: "item"
+				item: "mmorpg:mat/infused_iron"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.55d
+			subtitle: "Transforma los items de Calidad Común a Poco Común."
+			dependencies: ["1FB6AB7890E0D318"]
+			size: 1.7d
+			id: "6342CE99108EF31F"
+			tasks: [{
+				id: "2535E9319882EF1F"
+				type: "item"
+				item: "mmorpg:currency/orb_of_transmutation"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			subtitle: "Esencia tier 0 cocinada."
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "7595CD27EC4C2AEB"
+			tasks: [{
+				id: "5C54E7757A22987A"
+				type: "item"
+				item: "mmorpg:mat/smelted/0"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			subtitle: "Resetea los puntos que tengas asignados (Fuerza, agilidad, vitalidad, etc)"
+			dependencies: ["67EE1CDAC5B62950"]
+			id: "04F917D38741CB84"
+			tasks: [{
+				id: "5D6FA63D0E31709A"
+				type: "item"
+				item: "mmorpg:potions/reset_stats"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.5d
+			subtitle: "Item de crafteo."
+			dependencies: ["67EE1CDAC5B62950"]
+			id: "28E8449B57728E52"
+			tasks: [{
+				id: "109FC4441FA9C73E"
+				type: "item"
+				item: "mmorpg:mat/crystallized_essence"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			subtitle: "Esencia tier 1 cocinada."
+			dependencies: ["67EE1CDAC5B62950"]
+			id: "4FBECA750B6C3D6F"
+			tasks: [{
+				id: "53CEAFDB895B0D94"
+				type: "item"
+				item: "mmorpg:mat/smelted/1"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -6.5d
+			dependencies: ["4FBECA750B6C3D6F"]
+			id: "0463A27C598F265F"
+			tasks: [{
+				id: "36A5296D2D692B2A"
+				type: "item"
+				item: "mmorpg:mat/condensed_salvage/c1"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.5d
+			dependencies: ["7595CD27EC4C2AEB"]
+			id: "01D9E88071881AE8"
+			tasks: [{
+				id: "4AD8FB7B29594378"
+				type: "item"
+				item: "mmorpg:mat/condensed_salvage/c0"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			subtitle: "Automáticamente BORRA los items que le pongas."
+			dependencies: ["01D9E88071881AE8"]
+			id: "0745AA4EF6BC7A7C"
+			tasks: [{
+				id: "67859D638ABE5BC7"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/trash0"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.5d
+			subtitle: "Destroza los items comunes que le pongas automáticamente (como si usaras el Salvage hammer)"
+			dependencies: ["01D9E88071881AE8"]
+			id: "4D69C1D444B88CA1"
+			tasks: [{
+				id: "7FB75BE0B982A5A3"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/auto_sal0"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -9.5d
+			subtitle: "Mejora tier 0 de backpack"
+			dependencies: ["01D9E88071881AE8"]
+			id: "17BE4155060B5D03"
+			tasks: [{
+				id: "41B26EA9E8C59D35"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/size0"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			subtitle: "Agarra la esencia automáticamente."
+			dependencies: ["01D9E88071881AE8"]
+			id: "1A603F3B29714ABD"
+			tasks: [{
+				id: "63A5B9DC3F75A09A"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/essence0"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			subtitle: "Restaura 20% de tu vida"
+			dependencies: ["01D9E88071881AE8"]
+			id: "3CCDF8FC389024F8"
+			tasks: [{
+				id: "305BBB2EABDC1059"
+				type: "item"
+				item: "mmorpg:alchemy/potion/health/0"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			subtitle: "Restaura 20% de tu maná"
+			dependencies: ["01D9E88071881AE8"]
+			id: "40AD5D11CF693D2A"
+			tasks: [{
+				id: "407A8C72C79027F7"
+				type: "item"
+				item: "mmorpg:alchemy/potion/mana/0"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.5d
+			subtitle: "Agarra automáticamente las gemas."
+			dependencies: ["0463A27C598F265F"]
+			id: "2A6569E1119EA3F3"
+			tasks: [{
+				id: "3FE8D9CAEF29A54B"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/gem1"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -8.0d
+			subtitle: "NO destroza los items que tengan nombre o encantamientos en ellos."
+			dependencies: ["0463A27C598F265F"]
+			id: "745DDA55FA8DB5EE"
+			tasks: [{
+				id: "01AAEB13450A00BC"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/save1"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -7.5d
+			subtitle: "Destroza automáticamente los items de nivel POCO COMÚN."
+			dependencies: ["0463A27C598F265F"]
+			id: "168AA08FD43FC5D4"
+			tasks: [{
+				id: "2D332B15C90B84B8"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/auto_sal1"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -9.5d
+			subtitle: "Mejora tier 1 de backpack"
+			dependencies: ["0463A27C598F265F"]
+			id: "41CDA8C8F1D5FCBF"
+			tasks: [{
+				id: "29FB7F022589D572"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/size1"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -5.5d
+			subtitle: "Restaura el 25% de tu vida"
+			dependencies: ["0463A27C598F265F"]
+			id: "5C48B26CD339C7B9"
+			tasks: [{
+				id: "1C2AC016F33301F2"
+				type: "item"
+				item: "mmorpg:alchemy/potion/health/1"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -5.5d
+			subtitle: "Restaura el 25% de tu maná"
+			dependencies: ["0463A27C598F265F"]
+			id: "34936580355F8BD8"
+			tasks: [{
+				id: "6A529C8629408E9F"
+				type: "item"
+				item: "mmorpg:alchemy/potion/mana/1"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.0d
+			dependencies: ["67EE1CDAC5B62950"]
+			id: "613EC59F3E73FBC0"
+			tasks: [{
+				id: "1C6FB4B6E11B1F7C"
+				type: "item"
+				item: "mmorpg:mat/salvage/salvage2"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 2.5d
+			subtitle: "Item de crafteo"
+			dependencies: ["613EC59F3E73FBC0"]
+			id: "55D567ABAD4B68DD"
+			tasks: [{
+				id: "200F14EF5C3D3386"
+				type: "item"
+				item: "mmorpg:mat/golden_orb"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -4.0d
+			subtitle: "Esencia tier 2 cocinada."
+			dependencies: ["613EC59F3E73FBC0"]
+			id: "0391F6A6F1FBEE02"
+			tasks: [{
+				id: "370878B849221FF9"
+				type: "item"
+				item: "mmorpg:mat/smelted/2"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -6.5d
+			dependencies: ["0391F6A6F1FBEE02"]
+			id: "6EB495777AC93FAE"
+			tasks: [{
+				id: "655F715937F50CE2"
+				type: "item"
+				item: "mmorpg:mat/condensed_salvage/c2"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -5.5d
+			subtitle: "Restaura el 30% de tu vida"
+			dependencies: ["6EB495777AC93FAE"]
+			id: "56D45F038BE1B5AE"
+			tasks: [{
+				id: "25FDF378BBF6079C"
+				type: "item"
+				item: "mmorpg:alchemy/potion/health/2"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -5.5d
+			subtitle: "Restaura el 30% de tu maná"
+			dependencies: ["6EB495777AC93FAE"]
+			id: "2E02D329DA1199FC"
+			tasks: [{
+				id: "51ACD13E9CDB442E"
+				type: "item"
+				item: "mmorpg:alchemy/potion/mana/2"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -9.5d
+			dependencies: ["6EB495777AC93FAE"]
+			id: "782DC78DD7F02FCF"
+			tasks: [{
+				id: "04D1516A46CEE6D9"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/size2"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -7.5d
+			subtitle: "Destroza automáticamente los items de nivel RARO."
+			dependencies: ["6EB495777AC93FAE"]
+			id: "6195710A4FB6BAF4"
+			tasks: [{
+				id: "6F1DB926F2F4CBFD"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/auto_sal2"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -7.5d
+			subtitle: "Agarra runas automáticamente."
+			dependencies: ["6EB495777AC93FAE"]
+			id: "1E7E09B2753E1231"
+			tasks: [{
+				id: "10A528D4026F360E"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/rune2"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 0.0d
+			dependencies: ["613EC59F3E73FBC0"]
+			id: "6CFB77DE038E098F"
+			tasks: [{
+				id: "357BDADF23BE5A6B"
+				type: "item"
+				item: "mmorpg:mat/salvage/salvage3"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -4.0d
+			subtitle: "Esencia tier 3 cocinada"
+			dependencies: ["6CFB77DE038E098F"]
+			id: "4BE788750DBB68C9"
+			tasks: [{
+				id: "2571933A1FC929BB"
+				type: "item"
+				item: "mmorpg:mat/smelted/3"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -6.5d
+			dependencies: ["4BE788750DBB68C9"]
+			id: "06AA78ACBBB1F16D"
+			tasks: [{
+				id: "7A041B2934A214FB"
+				type: "item"
+				item: "mmorpg:mat/condensed_salvage/c3"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -9.5d
+			dependencies: ["06AA78ACBBB1F16D"]
+			id: "73EAB62B08DA2A25"
+			tasks: [{
+				id: "096727010C85D221"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/size3"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -7.5d
+			subtitle: "Agarra automáticamente todos los items que sean Currency de el mod."
+			dependencies: ["06AA78ACBBB1F16D"]
+			id: "1457DDED92661124"
+			tasks: [{
+				id: "624CF83659A5AE47"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/currency3"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -5.5d
+			subtitle: "Restaura el 40% de tu vida"
+			dependencies: ["06AA78ACBBB1F16D"]
+			id: "09630F4D3BD845F5"
+			tasks: [{
+				id: "5D49BF6EFC35EF80"
+				type: "item"
+				item: "mmorpg:alchemy/potion/health/3"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -5.5d
+			subtitle: "Restaura el 40% de tu maná"
+			dependencies: ["06AA78ACBBB1F16D"]
+			id: "284E8868CAF7D82C"
+			tasks: [{
+				id: "562C106335FB19B8"
+				type: "item"
+				item: "mmorpg:alchemy/potion/mana/3"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 0.0d
+			dependencies: ["6CFB77DE038E098F"]
+			id: "5BCCAFB3F424F122"
+			tasks: [{
+				id: "10C19D75585B4F83"
+				type: "item"
+				item: "mmorpg:mat/salvage/salvage4"
+			}]
+		}
+		{
+			x: 21.0d
+			y: -4.0d
+			subtitle: "Esencia tier 4 cocinada."
+			dependencies: ["5BCCAFB3F424F122"]
+			id: "24785BF07F03CAF3"
+			tasks: [{
+				id: "7DFBCFF484DA30F9"
+				type: "item"
+				item: "mmorpg:mat/smelted/4"
+			}]
+		}
+		{
+			x: 21.0d
+			y: -6.5d
+			dependencies: ["24785BF07F03CAF3"]
+			id: "12ED0C8243A9EAA6"
+			tasks: [{
+				id: "28AF57288807D288"
+				type: "item"
+				item: "mmorpg:mat/condensed_salvage/c4"
+			}]
+		}
+		{
+			x: 21.0d
+			y: -9.5d
+			dependencies: ["12ED0C8243A9EAA6"]
+			id: "0A4550DAD8AA86F5"
+			tasks: [{
+				id: "3C3D5A1180CE339C"
+				type: "item"
+				item: "mmorpg:backpack/upgrade/size4"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -5.5d
+			subtitle: "Restaura el 50% de tu vida"
+			dependencies: ["12ED0C8243A9EAA6"]
+			id: "704FCCA4D39DF233"
+			tasks: [{
+				id: "40BB049BF37B06FC"
+				type: "item"
+				item: "mmorpg:alchemy/potion/health/4"
+			}]
+		}
+		{
+			x: 22.0d
+			y: -5.5d
+			subtitle: "Restaura el 50% de tu maná"
+			dependencies: ["12ED0C8243A9EAA6"]
+			id: "2AB740AD94EC38EB"
+			tasks: [{
+				id: "7F3D38DE200EDBCC"
+				type: "item"
+				item: "mmorpg:alchemy/potion/mana/4"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -1.0d
+			dependencies: ["5BCCAFB3F424F122"]
+			id: "7F44405B1F199DE0"
+			tasks: [{
+				id: "342632D4EE69C1A0"
+				type: "item"
+				item: "mmorpg:mat/mythic_essence"
+			}]
+		}
+		{
+			title: "Almas!"
+			icon: {
+				id: "mmorpg:stat_soul/stat_soul"
+				Count: 21b
+				tag: {
+					stat_soul: {
+						rar: "common"
+						tier: 0
+						gear-: 1b
+						can_sal: 0b
+						uniq: ""
+						slot: ""
+					}
+				}
+			}
+			x: -2.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Y esto?"
+			description: [
+				"Hay distintos tipos de almas lo cual van en categorías:"
+				""
+				"Común"
+				"Poco Común"
+				"Raro"
+				"Épico <- Máximo crafteable"
+				"---------- "
+				"Estos dos son solamente encontrables, pero son los más fuertes del juego."
+				""
+				"Nombrado con Runa"
+				"Único"
+			]
+			dependencies: ["49A0600440C962F1"]
+			id: "032217694E25F15A"
+			tasks: [{
+				id: "4DCB9FDF15D07E63"
+				type: "checkmark"
+				title: "Clickeame para completar!"
+			}]
+		}
+		{
+			title: "Como subo de nivel las armas?"
+			icon: {
+				id: "mmorpg:stat_soul/stat_soul"
+				Count: 20b
+				tag: {
+					stat_soul: {
+						rar: "common"
+						tier: 0
+						gear-: 1b
+						can_sal: 0b
+						uniq: ""
+						slot: ""
+					}
+				}
+			}
+			x: 2.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Lo que no te cuenta el jei."
+			description: [
+				"Primero que todo: Necesitas un item que quieras mejorar que tenga un alma en el."
+				""
+				"(Una buena manera de empezar es craftearte una common soul stone)"
+				"Luego de eso vas a necesitar mejorarlo, del cual hay dos opciones:"
+				""
+				"1. Usar una Stone of Hope."
+				""
+				"2. Mejorar una herramienta +4 con una Uncommon Upgrade Stone y un +8 con una Rare upgrade stone."
+				""
+				"Para mejorar en +1 las herramientas vas a necesitar un magical, extraordinary o supreme upgrading stone."
+			]
+			dependencies: ["49A0600440C962F1"]
+			id: "219F55B531CB9047"
+			tasks: [{
+				id: "4BBAEF597261F0F8"
+				type: "checkmark"
+				title: "Clickeame para completar!"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.5d
+			subtitle: "Que estadística más fea... REROLL"
+			description: ["Rerolea los explicitos (explicits) de tu armadura a cambio de ponerle inestabilidad (mucha inestabilidad romperá tu item al mejorarlo la siguiente vez, con una probabilidad.)"]
+			dependencies: ["28E8449B57728E52"]
+			id: "338DB73821FB195E"
+			tasks: [{
+				id: "2DBC64D8E3AE6515"
+				type: "item"
+				item: "mmorpg:currency/number_reroll"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.5d
+			subtitle: "AHHH QUE ESTÁ PASANDO AYUDAAA SE MUEVE TODOOO"
+			description: ["Rerolea todos tus prefijos (affixes) pero te da inestabilidad"]
+			dependencies: ["28E8449B57728E52"]
+			id: "1EDF1B3AD7545A3D"
+			tasks: [{
+				id: "74144729D5B6156A"
+				type: "item"
+				item: "mmorpg:currency/reroll_affix_numbers"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			subtitle: "holy"
+			description: ["purifica un item, tiene un 25% de probabilidad de romper ese mismo item"]
+			dependencies: ["6342CE99108EF31F"]
+			id: "15D6460A45D1FF0F"
+			tasks: [{
+				id: "55DC96752D1A5974"
+				type: "item"
+				item: "mmorpg:currency/clear_corruption"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			subtitle: "Instabilidad fuera, mala vibra fuera"
+			description: ["Quita 500 de instabilidad de un item, con un 25% de probabilidad de romper el item."]
+			dependencies: ["6342CE99108EF31F"]
+			id: "01DA0337813A3C8F"
+			tasks: [{
+				id: "2FC6AD144B3C0D17"
+				type: "item"
+				item: "mmorpg:currency/clear_instability"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			subtitle: "menos inestable pofavo"
+			description: ["Saca 250 de inestabilidad de un item, tiene un 25% de probabilidad de romper ese mismo item."]
+			dependencies: ["6342CE99108EF31F"]
+			id: "686B2C905DFB97EE"
+			tasks: [{
+				id: "56BFE8F61E27B042"
+				type: "item"
+				item: "mmorpg:currency/crystal_of_purification"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			subtitle: "Reroll!"
+			description: [
+				"Rerolea los efectos de una herramienta."
+				""
+				"Por ejemplo, si una herramienta tiene los efectos:"
+				""
+				"Earth Damage"
+				"Mana"
+				"Damage to Undead"
+				""
+				"Va a rerolear esos 3 a otros completamente diferentes."
+			]
+			dependencies: ["6342CE99108EF31F"]
+			id: "0D4CDF6E84EAEC7E"
+			tasks: [{
+				id: "47FC487BE64106D6"
+				type: "item"
+				item: "mmorpg:currency/randomize_affixes"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			subtitle: "GIGA REROLL"
+			description: [
+				"Parecido al orbe del desorden, pero cambia las estadisticas POR COMPLETO"
+				"además de hacer que el item sea corrupto de ahora en más."
+				""
+				"Cuando un item está corrupto, el mismo no puede ser modificado y tiene que ser Purificado para seguir modificandolo."
+			]
+			dependencies: ["6342CE99108EF31F"]
+			id: "4AF46ACC64D4A704"
+			tasks: [{
+				id: "1E3DE5E035F433F3"
+				type: "item"
+				item: "mmorpg:currency/orb_of_corruption"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 3.5d
+			subtitle: "Reroll! (táctico)"
+			description: [
+				"Rerolea los números (tanto porcentajes como numeros base) de los affixes de tu item!"
+				""
+				""
+				"Los affix son los efectos extras que tiene que no son encantamiento cuando le pones un alma, por ejemplo:"
+				""
+				"Undead Damage"
+				"Earth damage"
+				""
+				"cambia el numerito!"
+			]
+			dependencies: ["55D567ABAD4B68DD"]
+			id: "5527151C3D2413DF"
+			tasks: [{
+				id: "78CB304B255CBE31"
+				type: "item"
+				item: "mmorpg:currency/reroll_primary_stats_numbers"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 3.5d
+			subtitle: "Reroll! (estratégico)"
+			description: ["Rerolea los números de las estadísticas ÚNICAS de tus items."]
+			dependencies: ["55D567ABAD4B68DD"]
+			id: "6D29778D9F796ED5"
+			tasks: [{
+				id: "6256A5953D03ECC8"
+				type: "item"
+				item: "mmorpg:currency/reroll_unique_numbers"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 4.5d
+			subtitle: "Prestigio chafa"
+			description: ["Resetea el nivel de tu armadura o herramienta a 0 a cambio de un reroll completo (da 100 de inestabilidad)"]
+			dependencies: ["55D567ABAD4B68DD"]
+			id: "608A86F652F09ED9"
+			tasks: [{
+				id: "362A790633FB8EBE"
+				type: "item"
+				item: "mmorpg:currency/orb_of_infinity"
+			}]
+		}
+		{
+			title: "Uncommon Essence"
+			x: 1.0d
+			y: -2.0d
+			subtitle: "Posible drop."
+			description: [
+				"Cuando rompes un alma poco común con un Salvage Hammer te pueden dropear este item."
+				""
+				"Juntar 9 de estos items dandole al click derecho lo transforma en una rarity upgrade stone, que mejora tus items."
+				""
+				"También podés romper este item con un Salvage Hammer para tener una Source of Strenght"
+			]
+			dependencies: ["1FB6AB7890E0D318"]
+			id: "45499CBDAB8ADF8A"
+			tasks: [{
+				id: "6C508BBA8B59367D"
+				type: "item"
+				item: {
+					id: "mmorpg:rarity/essence/base"
+					Count: 1b
+					tag: {
+						CustomModelData: 2
+						rar: "uncommon"
+					}
+				}
+			}]
+		}
+	]
+}

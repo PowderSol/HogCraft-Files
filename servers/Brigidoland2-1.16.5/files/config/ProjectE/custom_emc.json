@@ -1,0 +1,104 @@
+{
+  "entries": [
+    {
+      "item": "minecraft:furnace",
+      "emc": 8
+    },
+    {
+      "item": "projecte:red_matter",
+      "emc": 450560
+    },
+    {
+      "item": "projecte:low_covalence_dust",
+      "emc": 40
+    },
+    {
+      "item": "projecte:medium_covalence_dust",
+      "emc": 320
+    },
+    {
+      "item": "projecte:high_covalence_dust",
+      "emc": 8320
+    },
+    {
+      "item": "projecte:alchemical_chest",
+      "emc": 17450
+    },
+    {
+      "item": "iceandfire:fire_dragon_heart",
+      "emc": 2097152
+    },
+    {
+      "item": "iceandfire:ice_dragon_heart",
+      "emc": 2097152
+    },
+    {
+      "item": "iceandfire:lightning_dragon_heart",
+      "emc": 2097152
+    },
+    {
+      "item": "sons_of_sins:peaceful_bed",
+      "emc": 1048576
+    },
+    {
+      "item": "sons_of_sins:wistiver_jaws",
+      "emc": 1048576
+    },
+    {
+      "item": "sons_of_sins:prowler_s_hand",
+      "emc": 1048576
+    },
+    {
+      "item": "sons_of_sins:iron_motor",
+      "emc": 1048576
+    },
+    {
+      "item": "sons_of_sins:cursed_head",
+      "emc": 1048576
+    },
+    {
+      "item": "sons_of_sins:bloody_puddle",
+      "emc": 1048576
+    },
+    {
+      "item": "sons_of_sins:butcher_carcass",
+      "emc": 1048576
+    },
+    {
+      "item": "botania:gaia_ingot",
+      "emc": 1835008
+    },
+    {
+      "item": "minecraft:piston",
+      "emc": 348
+    },
+    {
+      "item": "fluxnetworks:flux_dust",
+      "emc": 64
+    },
+    {
+      "item": "projecte:philosophers_stone",
+      "emc": 786432
+    },
+    {
+      "item": "projectex:stone_table",
+      "emc": 36859401
+    },
+    {
+      "item": "botania:elf_glass",
+      "emc": 6
+    },
+    {
+      "item": "projecte:transmutation_table",
+      "emc": 36859401
+    },
+    {
+      "item": "projecte:condenser_mk1",
+      "emc": 37294915
+    },
+    {
+      "item": "mekanism:pellet_antimatter",
+      "emc": 3788200
+    }
+  ]
+}

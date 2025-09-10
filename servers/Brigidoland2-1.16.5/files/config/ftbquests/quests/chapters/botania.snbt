@@ -1,0 +1,542 @@
+{
+	id: "347056ECFC5E13E9"
+	group: "5CB5B5C458868902"
+	order_index: 0
+	filename: "botania"
+	title: "Botania"
+	icon: {
+		id: "botania:lexicon"
+		Count: 1b
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Apotecario de flores!"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "un poquito de awita, flores y muchos colores"
+			description: [
+				"Bienvenido devuelta!"
+				"Para empezar vas a necesitar este apotecario de flores"
+			]
+			dependencies: ["47CE515BBF45C649"]
+			id: "2312C92C213EC083"
+			tasks: [{
+				id: "579E80B7BA1D248D"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			title: "Pure Daisy"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"Para craftear la pure daisy, solamente tirá 4 petalos blancos y una semilla cualquiera a el apotecario de flores con agua adentro!"
+				""
+				"(Si el apotecario de flores no tiene agua, los items no se van a mantener adentro)"
+			]
+			dependencies: ["2312C92C213EC083"]
+			id: "01F93DA3A91753D0"
+			tasks: [{
+				id: "22AD78BF38097925"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+		}
+		{
+			title: "Que roca más rara"
+			x: 3.5d
+			y: -2.0d
+			subtitle: "Siento un poco de magia igual"
+			description: [
+				"Livingrock! Primer bloque base de botania."
+				""
+				"Lo vas a necesitar para hacer una mana pool y para runas!"
+			]
+			dependencies: ["01F93DA3A91753D0"]
+			id: "0395C274473F805A"
+			tasks: [{
+				id: "6D508CE157AFA2B9"
+				type: "item"
+				item: "botania:livingrock"
+			}]
+		}
+		{
+			title: "huele raro esta madera, pero parece que dura más."
+			x: 3.5d
+			y: 2.0d
+			subtitle: "Sentís un cosquilleo en las manos"
+			description: [
+				"Livingwood!"
+				"Lo vas a necesitar para varitas de magia, varitas de control de maná y dispersadores de maná!"
+			]
+			dependencies: ["01F93DA3A91753D0"]
+			id: "1B7B2911785ADC41"
+			tasks: [{
+				id: "7834172445027CC9"
+				type: "item"
+				item: "botania:livingwood"
+			}]
+		}
+		{
+			title: "Varita del bosque"
+			x: 6.5d
+			y: 2.0d
+			subtitle: "una varita que controla el flujo del mana de un lugar a otro, además de permitirte ver el maná de las mana pool o los dispersadores de maná"
+			description: ["Teniendo esta varita en tu mano te va a permitir ver el maná de las cosas y con shift + click derecho podés conectar los flujos de maná entre bloques! (shift + click derecho en planta y click derecho en dispersador de maná para pasar el maná de la planta a el dispersador)"]
+			dependencies: ["1B7B2911785ADC41"]
+			id: "0D75471FBC596CFC"
+			tasks: [{
+				id: "73E066201F248861"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Pasando el mana de acá para allá!"
+			x: 9.0d
+			y: 2.0d
+			subtitle: "wiii"
+			description: [
+				"Cuando está conectado a una flor que genere maná (como la primera de todas, la endoflame) dispara el mana en una dirección predeterminada. "
+				"Para elegir hacia donde querés que vaya el maná exactamente:"
+				"Solamente hace shift + click derecho en el dispersador de mana y click derecho hacia que bloque querés que vaya"
+				""
+				"(por ejemplo hacia la mana pool o el altar rúnico!)"
+			]
+			dependencies: ["0D75471FBC596CFC"]
+			id: "561D322B7A56699F"
+			tasks: [{
+				id: "5E0C2B41963B1C7F"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["01F93DA3A91753D0"]
+			id: "4A69CB0154C5A0A6"
+			tasks: [{
+				id: "7AECE5CBEEC35F62"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+		}
+		{
+			title: "Mana pool!"
+			x: 6.5d
+			y: -2.0d
+			description: [
+				"Guarda maná en GRANDES cantidades, y tiene el valor de 2 piscinas de maná en una"
+				""
+				""
+				"(Osea que si un crafteo en el JEI dice que necesita una mana pool entera, entonces en la realidad solamente necesita la mitad de esta)."
+			]
+			dependencies: ["0395C274473F805A"]
+			id: "248F135BBDDB4C10"
+			tasks: [{
+				id: "7D85A7489036612F"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+		}
+		{
+			title: "Altar rúnico"
+			x: 11.5d
+			y: -2.0d
+			subtitle: "pop"
+			description: [
+				"Utilizado para crear runas, que sirven para crear mejores plantas generadoras, varias varitas y para poder empezar a hacer terrasteel!"
+				""
+				""
+				"Para usarlo vas a necesitar maná y darle al click derecho a los ingredientes de la runa adentro de el altar rúnico."
+				""
+				"Cuando tengas todo, simplemente poné uno de Livingrock en el altar y dale al click derecho con una Varita del bosque para terminar el crafteo!"
+			]
+			dependencies: [
+				"248F135BBDDB4C10"
+				"4A69CB0154C5A0A6"
+				"561D322B7A56699F"
+			]
+			id: "14F9272E24FBF8FC"
+			tasks: [{
+				id: "43E58CC0B57E3209"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			title: "Runa de agua"
+			x: 13.5d
+			y: -3.5d
+			dependencies: ["14F9272E24FBF8FC"]
+			id: "21A330549278BBFA"
+			tasks: [{
+				id: "76F3DDFCABCCA652"
+				type: "item"
+				item: "botania:rune_water"
+			}]
+		}
+		{
+			title: "Runa de tierra"
+			x: 12.5d
+			y: -4.5d
+			dependencies: ["14F9272E24FBF8FC"]
+			id: "58BE37E5C9D07457"
+			tasks: [{
+				id: "18653558F2B25DD3"
+				type: "item"
+				item: "botania:rune_earth"
+			}]
+		}
+		{
+			title: "Runa de Maná"
+			x: 12.5d
+			y: 0.5d
+			dependencies: ["14F9272E24FBF8FC"]
+			id: "69D27548C1529EEA"
+			tasks: [{
+				id: "1B44FEF9A649749A"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+		}
+		{
+			title: "Runa de fuego"
+			x: 14.0d
+			y: -2.0d
+			dependencies: ["14F9272E24FBF8FC"]
+			id: "7BCE34915BA1A36F"
+			tasks: [{
+				id: "6C3E70FE55A6E2A3"
+				type: "item"
+				item: "botania:rune_fire"
+			}]
+		}
+		{
+			title: "Runa de aire"
+			x: 13.5d
+			y: -0.5d
+			dependencies: ["14F9272E24FBF8FC"]
+			id: "2542CC66D8C14DD6"
+			tasks: [{
+				id: "0E13978D05F9A37E"
+				type: "item"
+				item: "botania:rune_air"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			subtitle: "terrasteel!"
+			description: [
+				"Es un proceso muy complicado y costoso."
+				""
+				"Para hacer terrasteel vas a necesitar un multibloque el cuál está siempre ubicado en el libro de botania."
+				""
+				"Después vas a necesitar darle MUCHISIMO maná rapido (te recomiendo usar Sparks) y después tirar los items arriba de el mismo."
+			]
+			dependencies: [
+				"69D27548C1529EEA"
+				"2542CC66D8C14DD6"
+				"7BCE34915BA1A36F"
+				"21A330549278BBFA"
+				"58BE37E5C9D07457"
+			]
+			id: "09D2FB28D0F356F9"
+			tasks: [{
+				id: "42F1BF16105E8FFF"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+		}
+		{
+			x: 18.5d
+			y: -2.0d
+			subtitle: "Lingote de terrasteel"
+			description: [
+				"Un lingote muy costoso, que te va a dar el end-game de este mod."
+				""
+				"Usalo para la espada, picota, hacha o cualquier otra cosa que lo necesite."
+				""
+				""
+				"(Las herramientas que usan maná que te había contado antes)"
+			]
+			dependencies: ["09D2FB28D0F356F9"]
+			id: "6A08E38722C07A84"
+			tasks: [{
+				id: "5431669D96A6D54D"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: 19.5d
+			y: -3.0d
+			subtitle: "esto no es literalmente la terra-blade de terraria?"
+			description: ["si."]
+			dependencies: ["6A08E38722C07A84"]
+			id: "2D385B1E322B4AC7"
+			tasks: [{
+				id: "44BAE906EAF71ED8"
+				type: "item"
+				item: {
+					id: "botania:terra_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: -2.0d
+			dependencies: ["6A08E38722C07A84"]
+			id: "44E4FF64EC1BEDCC"
+			tasks: [{
+				id: "47CA096ADC251476"
+				type: "item"
+				item: {
+					id: "botania:terra_pick"
+					Count: 1b
+					tag: {
+						mana: 9999
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 19.5d
+			y: -1.0d
+			dependencies: ["6A08E38722C07A84"]
+			id: "4485CB3438DDE854"
+			tasks: [{
+				id: "29F8A2ACEF1B823C"
+				type: "item"
+				item: {
+					id: "botania:terra_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 18.5d
+			y: 0.5d
+			subtitle: "Portal a Alfheim!"
+			description: [
+				"Utilizado para crear el multibloque de alfheim, el cual usa bastante maná (diría que llenes las dos mana pools por las dudas)"
+				""
+				""
+				"No hay una dimensión por ahora, así que solamente usalo para craftear. (tira el objeto adentro del portal y te va a salir su contra-parte élfica)"
+				""
+				"PD: No tires items que no tienen contra-parte élfica, por que se van a borrar permanentemente."
+			]
+			dependencies: ["6A08E38722C07A84"]
+			id: "739E8BDF215429E2"
+			tasks: [{
+				id: "0D658A35E0A50150"
+				type: "item"
+				item: "botania:alfheim_portal"
+			}]
+		}
+		{
+			title: "Elementium!"
+			x: 18.5d
+			y: 3.0d
+			subtitle: "rosa uwu"
+			description: ["Mana-steel élfico."]
+			dependencies: ["739E8BDF215429E2"]
+			id: "5FDF2BDB7F02F9D5"
+			tasks: [{
+				id: "10E8523F0FA39A07"
+				type: "item"
+				item: "botania:elementium_ingot"
+			}]
+		}
+		{
+			title: "Guardián Gaia."
+			icon: "botania:gaia_head"
+			x: 15.0d
+			y: 4.5d
+			subtitle: "Vas a pelear con tu sombra."
+			description: ["Matá al guardian de gaia, y traeme sus restos."]
+			dependencies: ["5FDF2BDB7F02F9D5"]
+			id: "76DA176C2C13865B"
+			tasks: [{
+				id: "7A2A707DB6370351"
+				type: "kill"
+				entity: "botania:doppleganger"
+				value: 1L
+			}]
+		}
+		{
+			title: "Los restos del guardian gaia."
+			x: 12.5d
+			y: 4.5d
+			subtitle: "parece muy inestable, pero no al punto de desaparecer."
+			description: ["Utilizado para los items MÁS poderosos del mod, como por ejemplo la flügel tiara que te da el poder de VOLAR."]
+			dependencies: ["76DA176C2C13865B"]
+			id: "1FF15E5388A1FA19"
+			tasks: [{
+				id: "655DC8AB571AC275"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 4.5d
+			subtitle: "Vuelo creativo, pero con un costo."
+			description: [
+				"Vuelo creativo temporal que usa maná, además de darte unas alas que se pueden customizar libremente."
+				""
+				""
+				"Querés alas de demonio?"
+				"O de angel?"
+				"O de hada?"
+				"o simplemente no tener nada?"
+				""
+				"es tu elección."
+			]
+			dependencies: ["1FF15E5388A1FA19"]
+			id: "155B28CBAD9F1F88"
+			tasks: [{
+				id: "3FD24B7AE5280698"
+				type: "item"
+				item: {
+					id: "botania:flight_tiara"
+					Count: 1b
+					tag: {
+						variant: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Una mana pool de bolsillo!"
+			x: 7.0d
+			y: -4.0d
+			subtitle: "demasiado util honestamente"
+			description: [
+				"Ahora podés tener maná en tu inventario para cargar tus items de maná y también podés mover el mana de una mana pool a otra!"
+				""
+				"Simplemente tira la tableta a una mana pool con maná, y después configurá la mana pool con la varita del bosque para que saque de la mana pool a la tableta!"
+			]
+			dependencies: ["248F135BBDDB4C10"]
+			id: "08DECFCBCB083C8F"
+			tasks: [{
+				id: "72359D2E22A9566D"
+				type: "item"
+				item: {
+					id: "botania:mana_tablet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Manasteel"
+			x: 5.5d
+			y: -3.0d
+			subtitle: "hierro cubierto de maná"
+			description: [
+				"Tirá 1 de hierro en una mana pool con un poquito de maná para transformarlo."
+				""
+				""
+				"PD: También se puede usar para las herramientas y armadura base, las cuales tienen durabilidad pero también pueden usar maná envez de durabilidad."
+			]
+			dependencies: ["248F135BBDDB4C10"]
+			id: "390D1DCBE474DAB2"
+			tasks: [{
+				id: "152F81F54C83EB95"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+		}
+		{
+			title: "Mana diamond"
+			x: 7.5d
+			y: -3.0d
+			subtitle: "Un diamante cubierto de maná"
+			description: ["Tirá un diamante a una mana pool con un poco de maná"]
+			dependencies: ["248F135BBDDB4C10"]
+			id: "4F5A0B6671B00FE7"
+			tasks: [{
+				id: "520B6B3F302DB66E"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			title: "Mana pearl"
+			x: 6.0d
+			y: -4.0d
+			subtitle: "Enderpearl cubierta de maná"
+			description: ["Tirá una ender pearl adentro de la mana pool."]
+			dependencies: ["248F135BBDDB4C10"]
+			id: "6FE68E76882D0345"
+			tasks: [{
+				id: "448A8175A9665E24"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["248F135BBDDB4C10"]
+			id: "40B758112D8AC02D"
+			tasks: [{
+				id: "4C9CF15E9F485077"
+				type: "item"
+				item: "botania:alchemy_catalyst"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			subtitle: "Enciclopedia!"
+			description: [
+				"Muy recomendado tener el Léxica Botania. El cual sirve para ver todas las recetas y como hacer los multibloques del mod paso a paso."
+				""
+				"Los puntos importantes son:"
+				""
+				"-Petal Apothecary"
+				"-Pure Daisy"
+				"-Endoflame"
+				"-TerraSteel"
+				"-Portal to Alfheim (no es un portal todavía, solamente sirve para craftear)"
+				"-Gaia Guardian"
+			]
+			dependencies: ["2312C92C213EC083"]
+			id: "04D4645A81E7870E"
+			tasks: [{
+				id: "5807CC8ED7DC16A9"
+				type: "item"
+				item: {
+					id: "botania:lexicon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+}

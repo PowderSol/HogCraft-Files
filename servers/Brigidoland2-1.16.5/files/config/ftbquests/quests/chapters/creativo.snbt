@@ -1,0 +1,444 @@
+{
+	id: "7B2BB77061783204"
+	group: "34AFBBF700497BD7"
+	order_index: 2
+	filename: "creativo"
+	title: "Creativo"
+	icon: "storagedrawers:creative_storage_upgrade"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Cualquier fluido de acá va a ser infinito."
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "2F93DB07D30079DD"
+			tasks: [{
+				id: "0DB98B6BAB1D3182"
+				type: "item"
+				item: "mekanism:creative_fluid_tank"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Almacenamiento infinito de items en el refined storage"
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "3BE9A1D0C0317078"
+			tasks: [{
+				id: "008ABBB5ADCA3EA6"
+				type: "item"
+				item: "refinedstorage:creative_storage_disk"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Energía infinita, literalmente."
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "217DE434441A9E3F"
+			tasks: [{
+				id: "785D7D9F5F6A9A17"
+				type: "item"
+				item: {
+					id: "mekanism:creative_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			subtitle: "Cualquier gas que pongas acá va a ser infinito."
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "1EF79772CFD09F0C"
+			tasks: [{
+				id: "0C4F49A409C3C4B6"
+				type: "item"
+				item: "mekanism:creative_chemical_tank"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			subtitle: "Para los builders del server, ahora podés usar el building gadget infinitamente"
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "1CAD876DF0B8C415"
+			tasks: [{
+				id: "48B621DE08E26118"
+				type: "item"
+				item: "buildinggadgets:construction_paste_container_creative"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			subtitle: "Cualquier cosa que tenga este addon, tiene energía infinita."
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "23A938FB7F946CE3"
+			tasks: [{
+				id: "019113D9396848B5"
+				type: "item"
+				item: "thermal:rf_coil_creative_augment"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Con este addon, las maquinas de thermal series ya no usan energía, y además funcionan MUY rápido."
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "4EBBB5CED07F73A4"
+			tasks: [{
+				id: "43F62CAE5918D506"
+				type: "item"
+				item: "thermal:machine_efficiency_creative_augment"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Unidades de estres infinita para Create"
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "62CB7A1EEBE71CD1"
+			tasks: [{
+				id: "042E95B7BA6EE297"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			subtitle: "Ahora el blaze puede estar prendido infinitamente o hasta nitro-cargado infinitamente. (se puede configurar)"
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "7F7C4E69B2D26A81"
+			tasks: [{
+				id: "7C1711347A1BA22E"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			subtitle: "Guardar una cantidad infinita de items en un drawer"
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "008906BD10000DF3"
+			tasks: [{
+				id: "48ABE7E8DF0DB846"
+				type: "item"
+				item: "storagedrawers:creative_storage_upgrade"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			subtitle: "Poder sacar infinitos items de un drawer, haciendo ese item infinito."
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "161B19CEAC533CD5"
+			tasks: [{
+				id: "5763037B96851E85"
+				type: "item"
+				item: "storagedrawers:creative_vending_upgrade"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			subtitle: "amen"
+			description: [
+				"Item esencial para todos los crafteos más op de este modpack"
+				""
+				"Muchos de estos bloques son creativo, algunos otros son espadas que pueden matar hasta a admins en creativo."
+				"O otras te permiten no poder morir hasta por /kill"
+				""
+				"Las posibilidades son infinitas"
+			]
+			dependencies: [
+				"1677025253FAEFE1"
+				"45E146E8AEE5BFD3"
+			]
+			id: "09C4D6D5FEFA2C3B"
+			tasks: [{
+				id: "03985B2A2835B7E2"
+				type: "item"
+				item: {
+					id: "kubejs:brigidium"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			subtitle: "Poco a poco"
+			description: ["Desbloquea las 2 Partes para desbloquearme."]
+			dependencies: ["6D6D79A5900DDCB8"]
+			id: "1677025253FAEFE1"
+			tasks: [{
+				id: "22CD2C286530E387"
+				type: "item"
+				item: "kubejs:dark_matter_condensed"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			subtitle: "ESTO SE VA A DESCONTROLAAAR"
+			description: ["Desbloquea las 2 Partes para desbloquearme."]
+			dependencies: ["6F0ED49461BDD8A3"]
+			id: "45E146E8AEE5BFD3"
+			tasks: [{
+				id: "6B2822D165E77C91"
+				type: "item"
+				item: "kubejs:nuclear_stabilizer"
+			}]
+		}
+		{
+			title: "Indestructible"
+			icon: {
+				id: "avaritia:infinity_armor_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 1.0d
+			y: 1.5d
+			subtitle: "Armadura del Infinito."
+			description: [
+				"la armadura te da resistencia a todos los tipos de muerte, incluso /kill de un admin."
+				""
+				"No podés morir de NINGUNA forma."
+				""
+				"y de paso tenés vuelo creativo."
+			]
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "0F072BC334377CC5"
+			tasks: [
+				{
+					id: "529C3C0C049A0710"
+					type: "item"
+					item: {
+						id: "avaritia:infinity_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6E6BCB964D6C0DD4"
+					type: "item"
+					item: {
+						id: "avaritia:infinity_armor_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "130F6B72298CF44F"
+					type: "item"
+					item: {
+						id: "avaritia:infinity_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4F7BDDD16EF41BA5"
+					type: "item"
+					item: {
+						id: "avaritia:infinity_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Un Click y chau"
+			description: ["usado de manera correcta, podés limpiar un chunk completo en 1 minuto."]
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "7E78CA3032886111"
+			tasks: [{
+				id: "21C47CBA64734E70"
+				type: "item"
+				item: {
+					id: "avaritia:world_breaker"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			subtitle: "Tierra? Que tierra?"
+			description: ["puede sacar dirt en excesivamente grandes cantidades."]
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "75308CC01877A034"
+			tasks: [{
+				id: "4CE2E5CB04981B60"
+				type: "item"
+				item: {
+					id: "avaritia:planet_eater"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			subtitle: "Enemigo de los arboles"
+			description: ["Simplemente una buena hacha."]
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "4202FAA6E5B35326"
+			tasks: [{
+				id: "0DAFFE7C50B826DD"
+				type: "item"
+				item: {
+					id: "avaritia:natures_ruin"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "El Asesina Admins."
+			description: ["Puede matar a gente en creativo."]
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "6284C45339626502"
+			tasks: [{
+				id: "653A35FDF709FED3"
+				type: "item"
+				item: {
+					id: "avaritia:swordofthe_cosmos"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Nasus Top "
+			description: [
+				"por qué?"
+				""
+				"tan poco te querés?"
+			]
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "2456BD3DBD5A04FE"
+			tasks: [{
+				id: "3FA720C94E39EC0B"
+				type: "item"
+				item: {
+					id: "avaritia:hoeofthe_green_earth"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "5CC318415955B624"
+				type: "command"
+				title: "\"Brigidium\""
+				icon: {
+					id: "kubejs:brigidium"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				auto: "disabled"
+				command: "/tellraw @a {\"text\": \"El jugador @p Se quiere muy poco y crafteó la Azada del infinito.\", \"color\": \"red\"}"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			subtitle: "La justicia llueve del cielo."
+			description: ["El arco más fuerte del juego, puede summonear flechas que matan a cualquier cosa que toque"]
+			dependencies: ["09C4D6D5FEFA2C3B"]
+			id: "63048E5438B14809"
+			tasks: [{
+				id: "16CEBC1F23799949"
+				type: "item"
+				item: {
+					id: "avaritia:longbowofthe_heavens"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+}

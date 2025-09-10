@@ -1,0 +1,236 @@
+{
+	id: "556F86F4A3C05432"
+	group: "23AE05F5773EEA05"
+	order_index: 0
+	filename: "create"
+	title: "Create"
+	icon: "create:large_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["476C8BD766245B4B"]
+			id: "7AD184187244221A"
+			tasks: [{
+				id: "744AA3A4BD19DA2F"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			title: "Etapa Número 1"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Andesita."
+			description: [
+				"Vas a necesitar conseguir andesita para esto, la misma es crafteable con diorita y cobblestone si no recuerdo mal."
+				""
+				""
+				""
+				"PD: Este mod es muy complejo para explicar con palabras, así que te doy los bloques y si tenés alguna duda siempre podés mantener la W arriba del item en el JEI (listado de items a la derecha del inventario) para saber que puede hacer cada cosa!"
+			]
+			dependencies: ["297D923C92DE066D"]
+			id: "476C8BD766245B4B"
+			tasks: [{
+				id: "5FDE0BD3DA0E032D"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["476C8BD766245B4B"]
+			id: "5984CA606DFEED39"
+			tasks: [{
+				id: "03FD09B3923D6D48"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["476C8BD766245B4B"]
+			id: "437C31D5D976A72F"
+			tasks: [{
+				id: "6E7542512CCA3354"
+				type: "item"
+				item: "create:large_cogwheel"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["437C31D5D976A72F"]
+			id: "0E45B2FF06966511"
+			tasks: [{
+				id: "4E72D5E498CD33FA"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["5984CA606DFEED39"]
+			id: "2AE2F2263D18A205"
+			tasks: [{
+				id: "6311A5CBB71E62E9"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: [
+				"5984CA606DFEED39"
+				"7AD184187244221A"
+			]
+			id: "3D04E480CBD2F6AE"
+			tasks: [{
+				id: "49F9F5F8004DAF64"
+				type: "item"
+				item: "create:gearbox"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["476C8BD766245B4B"]
+			id: "6F65359915B35E52"
+			tasks: [{
+				id: "355ED26621851B9F"
+				type: "item"
+				item: "create:shaft"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["476C8BD766245B4B"]
+			id: "5C99F53F35D518B8"
+			tasks: [{
+				id: "7089411863BBE932"
+				type: "item"
+				item: "create:chute"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["476C8BD766245B4B"]
+			id: "23016EE0EC3EF2BA"
+			tasks: [{
+				id: "3596A677AA3392E1"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["7AD184187244221A"]
+			id: "0BFCC5541D403739"
+			tasks: [{
+				id: "529F783383579702"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["0BFCC5541D403739"]
+			id: "67BB0C675BD5B9C6"
+			tasks: [{
+				id: "781959A38E02C87A"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["0BFCC5541D403739"]
+			id: "4D03EF28030E0324"
+			tasks: [{
+				id: "24A8C5F5A3D245E5"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["0BFCC5541D403739"]
+			id: "653D2425C9B2AE9A"
+			tasks: [{
+				id: "7DE4F25203F145E5"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			dependencies: ["0BFCC5541D403739"]
+			id: "36BB6E1102933B19"
+			tasks: [{
+				id: "49EC13DAAD4B79F7"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			dependencies: ["0BFCC5541D403739"]
+			id: "15AA3B294F69D5AC"
+			tasks: [{
+				id: "1A2AB662B95DC740"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			dependencies: [
+				"36BB6E1102933B19"
+				"15AA3B294F69D5AC"
+			]
+			id: "48A742477EB3E3BF"
+			tasks: [{
+				id: "60EFB214DEFEC93B"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			dependencies: ["48A742477EB3E3BF"]
+			id: "7B5C062AEBBA1666"
+			tasks: [{
+				id: "1DDE604B8E84BF70"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -5.5d
+			dependencies: ["7B5C062AEBBA1666"]
+			id: "2D1511199FF86B31"
+			tasks: [{
+				id: "0D7FC80573856BE7"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+	]
+}

@@ -1,0 +1,1424 @@
+{
+	id: "57F9B8AC63E1D7D5"
+	group: "23AE05F5773EEA05"
+	order_index: 2
+	filename: "mekanism_nuclear"
+	title: "Mekanism (Nuclear)"
+	icon: {
+		id: "mekanism:pellet_polonium"
+		Count: 1b
+		ForgeCaps: {
+			"customnpcs:itemscripteddata": { }
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 3.5999999999999996d
+			y: 0.6d
+			description: [
+				"Después de usar trillones de RF en la SPS, por fín podemos hacer Antimatter Pellets."
+				""
+				"Usá el gas de Antimateria que te da el SPS a un Chemical Crystallizer y vas a tener 1 Antimatter Pellet por cada 1000mb que hagas."
+			]
+			dependencies: ["75C8DF78E16985B2"]
+			size: 1.2d
+			id: "7A590ABD467880FD"
+			tasks: [{
+				id: "1B2E9798A0763A2D"
+				type: "item"
+				item: {
+					id: "mekanism:pellet_antimatter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "El SPS completado."
+			icon: {
+				id: "mekanism:sps_casing"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 5.0d
+			y: 0.5d
+			subtitle: "cool"
+			description: [
+				"Con todos los bloques reunidos, es hora de construir la SPS. Abajo hay una guía con textos y imágenes asi te puede ayudar."
+				""
+				"La SPS va a ser de 7x7 cuando la construyas, pero no es un cubo. La misma sigue un simple patrón, el cual podés seguir las imagenes de abajo como guía de construcción. El Patrón se ve así:"
+				""
+				"{image:modpack:textures/SPS_foto1.png width:200 height:200 align:1}"
+				""
+				"Cada lado, incluyendo el techo y el piso, va a seguir este patrón. las Supercharged Coils deben ser puestas a través de cada una en el centro de sus lados respectivo, y los últimos dos puertos deben ser usados para meter Polonium y sacar Gas de Antimateria."
+				""
+				"Acá abajo tenés la estructura completada."
+				""
+				"{image:modpack:textures/SPS_desdeafuera.png width:200 height:200 align:1}"
+				""
+				"Y Acá abajo tenés la estructura vista hacia adentro, por si quedaron dudas."
+				""
+				"{image:modpack:textures/SPS_pordentro.png width:200 height:200 align:1}"
+				""
+				"Lo bueno del SPS, es que no tiene por que ser 1 sólo Supercharged coil, pueden ser varios juntos siempre y cuando tengan sus respectivos SPS ports. (atrás del SuperCharged coil está el sps port visto de afuera)"
+				""
+				"Y si ves que te sobraron SPS Ports, es que se te olvido poner uno en cada lado, así tenes el Input de Polonio de un lado y el Output de Antimatter gas del otro (no se puede usar por que está el SuperHeating Coil)"
+			]
+			dependencies: ["20E4B197436847C2"]
+			id: "75C8DF78E16985B2"
+			tasks: [{
+				id: "7C431F76AF0E5541"
+				type: "item"
+				item: {
+					id: "mekanism:sps_casing"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			description: [
+				"El SuperCharged Coil se pone en un SPS port en el centro de dos caras opuestas como en la imagen abajo. Cuando se le da energía, esto va a requerir que Supercargues Polonio para convertirlo a antimateria. "
+				""
+				"Enrealidad sólo necesitas 1 técnicamente, pero podés usar muchos más si querés que vaya más o menos lento"
+				""
+				"El único problema es que para producir 1mb de antimateria vas a necesitar 400 MILLONES de Rf. si no empezaste a hacer un reactor de fusión quizá sea una buena hora de empezar a hacerlo."
+				""
+				"{image:modpack:textures/SPS_supercharged.png width:200 height:200 align:1}"
+			]
+			dependencies: ["7043A11753A39CE0"]
+			id: "20E4B197436847C2"
+			tasks: [{
+				id: "3D47D550F727CA5F"
+				type: "item"
+				item: {
+					id: "mekanism:supercharged_coil"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2L
+			}]
+		}
+		{
+			title: "el SUPERCRITICAL PHASE SHIFTER"
+			x: 5.0d
+			y: 4.5d
+			subtitle: "SPS para los amigos"
+			description: [
+				"El Supercritical Phase Shifter (o mejor dicho SPS) es otra estructura multibloque usada para imbuir Polonio con grandes cantidades de energía para crear Gas de Antimateria, el cual puede ser cristalizado a Antimatter Pellets."
+				""
+				"Para construir el SPS, vas a necesitar hacer un total de 72 SPS Casings (60 para construir y 12 más para hacer los puertos), 3 Puertos SPS (SPS Ports) y 123 Structural glass (por que sólo las esquinas pueden ser SPS Casings, todo lo demás debe ser este glass) y un último item que te voy a explicar dentro de poco en profundidad."
+			]
+			dependencies: [
+				"5F05DD9F79CA43F1"
+				"097801454235686B"
+			]
+			id: "7043A11753A39CE0"
+			tasks: [
+				{
+					id: "279E78535A29128F"
+					type: "item"
+					item: {
+						id: "mekanism:sps_casing"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 60L
+				}
+				{
+					id: "69E8E7EA6CDE36D8"
+					type: "item"
+					item: {
+						id: "mekanism:structural_glass"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 123L
+				}
+				{
+					id: "6905F1FD3A3CE41D"
+					type: "item"
+					item: {
+						id: "mekanism:sps_port"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 4.5d
+			description: [
+				"Enviando tu residuo nuclear a un Solar Neutron Activator will give you Polonium."
+				""
+				"Manda el Polonio gasificado a través de una pressurized Reaction Chamber con un poco de Polvo de Fluorita (Fluorite Dust) y vas a tener Polonium Pellets. Vas a necesitar bastantes de estos en un futuro (más que nada para el Brigidium)."
+				""
+				"PD: Esto va a crear un subproducto de Residuo Nuclear Gastado (Spent Nuclear Waste) que necesita ser enviado a un Barril de Residuo (Waste barrel) para que se evaporice con el tiempo."
+			]
+			dependencies: ["295CB42D20BB5CC8"]
+			id: "5F05DD9F79CA43F1"
+			tasks: [{
+				id: "7ECB629CCE22DAB2"
+				type: "item"
+				item: {
+					id: "mekanism:pellet_polonium"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			subtitle: "Por lejos la segunda mejor producción de energía que existe."
+			description: [
+				"Este es el Reactor de Fusion, una de las maneras de generar energía más OP de todo el pack."
+				""
+				"Una vez activado, el reactor puede darte hasta 200 MILLONES DE RF por TICK, con las cosas necesarias. También puede ser enfriado con agua para producir vapor, el cual puede ir a una Turbina Industrial para hacer más energía."
+				""
+				"Para construir el Reactor de Fusión, vamos a necesitar seguir un simple patrón, cada cara se va a ver así:"
+				""
+				"{image:modpack:textures/fusion_1.png width:200 height:160 align:1}"
+				""
+				"Para la parte de arriba, vamos a reemplazar el bloque del medio con el bloque de Fusion Reactor Controller"
+				""
+				"{image:modpack:textures/fusion_4.png width:200 height:200 align:1}"
+				""
+				"Y ya lo tendrás terminado! una señal de que funcionó es que puedas darle click derecho, que la luz del controller se prenda y que salgan particulas rojas al terminarlo!"
+				""
+				"Acá se ve por dentro"
+				""
+				"{image:modpack:textures/fusion_3.png width:200 height:200 align:1}"
+			]
+			dependencies: ["5F05DD9F79CA43F1"]
+			id: "2E87C678F99CB09C"
+			tasks: [
+				{
+					id: "4412A56B81C9EEA1"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fusion_reactor_controller"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "5BA47B5C2F6FAC70"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fusion_reactor_frame"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 36L
+				}
+				{
+					id: "3AC03D84F27C43B8"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fusion_reactor_port"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "0B96DAB802B4263A"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:reactor_glass"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 25L
+				}
+			]
+		}
+		{
+			icon: {
+				id: "mekanismgenerators:fusion_fuel_bucket"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 9.0d
+			y: 1.0d
+			description: [
+				"Los reactores de fusión necesitan un combustible muy especial, D-T Fuel."
+				""
+				"Hay dos maneras de darle energía al reactor:"
+				"La Primera es dandole directamente con una cañeria el D-T Fuel a un ratio de 1,000mb por tick."
+				"La segunda es dandole los dos combustibles por separado a ratios controlados"
+				""
+				"Para empezar, vamos a enviarlas por separado. Probablemente necesitemos saber como hacerlas también."
+			]
+			dependencies: ["2E87C678F99CB09C"]
+			id: "60659BF79D6C9424"
+			tasks: [{
+				id: "69A4236A880CD8FF"
+				type: "checkmark"
+				title: "Dandole energía a tu reactor de fusión"
+			}]
+		}
+		{
+			title: "Dandole combustible al reactor de fusion: Tritium"
+			x: 11.0d
+			y: 1.5d
+			description: ["Por ahora, ya estarías haciendo Litio. Envialo con una cañeria a este Solar Neutron Activator para crear Tritio"]
+			dependencies: ["60659BF79D6C9424"]
+			id: "5833A8C02280A7D2"
+			tasks: [{
+				id: "3ABC195D14FDA6DE"
+				type: "item"
+				item: {
+					id: "mekanism:solar_neutron_activator"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Dandole combustible a nuestro Reactor: Deuterium"
+			x: 11.0d
+			y: 0.5d
+			description: [
+				"Para darle energía a nuestro Reactor de Fusión, vamos a necesitar crear dos diferentes gases, uno de ellos es el Deuterio"
+				""
+				"Primero, vamos a necesitar estas Electric pumps y darle una Filter upgrade. Ponelo arriba de un bloque de agua infinita y después dale energía. Con esto, vas a obtener Agua Pesada."
+				""
+				"Envía esta agua pesada a un Electrolytic Separator y obtén Deuterium."
+			]
+			dependencies: ["60659BF79D6C9424"]
+			id: "3CA677802ECF4C04"
+			tasks: [
+				{
+					id: "672176DEC51576AD"
+					type: "item"
+					item: {
+						id: "mekanism:electric_pump"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "33BECA795EC3A7A6"
+					type: "item"
+					item: {
+						id: "mekanism:upgrade_filter"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Inyector de Combustible"
+			x: 12.5d
+			y: 1.0d
+			description: [
+				"Para poder empezar el Reactor de Fusión, vamos a necesitar un pequeñisimo shot de D-T Fuel. Esto es obtenido al combinar Deuterio y Tritio juntos en un Chemical Infuser."
+				""
+				"Empezá por hacer un Hohlraum y ponlo en el Infusor (Donde está el botón de Suma) para llenarlo de D-T Fuel. Ahora estamos listos para empezar el reactor!"
+				"{image:modpack:textures/fusion_5.png width:200 height:150 align:1}"
+			]
+			dependencies: [
+				"3CA677802ECF4C04"
+				"5833A8C02280A7D2"
+			]
+			id: "73D64A04B09631BF"
+			tasks: [{
+				id: "26FDCA9446B9EEA9"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:hohlraum"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Ultimos Pasos"
+			icon: {
+				id: "mekanismgenerators:fusion_reactor_controller"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 14.5d
+			y: 1.0d
+			description: [
+				"Hohlraum lleno de D-T Fuel? check"
+				""
+				"Deuterio y Tritio listo para ser envíado a el reactor? check"
+				""
+				"Un amplificador laser con al menos 400 millones de RF listos para ser disparados a al Laser focus Matrix? check"
+				""
+				"Una vez estés listo, pon el Hohlraum al Fusion Reactor Controller, envía el combustible y activa el amplificador laser."
+				""
+				"Si lo hiciste bién, vas a ver que el reactor se va a activar!"
+			]
+			dependencies: ["73D64A04B09631BF"]
+			id: "32971E005FAA0751"
+			tasks: [
+				{
+					id: "41CC06BA5FCAB86E"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:hohlraum"
+						Count: 1b
+						tag: {
+							mekData: {
+								GasTanks: [{
+									Tank: 0b
+									stored: {
+										gasName: "mekanismgenerators:fusion_fuel"
+										amount: 10L
+									}
+								}]
+							}
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4150843403A5B0BA"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fusion_reactor_frame"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 2.5d
+			description: [
+				"Para crear una reacción en cadena en el Reactor para prenderse (como si fuera el encendedor) vamos a necesitar inyectarlo con un montón de energía. "
+				""
+				"Esto requiere que pongas muchos Lasers y todos necesitan ser energizados, después disparar 400 Millones de RF directamente a este Laser Focus Matrix."
+				""
+				"El Laser Focus Matrix se pone en el centro de una de las caras del Reactor de Fusión. Vamos a construir los Láseres más tarde."
+			]
+			dependencies: ["2E87C678F99CB09C"]
+			id: "658CC231C4C13692"
+			tasks: [{
+				id: "02B421B3DD0D6242"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:laser_focus_matrix"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: 2.5d
+			description: [
+				"La meta es hacer que cada laser apunte hacia el Amplificador de Laser (Laser Amplifier de la misión). Usando uno sólo es muy lento, así que vamos a hacer un par."
+				""
+				"En la imagen de abajo, podemos ver un ejemplo de como es que esto va a funcionar. Poniendoles energía directamente de una fuente de energía (como el Energy Cube) funciona, o también podés ponerle cables por doquier de tu generador de preferencia. Vas a necesitar darles un bloque de espacio vacío entre los laseres y el Amplificador de Laseres."
+				""
+				"El amplificador de Laser tiene un punto rojo en una de las caras. Acá es donde el laser va a ser disparado. Osea, que el punto rojo tiene que apuntar a el Laser Focus Matrix de el reactor"
+				""
+				"Asegurate de apagar el amplificador laser (o activa el control de redstone) y esperá a que guarde POR LO MENOS 400 millones de RF, y sólo entonces estará listo"
+				"{image:modpack:textures/fusion_laser1.png width:200 height:200 align:1}"
+			]
+			dependencies: ["658CC231C4C13692"]
+			id: "1189ED39C9618F54"
+			tasks: [
+				{
+					id: "445EE74392F215B0"
+					type: "item"
+					item: {
+						id: "mekanism:laser_amplifier"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6951E4E0668229D0"
+					type: "item"
+					item: {
+						id: "mekanism:laser"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3L
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 6.5d
+			description: [
+				"El Residuo nuclear puede ser enviado a una Isotopic Centrifuge para crear Plutonio."
+				""
+				"Enviando el Plutonio a una Pressurized Reaction Chamber va a darte Plutonium Pellets. Estos son usados para hacer el SPS."
+				""
+				"Nota: Esto va a crear un subproducto de Residuo nuclear gastado, el cual necesita ser enviado a un Barril de Residuo Nuclear (Waste barrel) para almacenarlo (y que se evapore con el tiempo)"
+			]
+			dependencies: ["295CB42D20BB5CC8"]
+			id: "097801454235686B"
+			tasks: [{
+				id: "112D827881BB3B43"
+				type: "item"
+				item: {
+					id: "mekanism:pellet_plutonium"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "engineersdecor:sign_radioactive"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 7.5d
+			y: 6.5d
+			description: [
+				"Vamos a pasar por todas las cosas una vez más para asegurarnos que todo esté listo antes de iniciarlo:"
+				""
+				"1. Armadura Hazmat (cuidate xfa)"
+				"2. Agua / algun tipo de refrigerante hacia algun Input port."
+				"3. Meter Fissile fuel a un Input port"
+				"4. Un puerto configurado para sacar el Refrigerante Calentado, puede ser tanto una Trashcan o una Turbina Industrial"
+				"5. Un puerto configurado para sacar el Residuo nuclear para enviarlo a Waste Barrels Radioactivos o máquinas para procesarlo"
+				""
+				"Si estás listo para iniciarlo, dale click al Botón ACTIVATE. Podés también ajustar el Burn Rate para producir más Residuo nuclear (a cambio de usar más coolant y otras cosas) pero primero empezá despacito."
+			]
+			dependencies: ["17883819E50D7BBB"]
+			id: "295CB42D20BB5CC8"
+			tasks: [{
+				id: "0324109805FDA306"
+				type: "checkmark"
+				title: "Iniciando el Reactor"
+			}]
+		}
+		{
+			title: "Como manejar el Residuo Nuclear"
+			x: 7.5d
+			y: 8.5d
+			description: [
+				"Una vez que empecemos a quemar Fissile Fuel en el reactor, vamos a obtener el Refrigerante Caliente y Residuo Nuclear."
+				""
+				"Acá es donde la Radiación entra. Siempre y cuando se mantenga de manera segura en algún contenedor o máquina. Nada se va a desparramar."
+				""
+				"La mejor manera de almacenar cualquier substancia Radioactiva es usando un Radioactive Waste Barrel. Estos van a guardar de manera segura el Residuo, mientras que lentamente diluyen el gas sin causar que la radiación se desparrame en el mundo. No querés que el Residuo Nuclear se mantenga en tu reactor, por que produce mucho calor, así que asegurate de tener un Port en Output para sacar el residuo y envialo a un barril de estos."
+				""
+				"Nota IMPORTANTE: Romper CUALQUIÉR máquina, barril, tubería o cualquier cosa que tenga Gas Radioactivo adentro va a causar un Desparramo de Radiación. Esto incluye productos de el residuo nuclear como lo son el Polonio y el Plutonio."
+				""
+				"Si se desparrama la radiación, todas las cosas en ese chunk quedarán infectadas de radiación, básicamente podés crear Chernobyl. (todo muere)"
+			]
+			dependencies: ["363345B8A530E263"]
+			id: "17883819E50D7BBB"
+			tasks: [{
+				id: "4AA3397B01FFE7EF"
+				type: "item"
+				item: {
+					id: "mekanism:radioactive_waste_barrel"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3L
+			}]
+		}
+		{
+			icon: {
+				id: "chisel:factory/hazard"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -3.5d
+			y: 8.5d
+			subtitle: "Requiere la misión NUCLEAR del capítulo Mekanism."
+			description: [
+				"Recapitulación: tenemos una Fábrica de Procesado de Ores usando varios Gases, maquinaria entre otros."
+				""
+				"En este capítulo, vamos a usar más de estos para crear poderosos Reactores (que son multibloques, osea estructuras que construis vos mismo) además de también maneras avanzadas de crear y guardar energía."
+				""
+				"Esto también nos va a llevar a hacer Polonium Buckets, los cuales son usados para hacer la Materia Oscura condensada, la cual te llevará a hacer tu primer Brigidium."
+				""
+				"Además de varios otros items que son de endgame y componentes de el Estabilizador Nuclear."
+			]
+			dependencies: ["0D11BC383AF11F3D"]
+			id: "6B9FC82FC1E234D6"
+			tasks: [{
+				id: "6E701EBAC6080AFD"
+				type: "checkmark"
+				title: "Mekanism: Nuclear."
+			}]
+		}
+		{
+			x: -4.5d
+			y: 9.5d
+			subtitle: "jaja me veo como un amogus"
+			description: [
+				"Para empezar nuestro camino hacia el mundo de los reactores, vamos a empezar haciendo el Fission Reactor. Estas estructuras que vamos a construir producen una cantidad exorbitante de calor al quemar Fissile Fuel. Este reactor no necesita producir energía por si sola, pero el calor generado puede ser usado para calentar el Refrigerante y ser usado para generar energía en una Turbina Industrial."
+				""
+				"El Fission Reactor puede ser MUY pegriloso (mui), ya que si se pone muy caliente ocurre un Meltdown que puede causar una Explosión nuclear, además de la conocida radiación esparciendose por 5 chunks a la redonda que dura muchas semanas de minecraft."
+				""
+				"Pero vamos a estar preparados para eso. Vamos a hacer esta Armadura Hazmat solo por las dudas okay?"
+			]
+			dependencies: ["6B9FC82FC1E234D6"]
+			id: "2E1EBE65DFE1E608"
+			tasks: [
+				{
+					id: "1F58CE276239CCB4"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_mask"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "110EB8CC1EFDBFA6"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_gown"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "3AEB375114460CF8"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "5CEB067F301A45DE"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Fission Reactor"
+			x: -3.5d
+			y: 10.5d
+			subtitle: "Los bordes y el cristal."
+			description: [
+				"Es hora de reunir los recursos que vamos a necesitar para construir el reactor."
+				""
+				"Justo como muchos de los Multibloques de Mekanism, los reactores pueden ser de diferentes tamaños personalizados a tus gustos y dependiendo de tus necesidades. Ellos deben ser en forma de Cubo, con el minimo por fuera siendo 3 de ancho, 4 de alto y 3 bloques de profundidad. El tamaño máximo es de 18x18x18, vamos a construir un 5x5x5 para empezar."
+				""
+				"Los bordes de la carcaza exterior deben ser de Fission Reactor Casings, mientras tanto cada cara del cubo puede ser entre Casings o Reactor Glass, Reactor Ports o hasta Reactor Logic Adapters. Pero más tarde te voy a enseñar para que sirve cada uno."
+				""
+				"Por ahora vamos a construir este básico 5x5x5 Fission Reactor"
+				""
+				"{image:modpack:textures/fission_1.png width:200 height:200 align:1}"
+				""
+				"Y Así se ve por dentro, por si tenés problemas al construirlo (arriba esta tapado de casings)"
+				""
+				"{image:modpack:textures/fission_2.png width:200 height:200 align:1}"
+			]
+			dependencies: ["2E1EBE65DFE1E608"]
+			id: "05BA9A03FD7E702C"
+			tasks: [
+				{
+					id: "74401875561DEC49"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_casing"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 53L
+				}
+				{
+					id: "07654793F8147CBE"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:reactor_glass"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 41L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 9.5d
+			subtitle: "si te preguntabas que había en el medio del reactor:"
+			description: [
+				"Adentro de reactor hay una serie de pilares usando varios bloques de Fission Fuel Assembly, con un sólo Control Rod Assembly puesto arriba de cada pilar. Estos pueden ponerse desde 1 a 15 bloques de altura, depending on the size of the reactor."
+				""
+				"Para esta parte, vamos a poner 2 Fission Fuel Assemblies en el centro de este multibloque y después poner el Control Rod Assembly justo arriba de este pilar como en esta foto:"
+				""
+				"{image:modpack:textures/fission_3.png width:200 height:200 align:1}"
+			]
+			dependencies: ["05BA9A03FD7E702C"]
+			id: "2F1889077CD3AA94"
+			tasks: [
+				{
+					id: "443BBD4F14E5FEB1"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_fuel_assembly"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "451A854FFE0E6C31"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:control_rod_assembly"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Entradas y Salidas"
+			x: -2.0d
+			y: 10.5d
+			description: [
+				"Para que nosotros metamos o saquemos cosas del Fission Reactor, vamos a necesitar Fission Reactor Ports. Estos Ports (O Puertos) pueden ser configurados para Input (Ingreso) y Output (Salida) con el Configurador (Herramienta)."
+				""
+				"Cada Fission Reactor necesita un minimo de 4 puertos."
+				""
+				"1x Input de Refrigerante"
+				"1x Output de Refrigerante"
+				"1x Input de Fissile Fuel"
+				"1x Output de el Residuo del Fissile Fuel"
+				""
+				"Para este reactor que tenemos, vamos a poner un puerto en cada lado como en la imagen de acá abajo. Asegurate de configurarlos para tengas lo mismo que en esta lista de Inputs y Outputs de acá arriba."
+				""
+				"{image:modpack:textures/fission_4.png width:200 height:200 align:1}"
+				""
+				"El verde es Input sólo, no importa cual de los dos sea, el Amarillo es Output de Waste y el Azul es Output de Refrigerante"
+			]
+			dependencies: ["05BA9A03FD7E702C"]
+			id: "1E24AD19974881FF"
+			tasks: [{
+				id: "4F48C5207D90A7E0"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:fission_reactor_port"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4L
+			}]
+		}
+		{
+			title: "Seguro de vida del reactor"
+			x: -2.0d
+			y: 11.5d
+			subtitle: "da miedito explotar un reactor >.<"
+			description: [
+				"Miedo de explotar tu Fission Reactor y lanzar un montón de radiación al aire? No te preocupes, todos estamos igual"
+				""
+				"Asi que, como podemos prevenir tal desastre catastrofico? Al crear un Circuit Breaker usando Fission Reactor Logic Adapters (Adaptadores Lógicos). "
+				"Con total sinceridad, estos no son 100% garantía de que no todo explote a la mierda, pero son bastante buenos tenerlos para mejorar tus posibilidades."
+				""
+				"Esencialmente, estos adaptadores nos dejan controlar el reactor usando Redstone. Con uno sólo, podés usar una palanca para prender y apagar el reactor. Pero de todas maneras, vamos a usarlos para control de daño."
+				""
+				"También podés ponerlos para dar una señal de redstone basados en ciertas condiciones adentro del Reactor, como el Daño Critico o Combustible Insuficiente. Esto es útil para crear un Circuit breaker y apagar el reactor si algunos de esos dos ocurren."
+			]
+			dependencies: ["05BA9A03FD7E702C"]
+			id: "2F0C81226E6FE965"
+			tasks: [{
+				id: "2D216151E5B4368E"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:fission_reactor_logic_adapter"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Circuit Breaker"
+			icon: "mekanismgenerators:fission_reactor_logic_adapter"
+			x: -2.0d
+			y: 12.5d
+			description: [
+				"Usando algunas mecánicas vanilla y 2 Fission Reactor Logic Adapters, nosotros podemos crear un simple Circuit Breaker para apagar automáticamente el reactor en caso de que las cosas se pongan calientes."
+				""
+				"Para esto vamos a necesitar 3 polvitos de redstone, un piston, algún bloque que tenga gravedad como la Arena o la Grava y un Observador."
+				""
+				"En una de las caras de nuestro Reactor vamos a poner dos Logic Adapters. uno Arriba y otro abajo como se muestra en la foto (con un bloque de distancia entre ellos)"
+				""
+				"Muy importante, el observador tiene que mirar hacia la arena, así da la señal de redstone hacia el Logic Adapter de arriba"
+				""
+				"Después de eso solamente ponemos la redstone para que conecte el observador de arriba con el Logic Adapter de Arriba y casi estamos listos!"
+				""
+				"Por último, solo necesitamos darle click derecho al Logic Adapter de abajo y ponerlo en \"Damage Critical\" cosa que cuando el reactor esté rompiendose, se apagará automáticamente envez de explotar."
+				""
+				"{image:modpack:textures/fission_5.png width:200 height:200 align:1}"
+				""
+				"También podemos ponerlo en \"Insufficient Fuel\" lo cual hace que si tiene poco combustible (como lo es el Fission Fuel) se apague automáticamente."
+			]
+			dependencies: ["2F0C81226E6FE965"]
+			optional: true
+			id: "48B3BA621118A4F2"
+			tasks: [
+				{
+					id: "24D40A7AC9F3BFD4"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_logic_adapter"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "7E82DDDDC001B53F"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "1886BF7CC6B62F72"
+					type: "item"
+					item: {
+						id: "minecraft:sand"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "59BDC8E86DB7DB7B"
+					type: "item"
+					item: {
+						id: "minecraft:piston"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "7DE9F78FA463CCA3"
+					type: "item"
+					item: {
+						id: "minecraft:observer"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "La interfaz del reactor"
+			icon: {
+				id: "mekanism:geiger_counter"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 0.0d
+			y: 10.5d
+			description: [
+				"Una vez que terminaras de construir el reactor, el mismo debería de darte unas partículas rojas alrededor, mostrando que lo construiste completamente."
+				""
+				"Le podés dar click derecho a cualquier parte de el reactor (menos los logic adapters) para abrir la Interfaz."
+				""
+				"La interfaz te va a mostrar toda la información que vas a necesitar para mantener tu reactor apropiadamente, además de también dos botones para tanto encender (Activate) como apagar el reactor (SCRAM)"
+				""
+				"A la izquierda vas a tener 2 tanques: Uno contiene el Refrigerante (en este caso agua) y el otro tiene el combustible (En este caso Fissile Fuel). A la derecha tenés dos tanques más, los cuales uno es Nuclear Waste (Residuo Nuclear) y Heated Coolant (Refrigerante Caliente, que en este caso es Vapor)."
+				""
+				"La Barra de Temperatura Verde de abajo te va a mostrar que tan Caliente está el Reactor. Después de cierta temperatura el reactor va a empezar a DAÑARSE, el cual puede eventualmente ocasionar una explosión nuclear masiva."
+				""
+				"Para ajustar el Burn Ratio (O que tan rápido utiliza Combustible) y ver más estadísticas podés clickear en el ícono ( i ) que sale a la izquierda. "
+				""
+				"Acá adentro, podés ajustar el Ratio que te dije, el cual exactamente controla que tanto combustible gasta el reactor por TICK del juego."
+				""
+				"{image:modpack:textures/fission_6.png width:200 height:170 align:1}"
+			]
+			dependencies: [
+				"2F1889077CD3AA94"
+				"1E24AD19974881FF"
+				"2F0C81226E6FE965"
+			]
+			id: "3CAEF52080A65201"
+			tasks: [{
+				id: "0E7349C3D204F05B"
+				type: "checkmark"
+				title: "Clickeame!"
+			}]
+		}
+		{
+			title: "Enfriando nuestro Reactor"
+			x: 0.0d
+			y: 12.0d
+			subtitle: "Que bloque más util"
+			description: [
+				"Cuando quemamos combustible como lo es Fissile Fuel, el mismo crea una cantidad absurda de calor. Para prevenir que el Reactor se convierta en Oppenheimer, vamos a necesitar asegurarnos de que esté bien refrigerado."
+				""
+				"La manera más fácil de hacer esto es dándole al reactor Agua de esta Sink en específico. La Sink de este mod nos da agua infinita de un bloque, elcual es MUY conveniente para esta situación."
+				""
+				"Saca agua de esta sink y metela en uno de los Puertos del reactor que esté configurado como Input (o verde) para llenar el reactor con Agua. "
+				""
+				"Por consecuencia de usar agua como refrigerante, cuando la misma se caliente se va a convertir en Vapor, el cual puede ser usado para generar energía con una Turbina Industrial (si querés aprobechar el agua perdida)"
+				""
+				"Sodio también puede ser usado para un refrigerante muchisimo más eficiente lo cuál te va a permitir usar Burn Ratios MUCHISIMO más altos y menores temperaturas en general."
+			]
+			dependencies: ["3CAEF52080A65201"]
+			id: "56CF94685B338075"
+			tasks: [{
+				id: "2E25A72E1BE8EF02"
+				type: "item"
+				item: {
+					id: "cookingforblockheads:sink"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Producción de Fissile Fuel"
+			x: 2.0d
+			y: 10.5d
+			description: [
+				"El Fission Reactor necesita su combustible, el cual es Fissile Fuel. Si buscas ahora mismo Fissile Fuel en el JEI, seguramente te vayas a perder con todas las cosas que necesitas para hacerlo. No te hagas ningún problema que papá powder (yo) te va a seguir en todo el trayecto."
+				""
+				"Todo se concentra en hacer Uranium Hexafluoride (Hexafluoruro de Uranio). Para esto vamos a concentrarnos en hacer estos dos gases:"
+				""
+				"Hydrofluoric Acid (Ácido Fluorhídrico)"
+				"Uranium Oxide (Óxido de Uranio, o también llamado Yellowcake)"
+			]
+			dependencies: ["3CAEF52080A65201"]
+			id: "6015DC86B54F3554"
+			tasks: [{
+				id: "3B64EF88BC4C5B3D"
+				type: "checkmark"
+				title: "click xfa uwu"
+			}]
+		}
+		{
+			title: "Yellowcake Uranium"
+			x: 3.0d
+			y: 12.0d
+			description: [
+				"Cada reactor usa uranio en algún momento para el combustible, no?"
+				""
+				"Para empezar, vamos a agarrar Uranium Ingots. Los vamos a procesar en una Enrichment CHamber para convertirlos en Yellow Cake Uranium"
+			]
+			dependencies: ["6015DC86B54F3554"]
+			id: "4E36871E1BC1460D"
+			tasks: [
+				{
+					id: "38465441B1EE2580"
+					type: "item"
+					item: {
+						id: "alltheores:uranium_ingot"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "3BBAACE6B9EA9A52"
+					type: "item"
+					item: {
+						id: "mekanism:yellow_cake_uranium"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Óxido de Uranio"
+			icon: {
+				id: "mekanism:chemical_oxidizer"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 5.0d
+			y: 12.0d
+			description: ["Una vez tengamos Yellow Cake Uranium, podemos mandarlo a través de un Chemical Oxidizer para crear el gas, Uranium Oxide (Óxido de Uranio)"]
+			dependencies: ["4E36871E1BC1460D"]
+			id: "2768EA45B41611EF"
+			tasks: [
+				{
+					id: "09DB93017DDB2C5B"
+					type: "item"
+					item: {
+						id: "mekanism:chemical_oxidizer"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0F2ECE081C0A0A26"
+					type: "item"
+					item: {
+						id: "mekanism:basic_chemical_tank"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Uranium Hexafluoride"
+			x: 6.0d
+			y: 10.5d
+			description: ["Usando Otro Chemical Infuser, vamos a combinar nuestro Hydrofluoric Acid con Uranium Oxide para hacer Uranium Hexafluoride."]
+			dependencies: [
+				"2768EA45B41611EF"
+				"5BDA33A89026A830"
+			]
+			id: "5854158EB101274D"
+			tasks: [{
+				id: "371ED63E3424E892"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_infuser"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Ácido Sulfurico"
+			x: 3.0d
+			y: 9.0d
+			subtitle: "Recapitulado"
+			description: [
+				"Deberías haber hecho Ácido sulfurico o Sulfuric acid en ingles para tu Fábrica de Procesado de Ores de Tier 4, pero acá hay un recordatorio de como se hacía."
+				""
+				"Conseguí Sulfur Dust de tanto Pulverizando en un Crusher Sulfuro de Thermal, o de Combinando Hydrogen Chloride con Pólvora en un Chemical Dissolution Chamber."
+				""
+				"También podés usar el ProjectE para clonar sulfuro, ya que el mismo tiene EMC. Te recomiendo esta manera (lo hice yo en mi playthrough para pasarme el modpack)"
+				""
+				"Toma tu Sulfur Dust y pasala por un Chemical Oxidizer para tener Sulfur Dioxide. Combiná eso con Oxígeno en un Chemical Infuser para tener Sulfur Trioxide."
+				""
+				"Después, vamos a combinar Water Vapor con el Sulfur Trioxide para hacer Sulfuric Acid."
+			]
+			dependencies: ["6015DC86B54F3554"]
+			id: "6541A4F3CA169715"
+			tasks: [{
+				id: "5EE1E05447C07692"
+				type: "item"
+				title: "Any #forge:dusts/sulfur"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:dusts/sulfur"
+					}
+				}
+			}]
+		}
+		{
+			title: "Ácido fluorhídrico"
+			x: 5.0d
+			y: 9.0d
+			description: [
+				"Vamos a agarrar nuestro Sulfuric Acid y combinarlo con Fluorita en un CHemical Dissolution Chamber para hacer Hydrofluoric Acid."
+				""
+				"Casi el último paso!!!"
+			]
+			dependencies: ["6541A4F3CA169715"]
+			id: "5BDA33A89026A830"
+			tasks: [
+				{
+					id: "3EFE5C4178009128"
+					type: "item"
+					item: {
+						id: "mekanism:fluorite_gem"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0DBB3BE97313D1F0"
+					type: "item"
+					item: {
+						id: "mekanism:chemical_dissolution_chamber"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Fissile Fuel"
+			x: 7.5d
+			y: 10.5d
+			subtitle: "Ultimo paso!!!!!!!"
+			description: ["Por último, vamos a pasar ese Uranium Hexafluoride en esta Isotropic Centrifuge para crear Fissile Fuel!"]
+			dependencies: ["5854158EB101274D"]
+			id: "363345B8A530E263"
+			tasks: [{
+				id: "7827DED802CEB86F"
+				type: "item"
+				item: {
+					id: "mekanism:isotopic_centrifuge"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Turbina industrial"
+			x: 9.5d
+			y: 8.5d
+			subtitle: "por que acá nada sobra"
+			description: [
+				"La Turbina industrial es un multibloque bastante grande que es usado para convertir el Refrigerante caliente en energía. El tamaño mínimo es el de 5x5x5 y el máximo es de 17x17x18"
+				""
+				"Para construir la Turbina, vamos a necesitar varios bloques así que empecemos desde el principio."
+				""
+				"De la misma manera que la mayoría de los multibloques de Mekanism, Los bordes deben ser de Turbine Casings. De todas maneras, en vez de usar Reactor Glass podés usar Structural Glass o más Casings para cada uno de los lados."
+				""
+				"{image:modpack:textures/turbina_cara.png width:200 height:210 align:1}"
+			]
+			dependencies: ["17883819E50D7BBB"]
+			id: "18DD3F33329C826C"
+			tasks: [
+				{
+					id: "23C5F849FC23961A"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_casing"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 52L
+				}
+				{
+					id: "123058E244FA3B81"
+					type: "item"
+					item: {
+						id: "mekanism:structural_glass"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 52L
+				}
+			]
+		}
+		{
+			title: "Tu turbina por dentro"
+			x: 11.0d
+			y: 8.5d
+			description: [
+				"Los Turbine Rotors se ponen en el medio de la Turbina. Por Cada Turbine Rotor, vas a necesitar 2 Turbine Blades. Para esta turbina, vamos a usar 3 Rotors."
+				""
+				"Mientras que mirás al rotor, dale click derecho con las turbinas para ponerlas directamente en el. Cuanto más grande sea la cadena de Rotors, más grande se van a hacer las Turbine Blades. "
+				""
+				"Para nuestra turbina industrial vamos a usar 6 Blades. Si planeas construir una turbina más grande, vas a necesitar subir la anchura de la turbina dependiendo de cuantas Blades planeas usar."
+				""
+				"El Rotational Complex debe ser puesto justo arriba del primer Rotor. El mismo Rotational Complex es rodeado de pressure Dispensers."
+				""
+				"Los Dispensers deben llenar todos los lados en donde está el Rotational Complex. (Foto ejemplo abajo)"
+				""
+				"{image:modpack:textures/turbina_afuera.png width:200 height:200 align:1}"
+				"esto es como se debería ver en capas la turbina, pero no como se debería ver completado."
+				""
+				"Completado sería que sea completamente cúbico y cerrado, así:"
+				""
+				"{image:modpack:textures/turbina_completada.png width:200 height:200 align:1}"
+			]
+			dependencies: ["18DD3F33329C826C"]
+			id: "423C513E378BFC44"
+			tasks: [
+				{
+					id: "2B0137069CCDFDA3"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_rotor"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "0DEDE8210705702E"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:rotational_complex"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1C6553D41230E2D3"
+					type: "item"
+					item: {
+						id: "mekanism:pressure_disperser"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "7D5F7E2FEE1F4331"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_blade"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 6L
+				}
+			]
+		}
+		{
+			title: "Los puertos"
+			x: 11.0d
+			y: 7.0d
+			description: [
+				"Las Turbine Valves son usadas para meter el Vapor, además de sacar la energía que la Turbina misma genera."
+				""
+				"Las Turbine Vents son usadas para sacar el exceso de agua cuando usas los Saturating Condensers. De otra manera, estos ayudan a mejorar el flujo de vapor dentro de la turbina. El número total de Vents también limite total de el Flujo de Vapor."
+				""
+				"Los Saturating Condensers son usados para convertir el Vapor devuelta a Agua. Estos son puestos arriba o por encima de la capa que contiene los Electromagnetic Coils (cositos con bordes negros y punto amarillo)."
+			]
+			dependencies: ["18DD3F33329C826C"]
+			id: "7755650A7418D3FC"
+			tasks: [
+				{
+					id: "13C4E1706651BE4F"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_valve"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "630873AC452A02C4"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_vent"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 24L
+				}
+				{
+					id: "1F8084D23ACB1B3E"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:saturating_condenser"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 9L
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 10.0d
+			description: [
+				"La Electromagnetic Coil es puesta directamente arriba de el Rotational Complex (visto en la imagen abajo) para convertir la energía kinetica en energía."
+				""
+				"Podés usar multiples, 7 siendo el máximo, de estas magnetic coils con una turbina usando 28 blades. Estos deben o tocar otra Magnetic Coil adyacente, o el Rotational Complex."
+				"{image:modpack:textures/turbina_afuera.png width:200 height:200 align:1}"
+			]
+			dependencies: ["18DD3F33329C826C"]
+			id: "44460ADE2EE47FC2"
+			tasks: [{
+				id: "3B53FF354F9C11A0"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:electromagnetic_coil"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Creando energía con tu turbina!"
+			x: 12.5d
+			y: 8.5d
+			description: [
+				"Si ya construiste la Turbina apropiadamente. Dandole click derecho a la turbina va a abrir su interfaz."
+				""
+				"Esto va a decirte toda la información que vayas a necesitar saber, incluyendo el total de Flujo de Vapor, además de el total de Vapor adentro de la turbina."
+				""
+				"A la derecha, vas a tner una barrita que te va a mostrar la energía que está guardada adentro de la Turbina. Si la misma se llena, la turbina se va a apagar, a no ser que le pongas el modo Vent Overflow (que básicamente hace que elimine el sobrante)."
+				""
+				"Vamos a poner esta turbina en marcha"
+				""
+				"Una vez que tengas tu Fission Reactor funcionando, mové el vapor directamente hacia la Turbine Valve (la Válvula de la turbina) en tu Turbina. Siendo que estamos usando Saturating Condensers en esta construcción, vamos a poder sacar agua de la Turbine Vent devuelta hacia tu reactor si lo deseas."
+			]
+			dependencies: [
+				"44460ADE2EE47FC2"
+				"423C513E378BFC44"
+				"7755650A7418D3FC"
+			]
+			id: "5AE85291396E2AB3"
+			tasks: [{
+				id: "290B3060DB5578BC"
+				type: "item"
+				item: {
+					id: "mekanismgenerators:turbine_casing"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+}

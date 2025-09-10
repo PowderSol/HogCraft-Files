@@ -1,0 +1,407 @@
+{
+	id: "46AEE70CB0048C39"
+	group: "5CB5B5C458868902"
+	order_index: 2
+	filename: "evilcraft"
+	title: "Evilcraft"
+	icon: "evilcraft:dark_gem"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "La reina grimhilde?"
+			x: -7.0d
+			y: -0.5d
+			subtitle: "BLANCANIEVESSSS¿"
+			description: ["Craftea la manzana podrida, y dale comer a cualquier mob no hostil esa misma. De el resultado (que es como un portal raro), tirá un libro a esa anomalía para obtener el libro del mod. "]
+			dependencies: ["2CB784E3E7870B48"]
+			optional: true
+			id: "7BB25D8C0F1ECAC2"
+			tasks: [
+				{
+					id: "502A130DDE438B65"
+					type: "item"
+					item: "evilcraft:darkened_apple"
+				}
+				{
+					id: "65B880CC79EBE0CD"
+					type: "item"
+					item: "evilcraft:origins_of_darkness"
+				}
+			]
+		}
+		{
+			title: "Miedo a las agujas"
+			x: -5.0d
+			y: -0.5d
+			subtitle: "nope "
+			description: [
+				"Craftea una jeringa. Dejala en tu inventario y matá algunos mobs hostiles. Si necesitas guardar más sangre en la jeringa, craftea dos y juntalas para que tengan el doble de capacidad."
+				""
+			]
+			dependencies: [
+				"7BB25D8C0F1ECAC2"
+				"2CB784E3E7870B48"
+			]
+			hide: false
+			dependency_requirement: "one_completed"
+			id: "12902CEDB8DEB58C"
+			tasks: [{
+				id: "13B9A6FB18130529"
+				type: "item"
+				item: {
+					id: "evilcraft:blood_extractor"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Mejorando"
+			x: -3.0d
+			y: -0.5d
+			subtitle: "demasiada sangre para mi gusto"
+			description: [
+				"Hace un espacio en el piso que pueda guardar 5 bloques de liquido (tienen que estar juntos), después dale click derecho con la jeringa para poner la sangre en cada uno de esos espacios y después rápido antes que se solidifique la sangre, tirá una gema oscura para hacer una gema oscura mejorada."
+				""
+				"Ahora poné los mismos 5 cubos de sangre devuelta (capas que vayas a necesitar una jeringa más grande o multiples jeringas) pero esta vez dejá que se solidifiquen. Miná los bloques que quedaron con un mechero (si, no me preguntes por que pero tiene que ser un mechero si o si) o toque de seda para los fragmentos de sangre. Si los minaste con toque de seda, podés quemar el restante para tener los fragmentos igual. Ahora usá los fragmentos y la gema para tener tu primer Núcleo de infusión de sangre (o blood infusion core). "
+			]
+			dependencies: ["12902CEDB8DEB58C"]
+			id: "2CFF93267CCB620C"
+			tasks: [
+				{
+					id: "2591880DD05E6FF3"
+					type: "item"
+					item: "evilcraft:dark_power_gem"
+				}
+				{
+					id: "26C69C04D54B186A"
+					type: "item"
+					item: "evilcraft:hardened_blood_shard"
+					count: 8L
+				}
+				{
+					id: "30AE71398D8E5881"
+					type: "item"
+					item: "evilcraft:blood_infusion_core"
+				}
+			]
+		}
+		{
+			title: "cofre y horno de carne?"
+			x: -3.0d
+			y: -2.0d
+			subtitle: "que asco me da este mod aveces"
+			description: ["Solamente usá lo que crafteaste antes, bastante simple"]
+			dependencies: ["2CFF93267CCB620C"]
+			id: "19D482DC635AA54A"
+			tasks: [
+				{
+					id: "20F827A26664C013"
+					type: "item"
+					item: {
+						id: "evilcraft:blood_infuser"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "298502360709D5DE"
+					type: "item"
+					item: {
+						id: "evilcraft:blood_chest"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "como las promesas de ella....."
+			x: -3.0d
+			y: -3.5d
+			subtitle: "súbete vamos al psicologo"
+			description: ["Cuando se usa el bol de promesas vacías podés craftear los Tenacity Cores."]
+			dependencies: ["19D482DC635AA54A"]
+			id: "1B5D7089474C454B"
+			tasks: [
+				{
+					id: "1CAEC46979118F4A"
+					type: "item"
+					item: "evilcraft:bowl_of_promises_empty"
+				}
+				{
+					id: "2E2BFAAF60B75366"
+					type: "item"
+					item: "evilcraft:bowl_of_promises_dusted"
+				}
+				{
+					id: "4FA95D2E55276F16"
+					type: "item"
+					item: "evilcraft:bowl_of_promises_tier0"
+				}
+				{
+					id: "019BF10236AAC8AE"
+					type: "item"
+					item: "evilcraft:promise_acceptor_iron"
+				}
+				{
+					id: "21EAF91B6ABD5A61"
+					type: "item"
+					item: "evilcraft:promise_tier_1"
+				}
+			]
+		}
+		{
+			title: "Un cofre mas grande de lo usual"
+			x: -5.0d
+			y: -3.5d
+			subtitle: "gigante"
+			description: ["el crafteo necesita una promesa de tenacidad nivel 2."]
+			dependencies: ["44728DC2754E3738"]
+			id: "3C939097515156A7"
+			tasks: [{
+				id: "0D8ADB4B7721CDE6"
+				type: "item"
+				item: {
+					id: "evilcraft:colossal_blood_chest"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Arbol Sangriento"
+			x: -5.0d
+			y: -2.0d
+			subtitle: "yuck"
+			description: ["Pone un arbusto muerto en el blood infuser con la sangre correspondiente, el mismo crece en netherrack (piedra del nether). Lo que queremos es la madera."]
+			dependencies: ["19D482DC635AA54A"]
+			id: "44728DC2754E3738"
+			tasks: [{
+				id: "48D89A33A7CC8174"
+				type: "item"
+				item: "evilcraft:undead_sapling"
+			}]
+		}
+		{
+			title: "Sacando encantamientos pero con mi sangre yippie!!!"
+			x: -1.5d
+			y: -0.5d
+			subtitle: "con sudor y lagrimas (y sangre)"
+			description: [
+				"El purificador puede desencantar los items con sangre básicamente."
+				""
+				"Para esto necesitas poner el item en cuestión, un Blook (que es un Libro con sangre del mod) y que el Purificador esté lleno"
+				""
+				"Después solamente le haces click derecho con los items correspondientes y pum, te saca un encantamiento de el item en cuestión."
+				""
+				""
+				"PD: Elige de manera aleatoria que encantamiento sacar del item."
+			]
+			dependencies: ["2CFF93267CCB620C"]
+			id: "3DBA37226F4A54D4"
+			tasks: [{
+				id: "34486C8D829BCDF7"
+				type: "item"
+				item: {
+					id: "evilcraft:purifier"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Spiritus chacarreros 101"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "uUuUuUUuUUUuuuu"
+			description: [
+				"Abrir la caja libera al espiritu de venganza."
+				"El anillito de venganza chico te deja ver al espiritu. El más grande te deja stunearlo y atraerlo a vos para meterlo a una caja abierta del eternal closure. y el piercing simplemente mata al espiritu."
+			]
+			dependencies: ["19D482DC635AA54A"]
+			id: "72D78F3C577A549C"
+			tasks: [
+				{
+					id: "41528F067F755624"
+					type: "item"
+					item: "evilcraft:vengeance_essence"
+				}
+				{
+					id: "2A9FE7E738D046C7"
+					type: "item"
+					item: "evilcraft:box_of_eternal_closure"
+				}
+				{
+					id: "5CE47E562482C579"
+					type: "item"
+					item: "evilcraft:vengeance_essence_materialized"
+				}
+				{
+					id: "7C40F448EABEC5F8"
+					type: "item"
+					item: "evilcraft:garmonbozia"
+				}
+				{
+					id: "29F03FA2705749D3"
+					type: "item"
+					item: "evilcraft:vengeance_ring"
+				}
+				{
+					id: "0BCAC01D9EDE0BA9"
+					type: "item"
+					item: "evilcraft:vengeance_focus"
+				}
+				{
+					id: "79EBBE336F452F2E"
+					type: "item"
+					item: "evilcraft:piercing_vengeance_focus"
+				}
+			]
+		}
+		{
+			title: "Picota vengativa"
+			x: 0.0d
+			y: -3.5d
+			subtitle: "Por que decir pico me puede cancelar... no para no queria decir-"
+			description: ["Básicamente fortuna 5 gratis, solamente tratá de sacarle el efecto malo con un purificador y te queda una picota dptm"]
+			dependencies: ["72D78F3C577A549C"]
+			id: "1B2F756322F1DAC6"
+			tasks: [{
+				id: "2B8FC672800B8B92"
+				type: "item"
+				item: {
+					id: "evilcraft:vengeance_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								lvl: 3s
+								id: "evilcraft:vengeance"
+							}
+							{
+								lvl: 5s
+								id: "minecraft:fortune"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Carne fresca"
+			x: 2.0d
+			y: -2.0d
+			subtitle: "que asco pero que rico"
+			description: [
+				"Básicamente source de comida infinita, siempre y cuando tengas comida."
+				""
+				"PD: También funciona en Origenes que tienen una dieta específica."
+			]
+			dependencies: ["72D78F3C577A549C"]
+			id: "0EAE5E9A415DF373"
+			tasks: [{
+				id: "5909159343D8444E"
+				type: "item"
+				item: {
+					id: "evilcraft:flesh_rejuvenated"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Promesa de tenacidad 3"
+			x: -3.0d
+			y: -5.0d
+			subtitle: "las mejoras"
+			dependencies: ["1B5D7089474C454B"]
+			id: "7FE97CD6AE3C8DBF"
+			tasks: [
+				{
+					id: "3C5611540DAE62CC"
+					type: "item"
+					item: "evilcraft:promise_tier_3"
+				}
+				{
+					id: "74D4684C2129EB0C"
+					type: "item"
+					item: "evilcraft:promise_efficiency_0"
+				}
+				{
+					id: "2F84E7EBFB26E6D3"
+					type: "item"
+					item: "evilcraft:promise_speed_0"
+				}
+			]
+			rewards: [{
+				id: "096C9525549BA349"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			subtitle: "rompe MUCHOS BLOQUES "
+			dependencies: ["72D78F3C577A549C"]
+			id: "63F88A33F800655B"
+			tasks: [{
+				id: "513FE42D81E407C7"
+				type: "item"
+				item: {
+					id: "evilcraft:mace_of_destruction"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			subtitle: "Aplica el efecto de la poción que desees"
+			dependencies: ["72D78F3C577A549C"]
+			id: "250F57F46AF6C45C"
+			tasks: [{
+				id: "3C1C6AE47D3277EA"
+				type: "item"
+				item: {
+					id: "evilcraft:primed_pendant"
+					Count: 1b
+					tag: {
+						inventoryItem: [ ]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			subtitle: "Te deja ver el mundo espiritual"
+			dependencies: ["72D78F3C577A549C"]
+			id: "7181CB2CD93675ED"
+			tasks: [{
+				id: "0CE1084A71409098"
+				type: "item"
+				item: {
+					id: "evilcraft:spectral_glasses"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+}

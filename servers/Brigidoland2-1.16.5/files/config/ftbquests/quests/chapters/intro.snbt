@@ -1,0 +1,995 @@
+{
+	id: "4133DF3D1CAF76EC"
+	group: ""
+	order_index: 0
+	filename: "intro"
+	title: "Intro"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Inicio"
+			x: -5.0d
+			y: 0.5d
+			subtitle: "¡Bienvenido a Brigidoland 2!"
+			description: [
+				"Esta pequeña línea de misiones te va a dar un pequeño tutorial de como utilizar los mods al mismo tiempo que estás jugando tu gameplay normal de minecraft."
+				""
+				"Esta guía NO ES ABSOLUTA, hay muchas cosas que no explico o que no muestro pero siguen estando en el mod:"
+				""
+				"Curiosea con los mods!"
+			]
+			id: "06F60E8047559447"
+			tasks: [{
+				id: "25948BF5738E43BF"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			title: "a laburar"
+			x: -2.5d
+			y: 0.5d
+			subtitle: "Minecraft vanilla?"
+			description: [
+				"Por ahora todo relativamente normal, un par de biomas por acá unas gaviotas por allá pero bastante de chill por ahora"
+				""
+				"Haceme una mesa de crafteo primero :3"
+			]
+			dependencies: ["06F60E8047559447"]
+			id: "4C9D40BE2054AFE1"
+			tasks: [{
+				id: "46246B8A6347A256"
+				type: "item"
+				title: "Any #forge:workbenches"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:workbenches"
+					}
+				}
+			}]
+		}
+		{
+			title: "Mi mayor enemigo, trabajar."
+			x: 0.0d
+			y: 0.5d
+			subtitle: "Pico, pico, domestico- Cierro pico, aplico- desde el hala"
+			description: ["Solamente muestro la progresión normal de minecraft básicamente, conseguime 8 de cobble para un horno"]
+			dependencies: ["4C9D40BE2054AFE1"]
+			id: "71BC737A1A9F44BE"
+			tasks: [{
+				id: "2532561775D8FA21"
+				type: "item"
+				title: "Any #forge:cobblestone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				count: 8L
+			}]
+		}
+		{
+			title: "Mi mayor enemigo, trabajar. Parte 2"
+			x: 4.0d
+			y: 0.5d
+			subtitle: "PICO- chico, sueno desde puerto rico- el micro- mi trabajo doméstico. Soy un gordo pico y pala"
+			description: [
+				"Veo que te estás aclimatizando un poco al pack"
+				""
+				"Eso o simplemente jugas minecraft vanilla sin darte cuenta que existían las quests hasta que alguien más te lo dijo"
+				""
+				"Pero el punto es que, ahora mismo necesitas un horno para tus inicios."
+				""
+				""
+				"Y de paso te digo que desbloqueas con este propio horno"
+			]
+			dependencies: ["71BC737A1A9F44BE"]
+			id: "22729481A5E0283A"
+			tasks: [{
+				id: "07F5D63C991C5E15"
+				type: "item"
+				item: {
+					id: "minecraft:furnace"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "RFTools"
+			x: 4.0d
+			y: 2.5d
+			subtitle: "Bienvenido a RFTools!"
+			description: [
+				"RFTools, mod multiuso por así decirlo."
+				""
+				"Querés tener muchos items en un solo lugar y no tenés ni idea de como se usa el refined storage O simplemente no tenés los recursos todavía?"
+				"Querés autocraftear objetos de manera simple y compacta?"
+				"Querés teletransportarte a casa sin el /home?"
+				"Querés usar lógica de redstone SUPERCOMPLEJA?"
+				""
+				"Entonces este mod es para vos."
+			]
+			dependencies: ["22729481A5E0283A"]
+			id: "75B913CC92B21FC6"
+			tasks: [{
+				id: "5B0570221061557F"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			title: "Mekanism!"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "DANGER DANGER DANGER."
+			description: [
+				"Bienvenido a MEKANISM, un mod SUPER complicado pero al mismo tiempo SUPER SIMPLE"
+				""
+				"Querés tener un horno industrial comprimido en un solo bloque?"
+				"Querés QUINTUPLICAR los ores que conseguis en la mina?"
+				"Querés tener un jetpack o una MULTIHERRAMIENTA (espada, picota, hacha y pala en uno) que gasta energía envez de durabilidad (Y no se rompe!)"
+				"QUERÉS HACER UN REACTOR NUCLEAR REAL QUE PROBABLEMENTE DEJE LA MIERDA EN TODOS LOS CHUNKS ALREDEDOR DE TU CASA?"
+				""
+				"este mod definitivamente es para vos."
+			]
+			dependencies: ["22729481A5E0283A"]
+			id: "53E96999DD0357CF"
+			tasks: [{
+				id: "7A48C9A8063A3C3F"
+				type: "item"
+				item: "alltheores:osmium_ingot"
+			}]
+		}
+		{
+			title: "Botania"
+			icon: {
+				id: "botania:lexicon"
+				Count: 1b
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
+			x: -1.0d
+			y: -0.5d
+			subtitle: "Las flores pero tan giga op"
+			description: [
+				"Bienvenido a Botania!"
+				""
+				"Querés volar tipo creativo?"
+				"Generar MANÁ y pelear contra tu sombra?"
+				"Querés disparar rayos de espadas tipo la terra-blade de terraria?"
+				"O quizá querés una picota giga op que gasta maná envez de durabilidad?"
+				""
+				"Entonces este mod es para vos"
+			]
+			dependencies: ["71BC737A1A9F44BE"]
+			id: "47CE515BBF45C649"
+			tasks: [{
+				id: "55D5C59BC26302E3"
+				type: "item"
+				title: "Any #botania:mystical_flowers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+			}]
+		}
+		{
+			title: "Mystical agriculture semi desbloqueado?"
+			icon: {
+				id: "mysticalagriculture:master_infusion_crystal"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 1.0d
+			y: -0.5d
+			subtitle: "Bienvenido a Mystical Agriculture!"
+			description: [
+				"Mystical agriculture, el mejor amigo de el vago."
+				""
+				"Querés dejar de bajar a la mina?"
+				"Querés dejar de farmear mobs?"
+				"Querés NETHER STARS INFINITAS?"
+				"este mod es definitivamente para vos."
+				""
+				"Cosa importante:"
+				"Para hacer que funcione solamente poné el altar en el mundo y pone lo demás en su lugar correspondiente."
+				""
+				"Para que funcione el crafteo el ALTAR tiene que tener una señal de redstone (podés poner un bloque de redstone abajo y solucionado.)"
+			]
+			dependencies: ["71BC737A1A9F44BE"]
+			id: "2C32D7D59510075C"
+			tasks: [
+				{
+					id: "26113CE953150DD9"
+					type: "item"
+					item: "mysticalagriculture:infusion_pedestal"
+					count: 8L
+				}
+				{
+					id: "31C338085CADAF30"
+					type: "item"
+					item: "mysticalagriculture:infusion_altar"
+				}
+			]
+		}
+		{
+			title: "Botany pots!"
+			x: 6.0d
+			y: 1.5d
+			subtitle: "el rincón del vago"
+			description: [
+				"Botany pots, un mod de vagos para vagos."
+				""
+				"Tardan mucho las semillas de mystical agriculture en crecer?"
+				"no querés esperar mucho para que crezca aleatoriamente la semilla de trigo?"
+				"o simplemente no querés hacer un sistema de pistones para sacar automaticamente el trigo/caña de azucar/ cualquier comida base de minecraft"
+				""
+				"Este mod es para vos."
+				""
+				"Usa tierra, la semilla a elección y una Hoppery botany pot y vas a ver la magia de la automatización (necesita un inventario por debajo, como por ejemplo un cofre o un drawer)"
+			]
+			dependencies: ["22729481A5E0283A"]
+			id: "65E1A1F6771DB3A4"
+			tasks: [{
+				id: "26944159DFAAA4E2"
+				type: "item"
+				title: "Any #botanypots:botany_pots"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botanypots:botany_pots"
+					}
+				}
+			}]
+		}
+		{
+			title: "Mi mayor enemigo, trabajar. Parte 3"
+			x: 8.0d
+			y: 0.5d
+			subtitle: "Pico y pala, pico y pala, pico y pala pero gritando \"Libertad\" como william WALLACE"
+			description: [
+				"De lunes a domingo voy todo viciado"
+				"La antorcha prendida luz por todos lados"
+				"Picando y picando y yo no te eh encontrado"
+				"Las manecillas giran ya hay zombies sonando"
+				""
+				"Bajandome la vida y no voy ni armado"
+				"Bebiendome la leche a sorbos y a tragos"
+				"Te vi así de frente que tremendo impacto, la Picarte un poquito dime."
+				"Si hay que ser minero"
+				"Romper el pico en el hierro"
+				"No importa el creeper que venga pa que sepas que te quiero"
+				"Como un buen minero, me juego la vida por tiiiii."
+			]
+			dependencies: ["22729481A5E0283A"]
+			id: "2F4697EB42978F15"
+			tasks: [{
+				id: "1A98003181C95AE6"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			title: "Campeón del Twilight"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: 9.5d
+			y: -1.0d
+			subtitle: "Traeme las lagrimas del UR-Ghast y la sangre de la Hydra. (Usar los Logros para ver la progresión)"
+			description: [
+				"Vas a necesitar traerme varias cosas de esta dimensión, pero primero vas a tener que hacer el portal"
+				""
+				"Para el mismo, hacé un 2x2 de agua infinita y rodealo con cualquier flor de minecraft vanilla"
+				""
+				"Luego, alejate y un poco y tirá un diamante en el mismo."
+				""
+				"Si cayó un rayó, felicidades el portal del Twilight forest fue creado con éxito, solo saltá adentro y vas a entrar."
+			]
+			dependencies: ["2F4697EB42978F15"]
+			id: "5993A33FE228F212"
+			tasks: [
+				{
+					id: "349A89099BFB5B8A"
+					type: "dimension"
+					dimension: "twilightforest:twilightforest"
+				}
+				{
+					id: "1B671716CBEA47E2"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_blood"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "65F79961D89EB583"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_tears"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Create: Desbloqueado!"
+			x: -3.5d
+			y: 1.5d
+			subtitle: "Tecnología básica"
+			description: ["Felicidades, desbloqueaste la pestaña del mod CREATE, para más información entra al capítulo de Tecnología \"Create\""]
+			dependencies: ["4C9D40BE2054AFE1"]
+			id: "297D923C92DE066D"
+			tasks: [{
+				id: "5E757085D31CAB88"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "Evilcraft!"
+			icon: "evilcraft:dark_gem"
+			x: 0.0d
+			y: -1.0d
+			subtitle: "TURBIO"
+			dependencies: ["71BC737A1A9F44BE"]
+			id: "2CB784E3E7870B48"
+			tasks: [{
+				id: "7A25A40207714243"
+				type: "item"
+				item: "evilcraft:dark_gem"
+			}]
+		}
+		{
+			title: "Campeón del Undergarden"
+			icon: "undergarden:forgotten_nugget"
+			x: 6.5d
+			y: -1.0d
+			subtitle: "Encuentra al Guardian Olvidado y asesinalo."
+			description: [
+				"Bienvenido al Undergarden, para entrar a la dimensión simplemente podés hacer un portal del nether común pero envez de obsidiana usá Bloques de ladrillos de piedra y luego prendelos con este catalyst que te hiciste."
+				""
+				""
+				""
+				"Tenés que encontrar al Guardián olvidado. El mismo se encuentra en fortalezas ubicadas en la capa 30."
+				""
+				"Mucha suerte, y mucho cuidado. los niveles en esta dimensión son más altos de lo normal."
+			]
+			dependencies: ["2F4697EB42978F15"]
+			id: "17941E857FBBFCA7"
+			tasks: [{
+				id: "4FB600BE8EB04973"
+				type: "item"
+				item: "undergarden:catalyst"
+			}]
+		}
+		{
+			title: "Tinker's Construct!"
+			x: -2.5d
+			y: -1.0d
+			subtitle: "Quemando de eso a aquello"
+			description: [
+				"Mod MUY básico. Podés quemar el hierro y multiplicarlo, hacer herramientas irrompibles o hasta una buena resortera para saltar muy alto!"
+				""
+			]
+			dependencies: ["4C9D40BE2054AFE1"]
+			id: "6461D4B9BDB2A5D2"
+			tasks: [{
+				id: "3232FC234662BF1D"
+				type: "item"
+				title: "Any #tconstruct:tables"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:tables"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4B307CB4BCE2BB36"
+				type: "item"
+				item: {
+					id: "tconstruct:materials_and_you"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "AHHH, MOSQUITOS LPTM SALI"
+			icon: "minecraft:netherrack"
+			x: 10.5d
+			y: 0.5d
+			subtitle: "Mucho cuidado de los crimson forests. "
+			description: [
+				"Hay varias cosas en esta dimension que son nuevas, una de ellas son los Mosquitos carmesí."
+				"Mosquitos gigantes que siempre están en enjambres, que te saltan a la cara para hacerte daño. Poco daño, pero a mi me asustan mucho."
+				""
+				""
+				"Ah y también mucho cuidado con los lagos de lava, existen las serpientes de huesos."
+			]
+			dependencies: ["2F4697EB42978F15"]
+			id: "45D10979B9B94E64"
+			tasks: [{
+				id: "05975CAC7DCB4740"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			title: "Refined Storage"
+			icon: "refinedstorage:controller"
+			x: 10.5d
+			y: 2.5d
+			subtitle: "POR FÍN- DIOS."
+			description: [
+				"Bienvenido a Refined storage"
+				""
+				""
+				"Querés automatizar todas las cosas en este modpack? (desde maquinas simples como hornos hasta cosas super complejas como automatizar maná)"
+				"Querés guardar casi INFINITOS items en un solo lugar?"
+				"Querés guardar fluidos INFINITOS en un solo lugar?"
+				"QUERÉS TENER TODO ORDENADO Y CRAFTEAR SOLO CON 2 CLICKS?"
+				""
+				"este mod es definitivamente para vos, para mi y para toda la familia."
+				""
+				""
+				"En serio, es muy bueno. Cuando antes lo uses, mejor. Me lo vas a agradecer un montón a la larga."
+			]
+			dependencies: ["45D10979B9B94E64"]
+			id: "6A227BB32697C2A7"
+			tasks: [{
+				id: "149A872DC88BDEBD"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+			}]
+		}
+		{
+			title: "AY QUEMA"
+			x: 13.0d
+			y: 0.5d
+			subtitle: "APAGALO BOLUDO ME TOY QUEMANDO"
+			description: ["vas a necesitarlo para los ojos de enderman y para MUCHISIMAS cosas más. "]
+			dependencies: ["45D10979B9B94E64"]
+			id: "7D45C5A0178F49D9"
+			tasks: [{
+				id: "21642B46D9245D3C"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+		}
+		{
+			title: "Thermal Series"
+			x: 3.0d
+			y: 2.0d
+			subtitle: "Mekanism, pero mucho más simple"
+			description: [
+				"Querés tener varias cosas del mekanism, pero se te hace muy complicado?"
+				""
+				"No te preocupes! este mod es muchisimo más simple y sólamente 10% menos efectivo!"
+				""
+				"Crea baterias para cargar todos los items de tu inventario que necesiten energía"
+				"O utilizá el induction smelter para tener una smeltery en miniatura! "
+				"y mucho más!"
+				""
+				""
+				""
+				"Lo más simple que vas a encontrar en cuanto a maquinaria."
+			]
+			dependencies: ["22729481A5E0283A"]
+			id: "2D9ED3F4810D27A7"
+			tasks: [{
+				id: "7DED9C2E7142422C"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			title: "Industrial foregoing!"
+			x: 5.0d
+			y: 2.0d
+			subtitle: "la revolución industrial y sus consecuencias:"
+			description: [
+				"Industrial foregoing, mod de completa automatización, medianamente complejo pero demasiado util"
+				""
+				"Querés atrapar mobs en una safari net y llevartelos en tu inventario?"
+				"Querés hacer granjas de mobs automáticas pero todavía no podes usar el mob grinding utils?"
+				"Querés automatizar matar al wither?"
+				""
+				"o simplemente querés un spawner automático, controlado y eficiente? (que usa energía y una safari net de tu elección)"
+				""
+				"Entonces este mod es para vos!"
+			]
+			dependencies: ["22729481A5E0283A"]
+			id: "413DD8623FD3A815"
+			tasks: [{
+				id: "34C4F4DA82E1D7EA"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			title: "ojo eh"
+			x: 15.5d
+			y: 0.5d
+			subtitle: "ooojiiiito"
+			description: ["vamos a empezar con 5 ojos de ender, pero probablemente necesites 12 o más para prender el portal"]
+			dependencies: ["7D45C5A0178F49D9"]
+			id: "736888AD266DA690"
+			tasks: [{
+				id: "3C6666449A0B27F0"
+				type: "item"
+				item: "minecraft:ender_eye"
+				count: 5L
+			}]
+		}
+		{
+			title: "La Piedra filosofal"
+			x: 8.0d
+			y: -2.5d
+			subtitle: "PROJECT E, ACTIVADO."
+			description: [
+				"Uno de los mods más op que existen en este modpack."
+				""
+				"Querés volar infinitamente?"
+				"Querés bloques infinitos como si estuvieras en creativo?"
+				"Querés poder tener todo lo que quieras y más en un solo bloque guardado permanentemente en tu jugador envez de un cofre?"
+				""
+				"Este mod es definitivamente para vos."
+				""
+				""
+				"Todos los valores que tienen emc se pueden guardar y sacar infinitamente."
+				""
+				"Enjoy :>"
+			]
+			dependencies: [
+				"17941E857FBBFCA7"
+				"5993A33FE228F212"
+				"160CDB19C7AF99A3"
+			]
+			id: "3377899747D30B59"
+			tasks: [{
+				id: "0350BC29669202F2"
+				type: "item"
+				item: {
+					id: "projecte:philosophers_stone"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Campeón del Nether"
+			x: 8.0d
+			y: -1.0d
+			subtitle: "Mata al wither y conseguime 4 lingotes de netherita."
+			description: [
+				"El item en si mismo es un Orbe del orígen, utilizado para cambiar tu raza a otra que te sea más comodo para tus gustos."
+				""
+				"intentá no usarlo si no querés cambiarte de raza."
+				""
+				""
+				""
+				"PD: no te preocupes sobre matar muchas veces al wither, una vez tengas su semilla vas a tenerlo muchisimas veces."
+			]
+			dependencies: ["2F4697EB42978F15"]
+			id: "160CDB19C7AF99A3"
+			tasks: [{
+				id: "317DBF9D317C47DB"
+				type: "item"
+				item: "origins:orb_of_origin"
+			}]
+		}
+		{
+			title: "No veo mucho cambio aca adentro"
+			icon: "minecraft:end_stone"
+			x: 17.5d
+			y: 0.5d
+			subtitle: "Si lo hay, solamente matá al dragón y fijate que hay después del end gateway >:)"
+			description: [
+				"Cosas a tener en cuenta en esta dimensión:"
+				"Existen los enderiophages, lo que hacen es que te pueden saltar a la cara y preñarte. Si este efecto no se cura normalmente, entonces un enderiophage chiquito va a salir de tu estómago tipo chestburster de Alien y te va a hacer un daño considerable."
+			]
+			dependencies: ["736888AD266DA690"]
+			id: "0820C52E189D1D82"
+			tasks: [{
+				id: "24AA89D7D4E09639"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			title: "Matá al dragón"
+			x: 18.5d
+			y: 1.5d
+			subtitle: "no me siento muy bien señor stark"
+			description: [
+				"NoOoOOoOoOOoOoOoo"
+				""
+				""
+				""
+			]
+			dependencies: ["0820C52E189D1D82"]
+			id: "0629A9038479D676"
+			tasks: [{
+				id: "49A4C4F308ED62B6"
+				type: "advancement"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+		}
+		{
+			x: 18.5d
+			y: -0.5d
+			subtitle: "las elytras duh"
+			description: ["wiii"]
+			dependencies: ["0820C52E189D1D82"]
+			id: "0AF4410928BBCA83"
+			tasks: [{
+				id: "68B4C98F45986F8F"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Cabezas de wither pfv :c"
+			x: 11.5d
+			y: 2.0d
+			subtitle: "hay que matar al wither de una manera u otra no?"
+			description: ["Conseguime 3 cabezas de wither, para matar al wither."]
+			dependencies: ["45D10979B9B94E64"]
+			id: "3D25687A42534477"
+			tasks: [{
+				id: "3B4956B200959F05"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 3L
+			}]
+		}
+		{
+			title: "Mi mayor enemigo, trabajar. Parte 4"
+			x: 9.5d
+			y: 2.0d
+			subtitle: "Pico y pala, pico y pala, pico y pala. Antes estaba pico, pico, Y AHORA ANDO PERICO TODA LA SEMAAANAA"
+			description: [""]
+			dependencies: ["45D10979B9B94E64"]
+			id: "5EC270D96144D5E2"
+			tasks: [{
+				id: "511F5836CA3DA4A8"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			title: "Psst, pequeño tip"
+			x: -3.5d
+			y: -0.5d
+			description: [
+				"Existen varios tipos de cosas en este modpack que no son lo usual que digamos..."
+				""
+				"Una de esas cosas es la Handheld Crafting table! capaz de realizar crafteos desde tu inventario sólo con un click derecho sosteniendola!"
+			]
+			dependencies: ["4C9D40BE2054AFE1"]
+			id: "21754BC96935C752"
+			tasks: [{
+				id: "65BFF5FB6145C6BD"
+				type: "item"
+				item: "extendedcrafting:handheld_table"
+			}]
+		}
+		{
+			title: "D-Dank?"
+			x: -2.5d
+			y: 2.0d
+			subtitle: "danke"
+			description: [
+				"Mod MUY útil para minar!"
+				""
+				"Su Funcionamiento?"
+				"Si el dank contiene tierra por ejemplo y agarras tierra en el mundo, esa tierra va a ir directo a tu dank envez de llenarte el inventario de basura!"
+				"Tiene varios modos también para usar los bloques que están en el con click derecho o para usarlo como backpack"
+				"Además, tiene un modo de \"void\" que cuando el dank llega al máximo de items (suben el máximo de espacios e items filtrados por tier de dank) que hace que el excedente se borre automáticamente!"
+				""
+				"Y ADEMÁS FUNCIONA PARA EL MOD BUILDING GADGETS Y BUILDER'S WAND :OOOO"
+			]
+			dependencies: ["4C9D40BE2054AFE1"]
+			id: "7A874FAB3F20AE15"
+			tasks: [{
+				id: "4A0A70FE4B344762"
+				type: "item"
+				item: "dankstorage:dank_1"
+			}]
+		}
+		{
+			title: "Ice and Fire 2"
+			x: -6.0d
+			y: 0.0d
+			subtitle: "Here be dragons"
+			description: ["Este modpack tiene DRAGONES, tené mucho cuidado después de los 800 bloques en cualquier dirección ;)"]
+			dependencies: ["06F60E8047559447"]
+			id: "36AF9DA130B1FE23"
+			tasks: [{
+				id: "55ED7F120911C38B"
+				type: "item"
+				title: "Any #forge:heart"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:heart"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
+			dependencies: ["7A874FAB3F20AE15"]
+			id: "5A8E1BC25EC3EE1A"
+			tasks: [{
+				id: "7E57ECA9B6EB4E57"
+				type: "item"
+				item: "dankstorage:dank_2"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			dependencies: ["5A8E1BC25EC3EE1A"]
+			id: "6C8725DA42DE82A3"
+			tasks: [{
+				id: "6A46B4D79F3F48D9"
+				type: "item"
+				item: "dankstorage:dank_3"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["6C8725DA42DE82A3"]
+			id: "7C3627747D03B7EE"
+			tasks: [{
+				id: "22F2A63E9AC3C8C3"
+				type: "item"
+				item: "dankstorage:dank_4"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["7C3627747D03B7EE"]
+			id: "3775E1D9FA015F88"
+			tasks: [{
+				id: "3035A783D841CF8B"
+				type: "item"
+				item: "dankstorage:dank_5"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			dependencies: ["3775E1D9FA015F88"]
+			id: "5411E74D0F4CFE14"
+			tasks: [{
+				id: "677B88E6B0720A59"
+				type: "item"
+				item: "dankstorage:dank_6"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.0d
+			dependencies: ["5411E74D0F4CFE14"]
+			id: "0CDC89A00D996CA1"
+			tasks: [{
+				id: "6BDCD27EA5FF8EF6"
+				type: "item"
+				item: "dankstorage:dank_7"
+			}]
+		}
+		{
+			title: "Manzana de Edén"
+			x: -5.0d
+			y: -0.5d
+			subtitle: "Pecados capitales."
+			description: ["Invoca a los pecados capitales comiendote esta manzana, la cual te servirá para conseguir un valioso loot que te dará la posibilidad de conseguir la mesa de transmutación..."]
+			dependencies: ["06F60E8047559447"]
+			id: "448EA71BEDABF0D7"
+			tasks: [{
+				id: "478427A2D9778D76"
+				type: "item"
+				item: "sons_of_sins:rotten_apple"
+			}]
+		}
+		{
+			title: "Mine and Slash!"
+			icon: "mmorpg:identify_tome"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Mine and Slash!"
+			description: [
+				"Bienvenido a Mine and Slash!"
+				""
+				"Un mod que tiene el proposito de hacer que minecraft sea un mmorpg!"
+				""
+				"Mejora tus herramientas, subí de nivel y tirá hechizos!"
+				"o también craftea las comidas más OP en cuanto a estadísticas, armaduras completamente increibles o incluso Scrolls de hechizos!"
+				""
+				""
+				"Todo y más en este mod que te va a acompañar en todo tu viaje."
+				""
+				"Para abrir tu status dale a la K! (por defecto la h)"
+			]
+			dependencies: ["71BC737A1A9F44BE"]
+			id: "49A0600440C962F1"
+			tasks: [{
+				id: "784EF25B708F7590"
+				type: "item"
+				item: {
+					id: "mmorpg:salvage_hammer"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Apotheosis"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "apotheosis:apoth_chronicle"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -6.0d
+			y: 1.0d
+			subtitle: "Mod multiuso!"
+			description: [
+				"Apotheosis es un mod muy poco centrado, pero no quiere decir que sea malo!"
+				""
+				"Tiene cosas como:"
+				"Items únicos irrompibles"
+				"Mobs poderosos"
+				"Encantamientos sumamente OP"
+				"hasta una manera de cambiar y mejorar los spawners que tengas en tu mundo!"
+			]
+			dependencies: ["06F60E8047559447"]
+			id: "31503D6AB9472952"
+			tasks: [{
+				id: "20BB0C69E1EE9B91"
+				type: "checkmark"
+				title: "Clickeame para un libro guía gratis!"
+			}]
+			rewards: [{
+				id: "48956AF7F9ADC8A3"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "mmorpg:stat_soul/stat_soul"
+				Count: 1b
+				tag: {
+					stat_soul: {
+						rar: "common"
+						tier: 0
+						gear-: 1b
+						can_sal: 0b
+						uniq: ""
+						slot: ""
+					}
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -5.0d
+			y: 1.5d
+			subtitle: "queseso"
+			description: [
+				"El JEI, es el mod más importante de este modpack si querés usar mods"
+				""
+				"Es muy simple, cuando abris el inventario lo tenés a la derecha y podés fijarte las recetas de todo con un solo click o con una keybind con el mouse arriba del item."
+				"Estos son los botones:"
+				"R: Receta de ese item (O click izquierdo)"
+				"U: Usos de ese item (o click derecho)"
+				"A: Poner como favorito el item (para tenerlo a mano a la izquierda de tu pantalla)"
+				"Backspace (El botón que usas para borrar): Volver al crafteo anterior."
+				""
+				"También tiene diferentes maneras de buscar, por ejemplo:"
+				"Si usas un \"@\" antes de cualquier palabra, busca por nombre de mod envez de por nombre de item"
+			]
+			dependencies: ["06F60E8047559447"]
+			id: "3D0CCF1345E861E8"
+			tasks: [{
+				id: "4652DFF4E15F3338"
+				type: "checkmark"
+				title: "JEI"
+			}]
+		}
+		{
+			title: "Backpacks!"
+			x: -1.5d
+			y: 1.5d
+			subtitle: "No tengo espacio :c"
+			description: [
+				"Mod de utilidad!"
+				""
+				"Quieres tener más espacio en el inventario para ir a la mina?"
+				""
+				"Quieres tener un \"cofre\" que guarde en stacks de hasta 1024 por slot?!"
+				"Quieres un \"cofre\" que tiene MUCHISIMOS slots Y TE LO PUEDES LLEVAR?"
+				"Quieres craftear, cocinar o hasta comer DESDE LA MOCHILA?"
+				""
+				"Entonces este mod es para ti."
+			]
+			dependencies: ["4C9D40BE2054AFE1"]
+			id: "2D229F040228E577"
+			tasks: [{
+				id: "171F27CC45A19931"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:backpack"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+
+[Messages]
+	#Language of mod messages
+	#Allowed Values: English, Russian, Ukrainian
+	language = "English"
+	#Display mod messages
+	display = true
+

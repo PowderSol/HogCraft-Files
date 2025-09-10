@@ -1,0 +1,21 @@
+{
+  "$schema": "file:///C:/Users/Alex/Desktop/Codigo/dondetrabajanebula/schemas/ServerMetaSchema.schema.json",
+  "meta": {
+    "version": "1.16.5",
+    "name": "Brigidoland2 (Minecraft 1.16.5)",
+    "description": "Servidor de Brigidoland 2! (TEST)",
+    "icon": "How to set the server icon: https://github.com/dscalzi/Nebula#setting-the-server-icon",
+    "address": "localhost:25565",
+    "discord": {
+      "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    },
+    "mainServer": false,
+    "autoconnect": false
+  },
+  "forge": {
+    "version": "36.2.34"
+  },
+  "untrackedFiles": []
+}

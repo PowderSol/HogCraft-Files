@@ -1,0 +1,157 @@
+{
+	id: "09C6B8EB4F99FD69"
+	order_index: 0
+	title: "Random Reward"
+	icon: "mmorpg:custom_crate"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 1
+					loot_crate: {
+						tier: 0
+						type: 1
+					}
+				}
+			}
+			weight: 2000
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 3
+					loot_crate: {
+						tier: 0
+						type: 5
+					}
+				}
+			}
+			weight: 2000
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 1
+					loot_crate: {
+						tier: 1
+						type: 1
+					}
+				}
+			}
+			weight: 160
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 3
+					loot_crate: {
+						tier: 1
+						type: 5
+					}
+				}
+			}
+			weight: 160
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 1
+					loot_crate: {
+						tier: 2
+						type: 1
+					}
+				}
+			}
+			weight: 120
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 3
+					loot_crate: {
+						tier: 2
+						type: 5
+					}
+				}
+			}
+			weight: 120
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 3
+					loot_crate: {
+						tier: 3
+						type: 5
+					}
+				}
+			}
+			weight: 60
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 1
+					loot_crate: {
+						tier: 4
+						type: 1
+					}
+				}
+			}
+			weight: 60
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 1
+					loot_crate: {
+						tier: 3
+						type: 1
+					}
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "mmorpg:loot_crate/default"
+				Count: 1b
+				tag: {
+					CustomModelData: 3
+					loot_crate: {
+						tier: 4
+						type: 5
+					}
+				}
+			}
+		}
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "random_reward"
+	}
+}

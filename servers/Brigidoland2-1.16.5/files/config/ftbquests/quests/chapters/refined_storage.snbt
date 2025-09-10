@@ -1,0 +1,283 @@
+{
+	id: "62D3699FB1E81B11"
+	group: "23AE05F5773EEA05"
+	order_index: 3
+	filename: "refined_storage"
+	title: "Refined Storage"
+	icon: "refinedstorage:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Refined storage!"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "quejesto"
+			description: [
+				"Esto es el Controller, su funcionamiento es el mismo de una fuente de energía de una pc por así decirlo:"
+				""
+				"Le da energía a todas las demás cosas. siempre y cuando tenga energía la misma"
+			]
+			dependencies: ["6A227BB32697C2A7"]
+			id: "707AD6AC4F0CBEEA"
+			tasks: [{
+				id: "44C9AD867C71E9CD"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+		}
+		{
+			title: "Cable"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "conectando de eso a aquello"
+			description: [
+				"Conecta las máquinas entre si para que se puedan comunicar a largas distancias"
+				""
+				""
+				"(Las maquinas normalmente si están una al lado de la otra se pueden comunicar tranquilamente"
+			]
+			dependencies: ["707AD6AC4F0CBEEA"]
+			id: "3C3B3B1EB5C17505"
+			tasks: [{
+				id: "50684DFAFE783DA7"
+				type: "item"
+				item: "refinedstorage:cable"
+			}]
+		}
+		{
+			title: "Pantalla!"
+			x: 3.5d
+			y: 0.0d
+			subtitle: "Literalmente estás armandote una pc en minecraft."
+			description: [
+				"Ahora tenés una interfaz!"
+				"cuenta como una pantalla táctil, la cual te permite ver y agarrar tus items."
+				""
+				""
+				""
+				"PD: Tiene botones a los lados y un buscador, el buscador se puede combinar con el JEI (buscador de objetos a la derecha) y también podés mover los items automáticamente a como se debería craftear haciendo shift + click derecho al botón [+] que sale en el item cuando te fijas su crafteo"
+			]
+			dependencies: ["707AD6AC4F0CBEEA"]
+			id: "6C0520DEEE16EECF"
+			tasks: [{
+				id: "5D4AF588EA93C63E"
+				type: "item"
+				item: "refinedstorage:grid"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			subtitle: "Disco sólido!"
+			description: ["Guarda tus discos en este lugar, completamente necesario para guardar items."]
+			dependencies: ["707AD6AC4F0CBEEA"]
+			id: "1A5260E7B8253D9A"
+			tasks: [{
+				id: "3C94D4DBA45BC42A"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+		}
+		{
+			title: "Crafter"
+			x: 1.5d
+			y: -2.5d
+			subtitle: "podés pedirle a tu \"computadora\" que haga las cosas por vos."
+			dependencies: ["707AD6AC4F0CBEEA"]
+			id: "0A8C5066388AB228"
+			tasks: [{
+				id: "03B72CF889458654"
+				type: "item"
+				item: "refinedstorage:crafter"
+			}]
+		}
+		{
+			title: "Una MEJOR pantalla táctil"
+			x: 3.5d
+			y: -1.0d
+			description: ["Te permite ver y agarrar los items de tu sistema Y TAMBIÉN TE DEJA CRAFTAR CON ELLOS."]
+			dependencies: ["6C0520DEEE16EECF"]
+			id: "7795D0AB6B39EF1E"
+			tasks: [{
+				id: "614CA7B862245D11"
+				type: "item"
+				item: "refinedstorage:crafting_grid"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			description: ["Sirve para configurar los patrones para el crafter."]
+			dependencies: ["6C0520DEEE16EECF"]
+			id: "03D5E106A89BD0DB"
+			tasks: [{
+				id: "42651F423176F622"
+				type: "item"
+				item: "refinedstorage:pattern_grid"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			description: ["te permite monitorear cuanto tiempo le falta a algún crafteo que pediste o también que errores tiene si no puede entrar el item o la receta no es correcta."]
+			dependencies: ["6C0520DEEE16EECF"]
+			id: "37A0DFA85FB685DA"
+			tasks: [{
+				id: "08513BCB66C5914A"
+				type: "item"
+				item: "refinedstorage:crafting_monitor"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			description: ["Te permite ver todos los crafters de tu sistema sin la necesidad de hacer click uno por uno."]
+			dependencies: ["6C0520DEEE16EECF"]
+			id: "5084C8BF433D4DCA"
+			tasks: [{
+				id: "53A4587AD706DDEC"
+				type: "item"
+				item: "refinedstorage:crafter_manager"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: ["6C0520DEEE16EECF"]
+			optional: true
+			id: "6812D57ECA8ED749"
+			tasks: [{
+				id: "7A31F96C3CBDE14C"
+				type: "item"
+				item: "refinedstorage:wireless_grid"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			dependencies: ["7795D0AB6B39EF1E"]
+			id: "47ED848750BA0265"
+			tasks: [{
+				id: "1F9BB48EA2D46D1F"
+				type: "item"
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			dependencies: ["37A0DFA85FB685DA"]
+			optional: true
+			id: "1FE05BA88ECD0B8E"
+			tasks: [{
+				id: "5E693DA8AE45DD5A"
+				type: "item"
+				item: "refinedstorage:wireless_crafting_monitor"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			description: [
+				"Circuitos del disco."
+				""
+				"Cuanto más grande sea el circuito (1k, 4k, 16k, 64k o más) más espacio va a guardar."
+				""
+				""
+				"Te recomiendo hacerte 4 discos completos (que esos son los que entran al disk drive) para guardar todas tus cosas"
+				""
+				""
+				""
+				"PD: No metas items que no se puedan stackear al sistema (por ejemplo pociones, herramientas entre otros), lo vas a llenar mucho más rapido de lo normal."
+			]
+			dependencies: ["1A5260E7B8253D9A"]
+			id: "4A4465E5E685976A"
+			tasks: [{
+				id: "26585F6A3E5455DA"
+				type: "item"
+				item: "refinedstorage:1k_storage_part"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["4A4465E5E685976A"]
+			id: "74D755285A3A0389"
+			tasks: [{
+				id: "76A7A7587BC5704D"
+				type: "item"
+				item: "refinedstorage:4k_storage_part"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["74D755285A3A0389"]
+			id: "6DB1DCD6FE98E77C"
+			tasks: [{
+				id: "410CD7C19ED271EE"
+				type: "item"
+				item: "refinedstorage:16k_storage_part"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			dependencies: ["6DB1DCD6FE98E77C"]
+			id: "7D70103E47859A63"
+			tasks: [{
+				id: "30F74810A168EF3C"
+				type: "item"
+				item: "refinedstorage:64k_storage_part"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			dependencies: ["4A4465E5E685976A"]
+			optional: true
+			id: "17397AE28BD09544"
+			tasks: [{
+				id: "1242E7B0A9985DDB"
+				type: "item"
+				item: "refinedstorage:1k_storage_disk"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["74D755285A3A0389"]
+			optional: true
+			id: "1BDA01C122D4295C"
+			tasks: [{
+				id: "7F3AB9C60A5DAEC4"
+				type: "item"
+				item: "refinedstorage:4k_storage_disk"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			dependencies: ["6DB1DCD6FE98E77C"]
+			optional: true
+			id: "294649A7C8484B45"
+			tasks: [{
+				id: "20C105EF1B83D0B0"
+				type: "item"
+				item: "refinedstorage:16k_storage_disk"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			dependencies: ["7D70103E47859A63"]
+			id: "681D94FA13ECBBD9"
+			tasks: [{
+				id: "307582013A1914DD"
+				type: "item"
+				item: "refinedstorage:64k_storage_disk"
+			}]
+		}
+	]
+}
